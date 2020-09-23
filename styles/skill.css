@@ -1,0 +1,39 @@
+.skill_contents {
+  padding: 20px 20px;
+}
+
+.skill_list {
+  font-size: 24px;
+}
+
+.skill_category {
+  margin: 12px 0;
+  font-size: 48px;
+  font-weight: bold;
+} 
+
+.skill_item {
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+/* 
+.skill_table {
+  width: 100%;
+  background-color: steelblue;
+}
+
+.skill_table,
+.skill_table th,
+.skill_table td {
+  border: 1px solid #fff;
+}
+
+.skill_table th,
+.skill_table td {
+  font-size: 30px;
+}
+
+.skill_table .skill_category {
+  font-size: 48px;
+} */

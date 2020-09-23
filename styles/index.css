@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+/* <div class="header"> */
+.header {
+  height: 100vh;
+
+  /* background-image: url('https://images.unsplash.com/photo-1504069424204-a54566b5165c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2904&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_messages,
+.header_list {
+  padding: 50px;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__main_heading,
+.header_list__heading,
+.header_list__items {
+  margin: 0;
+  margin-top: 50px;
+}
+
+
+.header__main_heading {
+  font-size: 120px;
+}
+
+.header__sub_heading {
+  font-size: 40px;
+}
+
+.header_list {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  /* height: 100%; */
+  background-color: #333333;
+
+
+  overflow: scroll;
+}
+
+.header_list__heading {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.header_list__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_list__item {
+  padding: 10px 20px;
+  width: 200px;
+
+  /* text-align: center; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all .4s ease;
+}
+
+
+.header_list__item:hover {
+  box-shadow: 0 0 10px 10px hsl(0, 1%, 80%);
+}
+
+.header_list__item a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+
+
+
+.scroll_down__icon {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #fff;
+  /* opacity: .6; */
+  transition: all .4s ease;
+}
+
+
+/* .scroll_up */
+.scroll_up {
+  padding: 20px 0;
+  width: 100%;
+  height: 50px;
+
+  text-align: center;
+}
+
+.scroll_up__icon {
+  font-size: 40px;
+  color: #333333;
+  opacity: .6;
+  transition: all .4s ease;
+}
+
+.scroll_up__icon:hover {
+  opacity: 1;
+  /* box-shadow:  0 0 10px 10px hsl(0, 0%, 40%); */
+  /* text-shadow: 0 0 10px 10px hsl(0, 0%, 40%); */
+}
