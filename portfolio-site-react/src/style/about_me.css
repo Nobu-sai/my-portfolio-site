@@ -1,0 +1,83 @@
+.about_me_bg {
+  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about_me {
+  /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
+  background-color: hsl(20, 100%, 30%);
+  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about_me_contents {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+
+}
+
+.about_me__h2 {
+  min-width: 250px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.introduciton {
+  flex: 2;
+  height: 100%;
+  overflow: scroll;
+
+  transition: all .4s ease;
+}
+
+.introduciton:hover {
+  border: 1px solid #fff;
+}
+.introduciton p {
+  line-height: 2;
+  letter-spacing: 8px;
+}
+
+.contact {
+  flex: 1;
+
+  padding: 0 40px;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  justify-content: center;
+  align-items: center;
+
+  overflow: scroll;
+  transition: all .4s ease;
+}
+
+.contact:hover {
+  border: 1px solid #fff;
+}  
+
+
+.contact__item {
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
+  transition: all .4s ease;
+}
+
+.contact__item:hover {
+  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
+}
+
+.contact__item a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+}
+

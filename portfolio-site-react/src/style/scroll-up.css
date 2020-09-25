@@ -1,0 +1,21 @@
+/* .scroll_up */
+.scroll_up {
+  padding: 20px 0;
+  width: 100%;
+  height: 50px;
+
+  text-align: center;
+}
+
+.scroll_up__icon {
+  font-size: 40px;
+  color: #333333;
+  opacity: .6;
+  transition: all .4s ease;
+}
+
+.scroll_up__icon:hover {
+  opacity: 1;
+  /* box-shadow:  0 0 10px 10px hsl(0, 0%, 40%); */
+  /* text-shadow: 0 0 10px 10px hsl(0, 0%, 40%); */
+}

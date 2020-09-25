@@ -1,5 +1,14 @@
+#skill {
+  background-color: hsl(93, 100%, 30%);
+  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .skill_contents {
   padding: 20px 20px;
+  overflow: scroll;
 }
 
 .skill_list {
