@@ -20,10 +20,7 @@ function AboutMe(props) {
           <div className="profile_image"></div>
             <h2 className="about_me__h2">I'm Nobuya Saito</h2>                        
             <p>I'm a Front End Developer.</p>
-            <p>I love creating things. So, I love coding.<br/>At the end of the day, coding is just a means for making our imagination into the reality.<br/>The excitement to create things pushes us foreward even in hard time in the process. <br/>Also, which makes us more imaginative.
-            <br/>I feel passion to creating something close to our imagination.
-            <br/>I want to develop products which are close to Your Imaginaiton. 
-            <br/>I'm the develper who can share the excitement. Sincerly.</p>            
+            <p>I love creating things. So, I love coding.<br/>At the end of the day, Everyting is just means for our Passion. Creating things is one of my passion, and Coding is a great means for it as my partner.<br/>I want to be Your partner to make your Imagination into the Reality.</p>            
             <ul>
               <h2>More about me.</h2>
               <h2>I tressure time and productivity to get Maximum ROI in Minimum Exertion.</h2>
