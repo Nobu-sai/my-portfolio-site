@@ -1,5 +1,5 @@
 .about_me_bg {
-  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -7,8 +7,8 @@
 
 #about_me {
   /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
-  background-color: hsl(20, 100%, 30%);
-  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+  background-color: hsl(93, 100%, 30%);
+  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -20,6 +20,8 @@
   align-items: center;
   /* justify-content: center; */
 
+  position: relative;
+
 }
 
 .about_me__h2 {
@@ -28,12 +30,41 @@
   font-size: 30px;
 }
 
+.profile_image {
+  position: absolute;
+  /* top: -280px; */
+  top: -400px;
+  right: 50px;
+  /* border-right: 1000px solid hsla(0, 0%, 20%); */
+  /* border-radius: 30px; */
+  box-shadow: 0 0 10px 10px hsla(0, 0%, 80%);
+  width: 400px;
+  height: 400px;
+  background-image: url('../assets/profile_image_side_edit.jpeg');
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  backdrop-filter: blur(200px);
+  opacity: .4;
+
+  transition: all .4s ease;
+}
+
+/* .profile_image:hover {
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+} */
+
+
 .introduciton {
   flex: 2;
   height: 100%;
   overflow: scroll;
 
   transition: all .4s ease;
+
 }
 
 .introduciton:hover {
@@ -43,6 +74,7 @@
   line-height: 2;
   letter-spacing: 8px;
 }
+
 
 .contact {
   flex: 1;

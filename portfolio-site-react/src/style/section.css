@@ -1,10 +1,12 @@
 .section {
-  margin-top: 10vh;
+  margin: 20vh 0;
   /* border-radius: 5px; */
   box-shadow: 0 0 10px 30px hsl(0, 0%, 80%);
   /* padding: 40px 0 0 40px; */
-  width: 85vw;
-  height: 90vh;
+  /* width: 85vw; */
+  width: 100vw;
+  /* height: 90vh; */
+  height: 90%;
   
   background-color: #fff;
 
@@ -64,3 +66,16 @@
   /* box-shadow: 0 0 10px 10px hsl(0, 1%, 20%); */
 }
 
+
+.image_source a {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+
+  transition: all .4s ease;
+}
+
+.image_source a:hover {
+  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
+}

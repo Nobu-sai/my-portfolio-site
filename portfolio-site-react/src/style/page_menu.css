@@ -7,12 +7,17 @@
   /* If I set this width, hover effects are broken. */
   /* width: 110vw; */
   
+  
 }
 
 /* Styling of overlay */
 .bm-overlay {
   box-shadow: 0 0 50px 10px  rgba(0, 0, 0, 0.3);
   background: hsla(0, 0%, 0%, 0.6);
+  /* background-image: url('https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
 }
 
 .bm-menu-wrap {

@@ -101,17 +101,17 @@
 }
 
 .header_list__item.about_me a:hover {
-  background-color: hsl(0, 70%, 30%);
+  background-color: hsl(100, 50%, 50%);
 }
 
 
-.header_list__item.skill a:hover {
-  background-color: hsl(100, 70%, 30%);
+.header_list__item.skill a:hover {  
+  background-color: hsl(0, 50%, 50%);
 }
 
 
 .header_list__item.portfolio a:hover {
-  background-color: hsl(200, 70%, 30%);
+  background-color: hsl(200, 50%, 50%);
 }
 
 
