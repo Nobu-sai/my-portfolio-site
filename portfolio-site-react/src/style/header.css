@@ -58,7 +58,7 @@
 
 .header_list:hover {
   /* box-shadow: 0 0 10px 10px hsl(0, 1%, 80%); */
-  box-shadow: 0 0 10px 10px hsl(0, 1%, 20%);
+  /* box-shadow: 0 0 10px 10px hsl(0, 1%, 20%); */
 }
 
 .header_list__heading {

@@ -21,7 +21,7 @@ function AboutMe(props) {
             <h2 className="about_me__h2">I'm Nobuya Saito</h2>                        
             <p>I'm a Front End Developer.</p>
             <p>I love creating things. So, I love coding.<br/>At the end of the day, coding is just a means for making our imagination into the reality.<br/>The excitement to create things pushes us foreward even in hard time in the process. <br/>Also, which makes us more imaginative.
-            <br/>I feel passion to creating things which close to our imagination.
+            <br/>I feel passion to creating something close to our imagination.
             <br/>I want to develop products which are close to Your Imaginaiton. 
             <br/>I'm the develper who can share the excitement. Sincerly.</p>            
             <ul>
