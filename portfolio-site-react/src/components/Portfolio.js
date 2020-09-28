@@ -20,20 +20,24 @@ function Portfolio() {
           <div className="portfolio_list">
             <div className="portfolio_list__background">
             
-              <div className="portfolio_list__item"><a href="./portpholio-pages/blog-app_ex_1/my-blog-app /index.html">Blog App</a></div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/FormValidationWay1Ex1/index.html">Form Validation</a></div>
+              <div className="portfolio_list__item"><a href="https://beat-box-js.firebaseapp.com/">Beat Box</a></div>
+              <div className="portfolio_list__item"><a href="https://blog-app-31ad0.firebaseapp.com/">Blog App</a></div>
+              <div className="portfolio_list__item"><a href="https://drawing-animaiton.firebaseapp.com/">Drawing Borders Animation</a></div>
+              <div className="portfolio_list__item"><a href="https://form-validation-1c872.firebaseapp.com/">Form Validation</a></div>
               <div className="portfolio_list__item"><a href="../portpholio-pages/Google-Map-Store-Locator/">Google Map Store Locator</a></div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/GuessTheNumber_Ex_1/index.html">Guess Number Game</a></div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/ImageSlider_Ex_1/absorb_1/index.html">Image Slider</a></div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/SortIMDBMovieDatabase/Arrange_1/index.html">Movie List Sorting App</a></div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/TabPanelWidget_Ex_1/Mastery_Absorb_1/index.html">Tab Panel Widgit</a></div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/TextEditor_Ex_1/Arrange_1/index.html">Text Editor</a></div>
+              <p>* Currently unfuncitoning</p>
+              <div className="portfolio_list__item"><a href="https://guess-number-game-js.firebaseapp.com/">Guess Number Game</a></div>
+              <div className="portfolio_list__item"><a href="https://image-slider-jquery.firebaseapp.com/">Image Slider</a></div>
+              <div className="portfolio_list__item"><a href="https://movie-list-c0ae3.web.app/">Movie List</a></div>
+              <div className="portfolio_list__item"><a href="https://tab-panel-widget.firebaseapp.com/">Tab Panel Widgie</a></div>
+              <div className="portfolio_list__item"><a href="https://text-editor-ca31a.firebaseapp.com/">Text Editor</a></div>
               <div className="portfolio_list__item">
-                <a href="../portpholio-pages/toys-chest/toy-chest_index.html">Toy Chest</a>
+                <a href="https://toy-chest-ef2ab.firebaseapp.com/">Toy Chest</a>
                 <p>Contents: Cat Image Generator, Rock Scisor Papaer, Button Color Changer, BlackJack</p>
               </div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/twitter_clone/twitter_clone_app/index.html">Twitter Clone</a></div>
-              <div className="portfolio_list__item"><a href="../portpholio-pages/Weather App_Ex_1/Arrange_1/index.html">Weather App</a></div>
+              <div className="portfolio_list__item"><a href="https://twitter-clone-e0f03.firebaseapp.com/">Twitter Clone</a></div>
+              <p>* Temporarily unfuncitoning</p>
+              <div className="portfolio_list__item"><a href="https://weather-app-832c9.firebaseapp.com/index.html">Weather App</a></div>
             </div>
               
           </div>
