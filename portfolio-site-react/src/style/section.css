@@ -1,10 +1,10 @@
 .section {
-  margin: 20vh 0;
+  margin: 100px 0;
   /* border-radius: 5px; */
   box-shadow: 0 0 10px 30px hsl(0, 0%, 80%);
   /* padding: 40px 0 0 40px; */
   /* width: 85vw; */
-  width: 100vw;
+  width: 100%;
   /* height: 90vh; */
   height: 90%;
   
@@ -24,8 +24,8 @@
 }
 
 .section_bg {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .section__heading_container {
