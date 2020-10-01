@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Element, animateScroll as scroll, scroller } from 'react-scroll'
+import {Element, animateScroll as scroll } from 'react-scroll'
 
 import AboutMe from './components/AboutMe.js';
 import Skill from './components/Skill.js';
@@ -9,6 +9,7 @@ import MenuContainer from "./components/Menu/MenuContainer.js";
 
 import './Home.css'
 import './style/header.css'
+
 
 
 
