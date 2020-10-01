@@ -76,7 +76,7 @@ function Portfolio() {
       skill: 'HTML, CSS, JS'
     },
     'Tab Panel Widget': {
-      name: 'Tab Panel Widgetlog App',
+      name: 'Tab Panel Widget',
       url: 'https://tab-panel-widget.firebaseapp.com/',
       image: tabPanelWidgetImage,
       skill: 'HTML, CSS, JS, jQuery'
@@ -188,6 +188,7 @@ function Portfolio() {
                       className="portfolio_skill"> 
                       Made with: {portfolio[1].skill}
                     </div>   
+                    <div className="go_url"><a href={portfolio[1].url}>Go Hosted URL</a></div>
                   </div>      
                   
                </>
@@ -213,7 +214,7 @@ function Portfolio() {
               src={clickedPortfolioData.image} 
               style={
                 {
-                padding: '18px 0',
+                // padding: '18px 0',
                 width: '80%',
                 height: '70%',
                 overflow: 'scroll'
@@ -237,6 +238,7 @@ function Portfolio() {
             </div>
           </>      
           ) : (          
+            // <div></div>
             <div className="portfolio_data_container">
               <div className="portfolio_title">{portfolioData['Beat Box'].name}</div>     
               <img 
@@ -244,9 +246,9 @@ function Portfolio() {
                 src={portfolioData['Beat Box'].image} 
                 style={
                   {
-                  padding: '18px 0',
+                  // padding: '18px 0',
                   width: '80%',
-                  height: '100%',
+                  height: '70%',
                   overflow: 'scroll'
                 }
                 }  
