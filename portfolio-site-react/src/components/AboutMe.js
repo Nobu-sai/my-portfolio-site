@@ -19,16 +19,9 @@ function AboutMe(props) {
           <div className="introduciton">
           <div className="profile_image"></div>
             <h2 className="about_me__h2">I'm Nobuya Saito</h2>                        
-            <p>I'm a Front End Developer.</p>
-            <p>I love creating things. So, I love coding.<br/>At the end of the day, Everyting is just means for our Passion. Creating things is one of my passion, and Coding is a great means for it as my partner.<br/>I want to be Your partner to make your Imagination into the Reality.</p>            
-            <ul>
-              <h2>More about me.</h2>
-              <h2>I tressure time and productivity to get Maximum ROI in Minimum Exertion.</h2>
-            {/* <p>I don't read books, but I think a lot and listent to talk by people who read books a lot.</p> */}
-            <p>I take Three factors into consideration about Productivity. Focus, Deliberaiton, and Cognition.</p>
-            <p>Focus: Focus is the matter of the direction of attention we put. It is said, we as human beings can focus attention to one thing for 2-4 hours a day and 4-5 days week at the Deepest Level. The work with Deepest Focus, so called Deep Work, is what I think the one of the most crucial factor for Productivity. That's why I work only 3 hours a day.</p>
-            </ul>
-            
+            <p>I'm a Web Developer.</p>
+            <p>I Love Creating things. So, I Love Coding.<br/>At the end of the day, Coding is a Means for Creating things as my great Partner.<br/>
+            I Want to be Your Partner to make Your Imagination into the Reality.</p>                                                  
           </div>
           
           <div className="contact">

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, Element, animateScroll as scroll, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 import "./Menu.css";
 
