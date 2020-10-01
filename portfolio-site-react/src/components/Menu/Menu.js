@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-scroll'
+// import Typist from 'react-typist';
 
 import "./Menu.css";
 
@@ -20,7 +21,12 @@ class Menu extends Component {
 
         <div className="menu_list">        
           
-          <div className="menu_list__heading">This Page</div>          
+          
+          <div className="menu_list__heading">
+            {/* <Typist startDelay={1000}> */}
+              This Page
+            {/* </Typist> */}
+          </div>          
 
           <div className="menu_list__items">
             <div className="menu_list__item about_me">
@@ -32,8 +38,8 @@ class Menu extends Component {
                 spy={true} 
                 smooth={true} 
                 duration={500} 
-              >
-                About Me
+              >                
+                  About Me              
               </Link>              
             </div>
 
@@ -46,8 +52,8 @@ class Menu extends Component {
                 spy={true} 
                 smooth={true} 
                 duration={500} 
-              >              
-              Skill               
+              >                            
+                  Skill                          
               </Link>
               
             </div>
@@ -60,8 +66,8 @@ class Menu extends Component {
                 spy={true} 
                 smooth={true} 
                 duration={500} 
-              >             
-              Portfolio   
+              >                             
+                  Portfolio                       
               </Link>
                         
             </div>                  

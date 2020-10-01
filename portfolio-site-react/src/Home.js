@@ -1,5 +1,7 @@
 import React from 'react';
 import {Element, animateScroll as scroll } from 'react-scroll'
+import Typist from 'react-typist';
+import Typical from 'react-typical'
 
 import AboutMe from './components/AboutMe.js';
 import Skill from './components/Skill.js';
@@ -20,18 +22,56 @@ function Home({link_1}) {
     scroll.scrollToTop();
   }
 
+  let typeDone = false;
+  
+  const typeHander = () => {
+    typeDone = true;
+  }
+
   return (
     <div className="App">                          
      
     
-    <MenuContainer />                    
+     <MenuContainer />
 
     {/* <Header />                */}
 
+
     <div className="header">
       <div className="header_messages">
-        <div className="header__main_heading">Welcom.</div>
-        {/* <h2 className="header__sub_heading">I'm Nobuya Saito.</h2> */}
+        <div className="header__main_heading">          
+          {/* <Typist onTypingDone={typeHander()}>
+            Welcom.
+          </Typist> */}
+             <Typical
+              steps={['Welcom.', 500]}
+              loop="no"
+              wrapper="p"
+            />                            
+          </div>
+        <div className="header_message">          
+           <Typist 
+            startDelay={1000}
+            cursor={
+              {
+                show: true,
+                blink: true,
+                element: '|',
+                hideWhenDone: true,
+                hideWhenDoneDelay: 100,
+              }
+            }
+           >
+           I'm Nobuya Saito. A Developer.
+          </Typist>
+         {/* {setInterval(()=>(
+            <Typical
+            steps={["i'm Nobuya Saito", 500]}
+            loop="no"
+            wrapper="p"
+            />         
+         ), 1000)} */}
+        </div>
       </div>
     </div>  
     
