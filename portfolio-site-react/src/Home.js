@@ -1,7 +1,7 @@
 import React from 'react';
 import {Element, animateScroll as scroll } from 'react-scroll'
 import Typist from 'react-typist';
-import Typical from 'react-typical'
+// import Typical from 'react-typical'
 
 import AboutMe from './components/AboutMe.js';
 import Skill from './components/Skill.js';
@@ -39,19 +39,24 @@ function Home({link_1}) {
 
     <div className="header">
       <div className="header_messages">
-        <div className="header__main_heading">          
-          {/* <Typist onTypingDone={typeHander()}>
-            Welcom.
-          </Typist> */}
-             <Typical
-              steps={['Welcom.', 500]}
-              loop="no"
-              wrapper="p"
-            />                            
+        <div className="header__main_heading">           
+            <Typist                        
+            cursor={
+              {
+                show: true,
+                blink: true,
+                element: '|',
+                hideWhenDone: true,
+                hideWhenDoneDelay: 100,
+              }
+            }
+            >
+              Welcom.
+            </Typist>
           </div>
         <div className="header_message">          
-           <Typist 
-            startDelay={1000}
+           <Typist            
+            startDelay={500}
             cursor={
               {
                 show: true,
@@ -62,7 +67,8 @@ function Home({link_1}) {
               }
             }
            >
-           I'm Nobuya Saito. A Developer.
+           <p>I'm Nobuya Saito.</p>
+           <p>A Developer. </p> 
           </Typist>
          {/* {setInterval(()=>(
             <Typical
