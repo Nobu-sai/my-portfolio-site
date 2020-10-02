@@ -1,36 +1,146 @@
 
-footer {
-  width: 100%;
+
+.footer {
+  /* border-radius: 8px; */
+  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
+  margin: 20px auto;  
+  width: 95%;
+  height: 100vh;
+  /* max-height: 600px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+
+}
+
+
+.footer_heading_container {
+  margin-top: 100px;
+  width: 100%;  
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer_heading {
+  padding: 100px 20px; 
+  width: 90%;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  background-color: black;
+  font-size: 50px;
+  /* color: #000; */
+  color: #fff;
+  letter-spacing: 20px;
+
+  text-align: center;
+}
+
+
+.footer__items {
+  display: flex;
+
+  max-height: 400px;
+}
+
+
+.footer_item {
+  
   margin: 20px 0;
-  margin-bottom: 200px;
+  margin-top: 100px;
+  margin-bottom: 200px; 
+  padding: 20px;
   background: #000;
 
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: flex-end; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  overflow: scroll;
-  transition: all .4s ease;
 }
 
-
-.footer__item {
-  padding: 10px 0;
-  width: 200px;
-  text-align: center;
-  transition: all .4s ease;
-}
-
-.footer__item:hover {
-  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
-}
-
-.footer__item a {
-  text-decoration: none;
+.footer_item__heading {
   font-size: 24px;
   color: #fff;
+}
+
+
+.footer_contact__item {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  text-decoration: none;
+  color: #fff;
+
+  transition: all .4s ease;
+}
+
+.footer_contact__item:hover {
+  /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
+}
+
+
+.footer_contact__item_name {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer_contact__item i {
+  /* margin-top: 4px; */
+  font-size: 40px;
+  color: hsl(0, 0%, 60%);
+
+  transition: all .4s ease;
+}
+
+.footer_contact__item i:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+
+.footer_contact__item.github i:hover {
+  color: #4078c0;
+}
+.footer_contact__item.linkedin i:hover {
+  color: #0077b5;
+}
+
+
+
+
+.image_source__item {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+}
+
+a.image_source__item {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: #fff;
+
+  transition: all .4s ease;
+}
+
+a.image_source:hover {
+  font-weight: bold;
 }
 
 

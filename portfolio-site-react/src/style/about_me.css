@@ -1,51 +1,64 @@
-.about_me_bg {
-  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
-#about_me {
-  /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
-  background-color: hsl(93, 100%, 30%);
-  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 .about_me_contents {
   padding: 20px 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   /* justify-content: center; */
 
-  position: relative;
+  /* position: relative; */
 
 }
 
-.about_me__h2 {
+/**** .introduciton ****/
+
+.introduciton {
+  /* padding: 20px 40px; */
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intro_message {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  text-shadow: 0 0 14px 14px hsla(0, 0%, 80%);
+}
+
+.intro_message__heading {
   min-width: 250px;
-  text-align: center;
-  font-size: 30px;
+  /* text-align: center; */
+  font-size: 32px;
 }
+
 
 .profile_image {
-  position: absolute;
-  /* top: -280px; */
-  top: -400px;
-  right: 50px;
-  /* border-right: 1000px solid hsla(0, 0%, 20%); */
-  /* border-radius: 30px; */
+  flex: 1;
+ }
+
+ /* Individual to each of Introduciton and Contact */
+.intro_message__p {
+  line-height: 1.6;
+  letter-spacing: 8px;
+  font-size: 14px;
+}
+
+
+.profile_image {  
+
   box-shadow: 0 0 10px 10px hsla(0, 0%, 80%);
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 350px;
   background-image: url('../assets/profile_image_side_edit.jpeg');
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
-  backdrop-filter: blur(200px);
-  opacity: .4;
+  /* backdrop-filter: blur(200px); */
+  opacity: .8;
 
   transition: all .4s ease;
 }
@@ -58,48 +71,34 @@
 } */
 
 
-.introduciton {
-  flex: 2;
-  height: 100%;
-  overflow: scroll;
+/**** .contact ****/
 
-  transition: all .4s ease;
-
-}
-
-.introduciton:hover {
-  border: 1px solid #fff;
-}
-.introduciton p {
-  line-height: 2;
-  letter-spacing: 8px;
-}
-
-
-.contact {
-  flex: 1;
-
-  padding: 0 40px;
-
+.contact {  
+  width: 90%;
+  height: 200px;
+  overflow: scroll;  
+  
   display: flex;
-  flex-direction: column;
-  /* align-items: flex-end; */
-  justify-content: center;
   align-items: center;
-
-  overflow: scroll;
-  transition: all .4s ease;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.contact:hover {
-  border: 1px solid #fff;
-}  
 
 
 .contact__item {
-  padding: 10px 0;
+  margin: 10px;
+  padding: 10px;
   width: 200px;
-  text-align: center;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  text-decoration: none;
+  color: #000;
+
   transition: all .4s ease;
 }
 
@@ -107,9 +106,35 @@
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
 }
 
-.contact__item a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #fff;
+
+.contact__item_name {
+  font-size: 18px;
+  color: #000;
 }
+
+.contact__item_name.resume  a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact__item i {
+  /* margin-top: 4px; */
+  font-size: 40px;
+  color: hsl(0, 0%, 60%);
+
+  transition: all .4s ease;
+}
+
+.contact__item i:hover {
+  color: hsl(0, 0%, 0%);
+}
+
+
+.contact__item.github i:hover {
+  color: #4078c0;
+}
+.contact__item.linkedin i:hover {
+  color: #0077b5;
+}
+
 

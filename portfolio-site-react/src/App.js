@@ -14,22 +14,24 @@ import './App.css'
 function App() {
   
   return (
-    
-    <Router>
-      <div>
-        <Switch>
-          <Route path="/resume_pdf">
-            <ResumePDF />          
-          </Route>    
+    // <div className="App">  
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route path="/resume_pdf">
+              <ResumePDF />          
+            </Route>    
+            
+            <Route path="/">
+              <Home link_1={<Link to="/resume_pdf">Resume (PDF)</Link>}/>        
+            </Route>    
           
-          <Route path="/">
-            <Home link_1={<Link to="/resume_pdf">Resume (PDF)</Link>}/>        
-          </Route>    
-         
-        </Switch>
-      </div>
-      
-    </Router>
+          </Switch>
+        </div>
+                    
+      </Router>
+
+    // </div>
   );
 
 }

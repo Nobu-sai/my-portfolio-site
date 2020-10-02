@@ -1,6 +1,8 @@
 
 .header {
-  width: 90vw;
+  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
+  margin: 20px auto;  
+  width: 95%;
   height: 100vh;
 
   /* background-image: url('https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
@@ -16,12 +18,11 @@
 
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
 }
 
-.header__main_heading {
-  margin: 0;
-  /* margin-top: 50px; */
+.header__main_heading {  
+  /* margin-top: 50px; */  
 }
 
 
