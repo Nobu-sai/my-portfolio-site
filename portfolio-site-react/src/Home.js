@@ -40,7 +40,8 @@ function Home({link_1}) {
     <div className="header">
       <div className="header_messages">
         <div className="header__main_heading">           
-            <Typist                        
+            <Typist      
+            startDelay={200}                  
             cursor={
               {
                 show: true,
@@ -56,7 +57,7 @@ function Home({link_1}) {
           </div>
         <div className="header_message">          
            <Typist            
-            startDelay={500}
+            startDelay={700}
             cursor={
               {
                 show: true,
