@@ -187,7 +187,7 @@ function Portfolio() {
                      <div className="portfolio_data"> 
                         <div 
                           className="portfolio_skill"> 
-                          Made with: {portfolio[1].skill}
+                          Made with: <span className="portfolio_skill__name">{portfolio[1].skill}</span>
                         </div>   
                         <div className="go_url">
                           <a href={portfolio[1].url}>Go Hosted URL</a>

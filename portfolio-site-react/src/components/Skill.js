@@ -36,7 +36,7 @@ function Skill() {
           <img class="skill__item_icon" src={bootstrapIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">JS</div>
+          <div class="skill__item_name">JavaScript</div>
           <img class="skill__item_icon" src={jsIcon}></img>
         </div>
         <div className="skill_item">
