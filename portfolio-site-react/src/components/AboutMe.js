@@ -7,45 +7,53 @@ import '../style/about_me.css';
 
 
 function AboutMe(props) {
-  return (
-    <div className="section_bg about_me_bg">
-
-     <div className="section" id="about_me">      
+  return (    
+     <div className="section" id="about_me">              
         <div className="section__heading_container">
-          <h1 className="section__heading">About me</h1>
+          <div className="section__heading">
+            About me
+          </div>
         </div>
         
         <div className="section_contents about_me_contents">
-          <div className="introduciton">
-          <div className="profile_image"></div>
-            <h2 className="about_me__h2">I'm Nobuya Saito</h2>                        
-            <p>I'm a Web Developer.</p>
-            <p>I Love Creating things. So, I Love Coding.<br/>At the end of the day, Coding is a Means for Creating things as my great Partner.<br/>
-            I Want to be Your Partner to make Your Imagination into the Reality.</p>                                                  
+          <div className="introduciton">    
+            <div class="intro_message">            
+              <div className="intro_message__heading"> I Love Creating things. <br/> So, I Love Coding.</div>      
+              {/* <p classname="intro_message__p">
+                At the end of the day, Coding is a Means for Creating things as my great Partner.
+              I Want to be Your Partner to make Your Imagination into the Reality.</p>                      */}
+              <p className="intro_message__p">
+                At the end of the day, Coding is a Means <br/> for Creating things as my great Partner.<br/>
+              I Want to be Your Partner <br/> to make Your Imagination into the Reality.</p>    
+            </div>            
+            <div className="profile_image"></div>                                  
           </div>
           
-          <div className="contact">
-            <h2 className="about_me__h2">Contact Me</h2>
-            <p className="contact__item"><a href="mail: snz0901@gmail.com">Email</a></p>            
-            <p className="contact__item"><a href="https://github.com/Nobu-sai">GitHub</a></p>     
-            <p className="contact__item"><a href="https://www.linkedin.com/in/nobuya-saito-3711721b7/">LinkedIn</a></p>     
-            <div className="contact__item">                   
-              {/* <ResumePDF pdf={resumePDF} />               */}
-              {/* <ResumePDF />   */}
-              {props.link_2}
-            </div>            
-              
-          </div>
-        </div>
-        <p className="image_source">
-        <a href="https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80">Image Source</a>
-      </p>          
+        <div className="contact">                            
+          <a className="contact__item mail" href="mail: snz0901@gmail.com">
+            <div class="contact__item_name">Email</div>
+            <i class="far fa-envelope"></i>
+          </a>       
 
-      </div>   
+          <a className="contact__item github" href="https://github.com/Nobu-sai">
+            <div class="contact__item_name">GitHub</div>
+            <i class="fab fa-github-square"></i>
+          </a>  
 
+          <a className="contact__item linkedin" href="https://www.linkedin.com/in/nobuya-saito-3711721b7/">
+             <div class="contact__item_name">LinkedIn</div>
+             <i class="fab fa-linkedin"></i>
+          </a>
 
-     </div>  
-  
+          <a className="contact__item">             
+            <div class="contact__item_name resume">{props.link_2}</div>
+            <i class="far fa-file-alt"></i>
+          </a>                                      
+        </div>     
+                                   
+        </div>          
+
+      </div>     
   )
 }
 

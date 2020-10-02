@@ -162,14 +162,14 @@ function Portfolio() {
   return (
     <div className="section" id="portfolio">
       <div className="section__heading_container">
-        <h1 className="section__heading">Portfolio</h1>
+        <div className="section__heading">Portfolio</div>
       </div>
       
       <div className="section_contents portfolio_contents">
 
         
         <div className="portfolio_list_container">          
-          <div className="portfolio_title">Portfolio List</div>
+          <div className="portfolio_list__heading">Portfolio List</div>
           
           
           <div className="portfolio_list" ref={portfolioList}>
@@ -181,14 +181,19 @@ function Portfolio() {
                   className="portfolio_list__item" 
                   onClick={e => setPortfolio(portfolio[1].name)}
                    >
-                    <div className="portfolio_name">
-                      {portfolio[1].name}
+                     <div className="portfolio_list__title">
+                          {portfolio[1].name}
                     </div>   
-                    <div 
-                      className="portfolio_skill"> 
-                      Made with: {portfolio[1].skill}
-                    </div>   
-                    <div className="go_url"><a href={portfolio[1].url}>Go Hosted URL</a></div>
+                     <div className="portfolio_data"> 
+                        <div 
+                          className="portfolio_skill"> 
+                          Made with: {portfolio[1].skill}
+                        </div>   
+                        <div className="go_url">
+                          <a href={portfolio[1].url}>Go Hosted URL</a>
+                        </div>
+                     </div>
+                    
                   </div>      
                   
                </>
@@ -207,8 +212,8 @@ function Portfolio() {
         
         {clickedPortfolioData.image ? (
           <> 
-            <div className="portfolio_data_container">
-              <div className="portfolio_title">{clickedPortfolioData.name}</div>     
+            <div className="portfolio_image_container">
+              <div className="portfolio_image__heading">{clickedPortfolioData.name}</div>     
               <img 
               className="portfolio_image"
               src={clickedPortfolioData.image} 
@@ -239,8 +244,8 @@ function Portfolio() {
           </>      
           ) : (          
             // <div></div>
-            <div className="portfolio_data_container">
-              <div className="portfolio_title">{portfolioData['Beat Box'].name}</div>     
+            <div className="portfolio_image_container">
+              <div className="portfolio_image__heading">{portfolioData['Beat Box'].name}</div>     
               <img 
               className="portfolio_image"
                 src={portfolioData['Beat Box'].image} 
@@ -259,9 +264,6 @@ function Portfolio() {
 
       </div>
 
-      <p className="image_source">
-        <a href="https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80">Image Source</a>
-      </p>
     </div>  
   )
 }
