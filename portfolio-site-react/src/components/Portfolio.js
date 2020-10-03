@@ -208,8 +208,9 @@ function Portfolio() {
         
         <div className="portfolio_list_container">                   
           
-          <div className="portfolio_list" ref={portfolioList}>
-            <div className="portfolio_list__background">                           
+          <div className="portfolio_list" ref={portfolioList}>            
+            <div className="portfolio_list__background">              
+             {/* <div className="scroll_message">Scroll down for the next portfolio.</div> */}
 
               {Object.entries(portfolioData).map((portfolio)=>(
                 <>
