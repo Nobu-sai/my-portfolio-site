@@ -5,6 +5,8 @@ import PortfolioData from './PortfolioData';
 import '../style/section.css';
 import '../style/portfolio.css';
 // import '../style/PortfolioData.css';
+
+// Porfolio Images
 import beatBoxImage from '../assets/portfolio-image/beat-box.png';
 import blogAppImage from '../assets/portfolio-image/blog-app.png';
 import drawingBordersAnimationImage from '../assets/portfolio-image/drawing-borders-animation.png';
@@ -17,6 +19,18 @@ import textEditorImage from '../assets/portfolio-image/text-editor.png';
 import toyChestImage from '../assets/portfolio-image/toy-chest.png';
 import twitterCloneImage from '../assets/portfolio-image/twitter-clone.png';
 import weatherAppImage from '../assets/portfolio-image/weather-app.png';
+
+// Skill Icons
+// import htmlIcon from '../assets/skill-icon/html5.svg';
+// import cssIcon from '../assets/skill-icon/css3.svg';
+// import bootstrapIcon from '../assets/skill-icon/bootstrap.svg';
+// import jsIcon from '../assets/skill-icon/js.svg';
+// import reactjsIcon from '../assets/skill-icon/reactjs.svg';
+// import nodejsIcon from '../assets/skill-icon/nodejs.svg';
+// import expressjsIcon from '../assets/skill-icon/expressjs.svg';
+// import firebaseIcon from '../assets/skill-icon/firebase.svg';
+// import mongodbIcon from '../assets/skill-icon/mongodb.svg';
+// import figmaIcon from '../assets/skill-icon/figma.svg';
 
 
 
@@ -31,19 +45,25 @@ function Portfolio() {
       name: 'Beat Box',
       url: 'https://beat-box-js.firebaseapp.com/',
       image: beatBoxImage,
-      skill: 'HTML, CSS, JS'
+      skill: "HTML, CSS, JS",
+      user_story: 'You can play Beats with your keybord.',
+      dev_story: "Used JS Classes and Audio Objects.",
     },
     'Blog App': {
       name: 'Blog App',
       url: 'https://blog-app-31ad0.firebaseapp.com/',
       image: blogAppImage,
-      skill: 'HTML, CSS, JS, Node.js, Express.js'
+      skill: 'HTML, CSS, JS, Node.js, Express.js',
+      user_story: 'You can post Blogs and Sort and View them',
+      dev_story: "Created Local API with Node.js and Express.js",
     },
     'Drawing Borders Animation': {
       name: 'Drawing Borders Animation',
       url: 'https://drawing-animaiton.firebaseapp.com/',
       image: drawingBordersAnimationImage,
-      skill: 'HTML, CSS, JS'
+      skill: 'HTML, CSS, JS',
+      user_story: 'Random Borders are drawn by clicking the button',
+      dev_story: "Used HTML canvas Tag and JS animations",
     },
     // 'Form Validation': {
     //   name: 'Form Validation',
@@ -55,55 +75,73 @@ function Portfolio() {
       name: 'Google Map Store Locator',
       url: 'https://map-store-locator-1bfa8.firebaseapp.com/',
       image: googleMapStoreLocatorImage,
-      skill: 'HTML, CSS, JS, Node.js, MongoDB, Google Map API'
+      skill: 'HTML, CSS, JS, Node.js, MongoDB, Google Map API',
+      user_story: "You can search Starbacks by ZIP Code. (Near LA only.)",
+      dev_story: "Used Google Map API",
     },
     'Guess Number Game': {
       name: 'Guess Number Game',
       url: 'https://guess-number-game-js.firebaseapp.com/',
       image: guessNumberGameImage,
-      skill: 'HTML, CSS, JS'
+      skill: 'HTML, CSS, JS',
+      user_story: 'You can play guessing random number from -100 to 100.',
+      dev_story: "Used JS for getting random numbers and replacing HTML",
     },
     'Image Slider': {
       name: 'Image Slider',
       url: 'https://image-slider-jquery.firebaseapp.com/',
       image: imageSliderImage,
-      skill: 'HTML, CSS, JS, jQuery'
+      skill: 'HTML, CSS, JS, jQuery',
+      user_story: 'You can travel the earth virtually.',
+      dev_story: "Used jQuery for Sliding Animation",
     },
     'Movie List': {
       name: 'Movie List',
       url: 'https://movie-list-c0ae3.web.app/',
       image: movieListImage,
-      skill: 'HTML, CSS, JS'
+      skill: 'HTML, CSS, JS',
+      user_story: 'You can view and sort a list of movie titles.',
+      dev_story: "Used JS for sorting list like with Object and Loop",
     },
     'Tab Panel Widget': {
       name: 'Tab Panel Widget',
       url: 'https://tab-panel-widget.firebaseapp.com/',
       image: tabPanelWidgetImage,
-      skill: 'HTML, CSS, JS, jQuery'
+      skill: 'HTML, CSS, JS, jQuery',
+      user_story: 'You can control Panels to see by the relevant Tab.',
+      dev_story: "Used jQuery for moving around Panels by Tabs",
     },
     'Text Editor': {
       name: 'Text Editor',
       url: 'https://text-editor-ca31a.firebaseapp.com/',
       image: textEditorImage,
-      skill: 'HTML, CSS, JS'
+      skill: 'HTML, CSS, JS',
+      user_story: 'You can write texts and change their styles',
+      dev_story: "Use JS and CSS for grabbing text and change styles.",
     },
     'Toy Chest': {
       name: 'Toy Chest',
       url: 'https://toy-chest-ef2ab.firebaseapp.com/',
       image: toyChestImage,
-      skill: 'HTML, CSS, JS'
+      skill: 'HTML, CSS, JS',
+      user_story: 'You can play many Toys.',
+      dev_story: "Used JS for the game control",
     },
     'Twitter Clone': {
       name: 'Twitter Clone',
       url: 'https://twitter-clone-e0f03.firebaseapp.com/',
       image: twitterCloneImage,
-      skill: 'HTML, CSS, JS, Node.js, Express.js, Twitter API'
+      skill: 'HTML, CSS, JS, Node.js, Express.js, Twitter API',
+      user_story: 'You can search Tweets from whatever word you want.',
+      dev_story: "Used Twitter API for getting tweets.",
     },
     'Weather App': {
       name: 'Weather App',
       url: 'https://weather-app-832c9.firebaseapp.com/index.html',
       image: weatherAppImage,
-      skill: 'HTML, CSS, JS, OpenWeather API'
+      skill: 'HTML, CSS, JS, OpenWeather API',
+      user_story: 'You can search weather from a city name.',
+      dev_story: "Used openweather API for weather data",
     }
   }
   
@@ -168,9 +206,7 @@ function Portfolio() {
       <div className="section_contents portfolio_contents">
 
         
-        <div className="portfolio_list_container">          
-          <div className="portfolio_list__heading">Portfolio List</div>
-          
+        <div className="portfolio_list_container">                   
           
           <div className="portfolio_list" ref={portfolioList}>
             <div className="portfolio_list__background">                           
@@ -185,13 +221,28 @@ function Portfolio() {
                           {portfolio[1].name}
                     </div>   
                      <div className="portfolio_data"> 
-                        <div 
-                          className="portfolio_skill"> 
-                          Made with: <span className="portfolio_skill__name">{portfolio[1].skill}</span>
-                        </div>   
-                        <div className="go_url">
-                          <a href={portfolio[1].url}>Go Hosted URL</a>
-                        </div>
+                      <div className="portfolio_data__item">
+                       <div 
+                          className="portfolio_data__title"> 
+                          Made with<br/> <span className="portfolio_skill__name"> {portfolio[1].skill}</span>
+                        </div> 
+                      </div>
+
+                      <div className="portfolio_data__item">
+                        <div>
+                            <div className="portfolio_data__title">
+                              Visit the page.
+                            </div>
+                            <a 
+                              href={portfolio[1].url}
+                              className="visit_url_container"                            
+                            >
+                              <span className="visit_url">Click here.</span> 
+                            </a>
+                          </div>
+                      </div>
+                                             
+                      
                      </div>
                     
                   </div>      
@@ -200,7 +251,7 @@ function Portfolio() {
               // console.log(portfolio)     
               ))
               }
-
+        
             </div>
               
           </div>
@@ -212,17 +263,24 @@ function Portfolio() {
         
         {clickedPortfolioData.image ? (
           <> 
-            <div className="portfolio_image_container">
-              <div className="portfolio_image__heading">{clickedPortfolioData.name}</div>     
+            <div className="portfolio_data_container">
+              <div className="portfolio__heading">{clickedPortfolioData.name}</div>  
+              <div className="explanation">
+                <div className="user_story">
+                    User Story: <br/><span className="user_story__text">{clickedPortfolioData.user_story}</span>
+                  </div>
+                  <div className="dev_story">
+                    Dev Story: <br/><span className="dev_story__text">{clickedPortfolioData.dev_story}</span>
+                  </div>  
+              </div>
               <img 
               className="portfolio_image"
               src={clickedPortfolioData.image} 
               style={
                 {
-                // padding: '18px 0',
-                width: '80%',
-                height: '70%',
-                overflow: 'scroll'
+                // width: '70%',
+                // height: '60%',
+                // overflow: 'scroll'
                 }
               }  
               />
@@ -244,17 +302,25 @@ function Portfolio() {
           </>      
           ) : (          
             // <div></div>
-            <div className="portfolio_image_container">
-              <div className="portfolio_image__heading">{portfolioData['Beat Box'].name}</div>     
+            <div className="portfolio_data_container">
+              <div className="portfolio__heading">{portfolioData['Beat Box'].name}</div>    
+              <div className="explanation">
+                <div className="user_story">
+                  User Story: <br/><span className="user_story__text">You can play beats with your keybord.</span>
+                </div>
+                <div className="dev_story">
+                  Dev Story: <br/><span className="dev_story__text">Use JS Classes and Audio Objects.</span>
+                </div>
+              </div> 
               <img 
               className="portfolio_image"
                 src={portfolioData['Beat Box'].image} 
                 style={
                   {
                   // padding: '18px 0',
-                  width: '80%',
-                  height: '70%',
-                  overflow: 'scroll'
+                  // width: '70%',
+                  // height: '60%',
+                  // overflow: 'scroll'
                 }
                 }  
               />

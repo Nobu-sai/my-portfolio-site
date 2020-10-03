@@ -1,7 +1,7 @@
 
 
 .about_me_contents {
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,10 +36,6 @@
 }
 
 
-.profile_image {
-  flex: 1;
- }
-
  /* Individual to each of Introduciton and Contact */
 .intro_message__p {
   line-height: 1.6;
@@ -63,19 +59,13 @@
   transition: all .4s ease;
 }
 
-/* .profile_image:hover {
-  z-index: 10;
-  width: 200px;
-  height: 200px;
-  opacity: 1;
-} */
 
 
 /**** .contact ****/
 
 .contact {  
   width: 90%;
-  height: 200px;
+  /* height: 600px; */
   overflow: scroll;  
   
   display: flex;
@@ -91,10 +81,9 @@
   width: 200px;
   height: 100px;
 
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 
   text-decoration: none;
   color: #000;
@@ -108,7 +97,8 @@
 
 
 .contact__item_name {
-  font-size: 18px;
+  text-align: center;
+  font-size: 14px;
   color: #000;
 }
 
@@ -118,7 +108,7 @@
 }
 
 .contact__item i {
-  /* margin-top: 4px; */
+  margin-top: 4px;
   font-size: 40px;
   color: hsl(0, 0%, 60%);
 
@@ -138,3 +128,152 @@
 }
 
 
+
+
+
+
+@media(max-width: 1024px) {
+  .intro_message__heading {
+    font-size: 24px;
+  }
+
+  .intro_message__p {
+    font-size: 12px;
+  }
+
+  .profile_image {      
+    width: 200px;
+    height: 250px;
+  }
+
+  .contact__item {
+    margin: 4px;
+    padding: 8px;
+    width: 150px;
+    height: 50px;
+
+    
+
+  }
+
+  .contact__item:hover {
+    box-shadow: 0 0 4px 4px hsl(0, 0%, 80%);
+  }
+
+
+  .contact__item_name {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+  }
+
+
+  .contact__item i {
+    font-size: 20px;
+
+  }
+
+
+
+}
+
+@media(max-width: 768px) {
+
+  .introduciton {
+    /* flex-direction: column; */
+  }
+
+  .intro_message__heading {
+    font-size: 18px;
+  }
+
+  .profile_image {  
+
+    box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
+    width: 150px;
+    height: 150px;
+    
+  }
+
+  .contact__item {
+    margin: 8px;
+    padding: 8px;
+    width: 120px;
+    height: 30px;
+
+  }
+
+
+  .contact__item_name {
+    font-size: 8px;
+  }
+
+
+  .contact__item i {
+    font-size: 18px;
+
+  }
+
+
+}
+
+
+@media(max-width: 425px) {  
+
+  .introduciton {
+    position: relative;
+  }
+
+
+  
+  .intro_message__heading {
+    font-size: 12px;
+  }
+
+  .intro_message__p {
+    margin-top: 38px;
+    font-size: 8px;
+  }
+
+
+  .profile_image {  
+    position: absolute;
+    top: 18px;
+    right: 0;
+    box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
+    width: 80px;
+    height: 80px;
+    
+  }
+
+
+  .contact__item {
+    margin: 8px;
+    padding: 4px;
+    width: 100px;
+    height: 30px;
+
+  }
+
+  .contact__item:hover {
+    box-shadow: 0 0 4px 4px hsl(0, 0%, 80%);
+  }
+
+
+  .contact__item_name {
+    font-size: 8px;
+  }
+
+
+  .contact__item i {
+    font-size: 8px;
+
+  }
+
+
+}
+
+
+@media(max-width: 375px) {
+  
+}

@@ -1,8 +1,8 @@
 #roundButton {
   z-index: 105;
   position: fixed;
-  right: 15px;
-  bottom: 10px;
+  right: 5%;
+  bottom: 5%;
   
   background-color: hsl(0, 0%, 60%);
   margin-bottom: 20px;
@@ -24,4 +24,22 @@
 #roundButton:active {
   background-color: hsl(0, 0%, 30%);
   /* background-color: #FFF; */
+}
+
+
+@media(max-width: 768px) {
+  #roundButton {
+    border: 8px solid hsl(0, 0%, 10%);
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media(max-width: 425px) {
+  #roundButton {
+    border: 4px solid hsl(0, 0%, 10%);
+    width: 15px;
+    height: 18px;
+  }
 }

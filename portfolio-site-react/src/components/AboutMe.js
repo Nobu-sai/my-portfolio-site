@@ -18,36 +18,34 @@ function AboutMe(props) {
         <div className="section_contents about_me_contents">
           <div className="introduciton">    
             <div class="intro_message">            
-              <div className="intro_message__heading"> I Love Creating things. <br/> So, I Love Coding.</div>      
-              {/* <p classname="intro_message__p">
-                At the end of the day, Coding is a Means for Creating things as my great Partner.
-              I Want to be Your Partner to make Your Imagination into the Reality.</p>                      */}
+              <div className="intro_message__heading"> I love creating things. <br/> So, I love coding.</div>                   
               <p className="intro_message__p">
-                At the end of the day, Coding is a Means <br/> for Creating things as my great Partner.<br/>
-              I Want to be Your Partner <br/> to make Your Imagination into the Reality.</p>    
+                At the end, coding is a means <br/> for creating things as my great partner.<br/>
+              I want to be your partner <br/> to make your imagination into the reality.</p>    
             </div>            
             <div className="profile_image"></div>                                  
           </div>
           
         <div className="contact">                            
-          <a className="contact__item mail" href="mail: snz0901@gmail.com">
+          <a className="contact__item mail" href="mailto: snz0901@gmail.com">
             <div class="contact__item_name">Email</div>
-            <i class="far fa-envelope"></i>
           </a>       
 
-          <a className="contact__item github" href="https://github.com/Nobu-sai">
+          <a className="contact__item github" href="https://github.com/Nobu-sai">            
             <div class="contact__item_name">GitHub</div>
             <i class="fab fa-github-square"></i>
+            
           </a>  
 
-          <a className="contact__item linkedin" href="https://www.linkedin.com/in/nobuya-saito-3711721b7/">
-             <div class="contact__item_name">LinkedIn</div>
+          <a className="contact__item linkedin" href="https://www.linkedin.com/in/nobuya-saito-3711721b7/">              
+             <div class="contact__item_name">LinkedIn</div>             
              <i class="fab fa-linkedin"></i>
           </a>
 
           <a className="contact__item">             
-            <div class="contact__item_name resume">{props.link_2}</div>
-            <i class="far fa-file-alt"></i>
+            <div class="contact__item_name resume">{props.link_2}            
+            </div>
+            
           </a>                                      
         </div>     
                                    
