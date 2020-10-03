@@ -25,29 +25,7 @@ function AboutMe(props) {
             </div>            
             <div className="profile_image"></div>                                  
           </div>
-          
-        <div className="contact">                            
-          <a className="contact__item mail" href="mailto: snz0901@gmail.com">
-            <div class="contact__item_name">Email</div>
-          </a>       
-
-          <a className="contact__item github" href="https://github.com/Nobu-sai">            
-            <div class="contact__item_name">GitHub</div>
-            <i class="fab fa-github-square"></i>
-            
-          </a>  
-
-          <a className="contact__item linkedin" href="https://www.linkedin.com/in/nobuya-saito-3711721b7/">              
-             <div class="contact__item_name">LinkedIn</div>             
-             <i class="fab fa-linkedin"></i>
-          </a>
-
-          <a className="contact__item">             
-            <div class="contact__item_name resume">{props.link_2}            
-            </div>
-            
-          </a>                                      
-        </div>     
+        
                                    
         </div>          
 

@@ -1,10 +1,10 @@
 
 
 .section {
-  margin-top: 100px;
+  margin-top: 150px;
   padding: 40px 0;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 
   display: flex;
   flex-direction: column;
@@ -109,12 +109,13 @@
 @media(max-width: 1024px) {
   .section {
     margin-top: 100px;   
+    padding: 20px 0;
     /* width: 1024px;  */
   }
 
   .section__heading { 
     padding: 50px 20px; 
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 8px;
   }
 
@@ -132,7 +133,7 @@
 
   .section__heading { 
     padding: 30px 10px; 
-    font-size: 24px;
+    font-size: 32px;
     letter-spacing: 4px;
   }
 

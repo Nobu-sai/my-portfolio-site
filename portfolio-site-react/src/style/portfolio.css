@@ -176,7 +176,7 @@
 
 .portfolio_image {
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
-  width: 75%;
+  width: 65%;
   height: 60%;
   overflow: scroll;
 }
@@ -234,12 +234,19 @@
 
 
   .portfolio_list {
-    padding: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
     
+    /* overflow: hidden; */
   }
 
   .portfolio_list__background {
-    height: 200px;
+    /* padding: 20px 0; */
+    max-height: 180px;
+    /* overflow: scroll; */
+  }
+  .portfolio_list_container {
+    /* padding: 20px 0; */
   }
 
   .portfolio_contents {
@@ -249,6 +256,8 @@
   }
   .portfolio_list__item {
     padding: 8px 0;
+
+    /* overflow: hidden; */
   }
 
 
@@ -267,6 +276,11 @@
     /* padding: 100px 20px;  */
     font-size: 14px;
   }
+
+  .portfolio_list_container {
+    padding-top: 10px;
+  }
+
 
   .portfolio_data__title {  
     font-size: 10px;

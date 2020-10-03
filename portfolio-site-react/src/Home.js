@@ -75,7 +75,7 @@ function Home({link_1}) {
     
     <Element name="about_me">
       <AboutMe 
-      link_2={link_1}      
+      // link_2={link_1}      
       className="section_container"/>
  
     </Element>        
@@ -100,6 +100,33 @@ function Home({link_1}) {
           wrapper="p"
         />
       </div>      
+      
+        <div className="contact footer__item">        
+          <div className="contact__title">Contact Me</div>  
+          <div className="contact__item_container">
+            <a className="contact__item mail" href="mailto: snz0901@gmail.com">
+              <div class="contact__item_name">Email</div>            
+            </a>       
+
+            <a className="contact__item github" href="https://github.com/Nobu-sai">            
+              <div class="contact__item_name">GitHub</div>
+              <i class="fab fa-github-square"></i>
+              
+            </a>  
+
+            <a className="contact__item linkedin" href="https://www.linkedin.com/in/nobuya-saito-3711721b7/">              
+              <div class="contact__item_name">LinkedIn</div>             
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a className="contact__item">             
+              <div class="contact__item_name resume">{link_1}            
+              </div>
+              
+            </a>   
+          </div>
+                                            
+        </div>     
         
       <div className="footer__item">
         <div className="image_source__heading">Image Source</div>
