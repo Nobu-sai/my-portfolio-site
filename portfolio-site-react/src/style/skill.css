@@ -12,10 +12,10 @@
 .skill_item {  
   /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
   /* border: 1px solid black; */
-  margin: 12px;
+  margin: 20px;
 
-  width: 150px;
-  height: 150px; 
+  width: 250px;
+  height: 200px; 
 
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
 }
 
 .skill__item_name {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .skill__item_icon {
@@ -52,4 +52,83 @@
 
 .coming_soon {
   font-size: 8px;
+}
+
+
+
+@media(max-width: 1024px) {
+ 
+  .skill_item {  
+    /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
+    /* border: 1px solid black; */
+    margin: 20px;
+
+    width: 150px;
+    height: 100px; 
+
+  }
+
+
+  .skill__item_name {
+    font-size: 8px;
+  }
+
+  .skill__item_icon {
+    margin-top: 8px;
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .skill__item_icon:hover {
+    width:  80px;
+    height: 80px;
+  }
+}
+
+@media(max-width: 768px) {
+
+
+}
+
+
+@media(max-width: 425px) {
+
+
+  .skill_contents {
+    padding: 10px;
+  }
+ 
+  .skill_item {  
+    /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
+    /* border: 1px solid black; */
+    margin: 20px;
+
+    width: 100px;
+    height: 70px; 
+
+  }
+
+
+  .skill__item_name {
+    font-size: 8px;
+  }
+
+  .skill__item_icon {
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .skill__item_icon:hover {
+    width:  50px;
+    height: 50px;
+  }
+
+}
+
+
+@media(max-width: 375px) {
+  
 }

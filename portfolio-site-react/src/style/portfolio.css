@@ -15,15 +15,9 @@
 
 
 
-.portfolio_list__heading,
-.portfolio_image__heading {
-  font-size: 40px;
-  text-align: center;
-}
-
 
 .portfolio_list_container,
-.portfolio_image_container {
+.portfolio_data_container {
   padding: 40px;
   height: 80%;
 
@@ -47,7 +41,7 @@
   width: 90%;
   /* height: 100%; */
   height: 90%;
-  max-height: 600px;
+  /* max-height: 600px; */
 
 } 
 
@@ -56,11 +50,6 @@
 /* .portfolio_list_container */
 .portfolio_list_container {
   flex-basis: 30%;
-  /* flex-grow: 1; */
-  /* max-height: 500px; */
-  
-  /* background-color: tan; */
-  /* text-align: center; */
 }
 
 
@@ -69,6 +58,7 @@
   padding: 20px;
   border: 1px solid #000;
   /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
+
 
   /* background-color: beige; */
   
@@ -90,7 +80,7 @@
 .portfolio_list__item {
   /* border-bottom: 1px solid #fff; */
   border-bottom: 1px solid #000;  
-  padding: 25px 0;
+  padding: 14px 0;
   /* padding-left: 8px; */
   width: 100%;
   /* text-align: center; */
@@ -101,49 +91,218 @@
 .portfolio_list__item:hover {  
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
   /* box-shadow: 0 0 10px 10px hsl(0, 0%, 20%); */
-  font-weight: bold;
+  /* font-weight: bold; */
+  
+  cursor: pointer;
 }
 
-.portfolio_list__title {
+.portfolio_list__title,
+.portfolio__heading {
   font-size: 24px;
   text-align: center;
 }
 
 
-.portfolio_skill, 
-.go_url {
+.portfolio_data__title {  
+  font-size: 18px;
   margin-top: 12px;
 }
 
-.portfolio_skill__name {
-  font-weight: bold;
+.portfolio_skill__name,
+.visit_url {
+  margin-top: 4px;
+  margin-left: 8px;
+  width: 150px; 
+
+  font-size: 12px;
   color: #333;
+
+  overflow: scroll;
 }
 
-.go_url a {
-  padding: 4px;
-  color: #000;
+.portfolio_skill__name {     
+  background-color: ivory;
+  font-weight: bold;
+}
+
+.visit_url_container { 
   text-decoration: none;
   transition: all .4s ease;
 }
 
-.go_url a:hover {
+.visit_url {  
+  padding: 4px;
+  transition: all .4s ease;
+}
+
+.visit_url:hover {  
   /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
+  font-size: 14px;
   font-weight: 900;
 }
 
-/* .portfolio_image */
-.portfolio_image_container {
+
+
+/* .portfolio_data_container*/
+.portfolio_data_container {
   flex-basis: 70%;
   /* height: 100%; */
   /* flex-grow: 2; */
 
   /* background-color: aquamarine;  */
+  overflow: scroll;
+}
+
+.portfolio__heading {
+  padding: 0;
+}
+
+.explanation {
+  width: 80%;
+}
+.user_story, 
+.dev_story {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.user_story__text,
+.dev_story__text {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #333;
 }
 
 
 .portfolio_image {
-  /* border: 1px solid #000; */
-  /* padding: 20px; */
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
+  width: 75%;
+  height: 60%;
+  overflow: scroll;
+}
+
+
+
+
+@media(max-width: 1024px) {
+  .portfolio_list_container,
+  .portfolio_data_container {
+    padding: 20px;
+    
+  }
+  .portfolio_list__title,
+  .portfolio__heading {
+    /* padding: 100px 20px;  */
+    font-size: 18px;
+  }
+
+
+
+  .portfolio_data__title {  
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .portfolio_skill__name,
+  .visit_url {
+    margin-top: 4px;
+    margin-left: 8px;
+    /* width: 100px;  */
+
+    font-size: 8px;
+
+  }
+
+
+  .user_story, 
+  .dev_story {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .user_story__text,
+  .dev_story__text {
+    margin-top: 8px;
+    font-size: 8px;
+  }
+
+
+
+}
+
+@media(max-width: 768px) {
+
+
+  .portfolio_list {
+    padding: 10px;
+    
+  }
+
+  .portfolio_list__background {
+    height: 200px;
+  }
+
+  .portfolio_contents {
+    
+    flex-direction: column-reverse;
+    
+  }
+  .portfolio_list__item {
+    padding: 8px 0;
+  }
+
+
+  .portfolio_data__title {  
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  
+}
+
+
+@media(max-width: 425px) {
+  .portfolio_list__title,
+  .portfolio__heading {
+    /* padding: 100px 20px;  */
+    font-size: 14px;
+  }
+
+  .portfolio_data__title {  
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+
+  .portfolio_skill__name,
+  .visit_url {
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 8px;
+
+  }
+
+
+  
+
+  .user_story, 
+  .dev_story {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+
+  .user_story__text,
+  .dev_story__text {
+    margin-top: 4px;
+    font-size: 8px;
+  }
+
+
+
+
+}
+
+
+@media(max-width: 375px) {
+  
 }

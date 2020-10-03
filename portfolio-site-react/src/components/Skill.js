@@ -1,6 +1,8 @@
 import React from 'react'
 import '../style/section.css';
 import '../style/skill.css';
+
+// Skill Icons
 import htmlIcon from '../assets/skill-icon/html5.svg';
 import cssIcon from '../assets/skill-icon/css3.svg';
 import bootstrapIcon from '../assets/skill-icon/bootstrap.svg';
@@ -61,7 +63,7 @@ function Skill() {
         </div>     
         <div className="skill_item">
           <div class="skill__item_name">Figma</div>
-          <div className="coming_soon">* Coming Soon</div>
+          {/* <div className="coming_soon">* Coming Soon</div> */}
           <img class="skill__item_icon" src={figmaIcon}></img>
         </div>               
       </div>
