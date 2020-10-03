@@ -65,7 +65,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed; */
-  padding: 100px 20px; 
+  margin-top: 0px;
+  padding: 20px 20px; 
 
   font-size: 24px;
   color: #fff;
@@ -172,7 +173,7 @@
   z-index: 200;
   position: absolute;
   left: 15px;
-  bottom: 25px;
+  bottom: 30px;
 
   width: 50px;
   height: 50px;
@@ -220,7 +221,8 @@
   }
 
   .image_source__heading {
-    padding: 20px 0;
+    margin-top: 0;
+    padding: 0;
   }
 
 }
@@ -242,6 +244,7 @@
   }
 
   .image_source__heading {
+    margin-top: -20px;
     font-size: 24px; 
   }
 
@@ -288,6 +291,7 @@
 
 
   .image_source__heading {
+    margin-top: 40px;
     font-size: 14px; 
   }
 
@@ -302,6 +306,7 @@
 
   .scroll_up {
     font-size: 8px;
+    bottom: 14px;
   }
 
   .scroll_up__icon {
@@ -313,5 +318,8 @@
 
 
 @media(max-width: 375px) {
-  
+  .scroll_up {    
+    bottom: 10px;
+  }
+
 }
