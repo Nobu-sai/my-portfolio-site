@@ -190,9 +190,16 @@
   .profile_image {  
 
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     
+  }
+
+  .contact {
+    margin-top: 12px;
+    flex-direction: column;
+    height: 600px;
+    overflow: scroll;
   }
 
   .contact__item {
@@ -205,12 +212,12 @@
 
 
   .contact__item_name {
-    font-size: 8px;
+    font-size: 12px;
   }
 
 
   .contact__item i {
-    font-size: 18px;
+    font-size: 24px;
 
   }
 
@@ -238,8 +245,8 @@
 
   .profile_image {  
     position: absolute;
-    top: 18px;
-    right: 0;
+    top: 24px;
+    right: -22px;
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
     width: 80px;
     height: 80px;
