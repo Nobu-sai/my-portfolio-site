@@ -130,5 +130,7 @@
 
 
 @media(max-width: 375px) {
-  
+  .skill__item_name {
+    letter-spacing: 8px;
+  }
 }
