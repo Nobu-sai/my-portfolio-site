@@ -2,7 +2,7 @@ import React from 'react'
 // import { Link } from 'react-scroll'
  import './PageList.css'
 
-function List({heading, item_1, item_2, item_3}) {
+function List({heading, item_1, item_2, item_3, item_4}) {
   // (item_1,2,3)
   // className: page_list__item, about_me, skill, portfolio
   return (
@@ -16,7 +16,8 @@ function List({heading, item_1, item_2, item_3}) {
       <div className="page_list__items">        
           {item_1}
           {item_2}                 
-          {item_3}               
+          {item_3}             
+          {item_4}  
       </div>  
             
     </div>    

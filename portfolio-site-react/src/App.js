@@ -23,7 +23,7 @@ function App() {
             </Route>    
             
             <Route path="/">
-              <Home link_1={<Link to="/resume_pdf">Resume (PDF)</Link>}/>        
+              <Home pdf_link={<Link to="/resume_pdf">Resume (PDF)</Link>}/>        
             </Route>    
           
           </Switch>
