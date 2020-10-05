@@ -79,6 +79,7 @@
 
 
 .portfolio_list__item {
+  /* margin: 4px; */
   /* border-bottom: 1px solid #fff; */
   border-bottom: 1px solid #000;  
   padding: 14px 0;
