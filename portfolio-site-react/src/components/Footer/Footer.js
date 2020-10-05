@@ -96,7 +96,7 @@ function Footer({pdf_link}) {
 
       <div className="scroll_up">
         <i className="fas fa-arrow-down scroll_up__icon fa-flip-vertical" onClick={scrollToTop}></i>
-        Top
+        <div className="top">Top</div>
       </div>
 
     </div>
