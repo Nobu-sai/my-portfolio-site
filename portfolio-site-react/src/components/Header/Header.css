@@ -3,7 +3,7 @@
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
   margin: 20px auto;  
   width: 95%;
-  height: 100vh;
+  height: 95vh;
 
   display: flex;
   flex-direction: column;
