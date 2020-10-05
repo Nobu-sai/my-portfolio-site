@@ -1,6 +1,8 @@
 
 .footer {
-  margin: 0 auto;  
+
+  margin: 10px auto;  
+    /* => Prevent cut off the bottom */
   margin-top: 100px;
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
   /* border-radius: 8px; */
