@@ -310,7 +310,7 @@ function Portfolio() {
                   User Story: <br/><span className="user_story__text">You can play beats with your keybord.</span>
                 </div>
                 <div className="dev_story">
-                  Dev Story: <br/><span className="dev_story__text">Use JS Classes and Audio Objects.</span>
+                  Dev Story: <br/><span className="dev_story__text">Used JS Classes and Audio Objects.</span>
                 </div>
               </div> 
               <img 
