@@ -1,12 +1,12 @@
 
 
 .about_me_contents {
-  padding: 80px 0;
+  padding: 80px 20px;
   /* height: 800px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
 
   /* position: relative; */
 
@@ -33,7 +33,7 @@
 }
 
 .intro_message__heading {
-  min-width: 250px;
+  /* min-width: 250px; */
   /* text-align: center; */
   font-size: 32px;
 }
@@ -53,16 +53,20 @@
   /* padding: 20px; */
   width: 250px;
   height: 300px;
-  background-image: url('../assets/profile_image_side_edit.jpeg');
+  /* background-image: url('../../assets/profile_image_side_edit.jpeg'); */
+  background-image: url('../../assets/profile_image_side_edit.jpeg');
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
   /* backdrop-filter: blur(200px); */
-  opacity: .8;
+  opacity: .4;
 
   transition: all .4s ease;
 }
 
+.profile_image:hover {
+  opacity: 1;
+}
 
 
 
@@ -72,7 +76,7 @@
 
 @media(max-width: 1024px) {
   .introduciton {
-    width: 90%;
+    width: 100%;
   }
   .intro_message__heading {
     font-size: 24px;
@@ -92,7 +96,9 @@
 }
 
 @media(max-width: 768px) {
-
+  .about_me {
+    padding: 40px 10px;
+  }
   .introduciton {
     /* flex-direction: column; */
   }
@@ -101,13 +107,22 @@
     font-size: 18px;
   }
 
-  .profile_image {  
+  .intro_message__p {
+    margin-top: 60px;    
+    min-width: 400px;
+  }
 
+  .profile_image {  
+    position: absolute;
+    top: 30%;
+    right: 15%;      
+  
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
     width: 120px;
     height: 120px;
     
   }
+
 
 
 }
@@ -132,13 +147,12 @@
   }
 
 
-  .profile_image {  
-    position: absolute;
-    top: 30%;
+  .profile_image {      
+    top: 25%;
     right: 5%;
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 100px;
     
   }
 
@@ -150,20 +164,29 @@
 
 @media(max-width: 375px) {
   .profile_image {  
-    top: 40%;
-    right: 10%;
+    top: 20%;
+    right: 5%;
   }  
 
   .intro_message__p {
     margin-top: 60px;    
     min-width: 270px;
   }
+
+  .profile_image {  
+    top: 30%;
+    right: 0;
+    width: 80px;
+    height: 80px;
+  }  
+
+
 }
 
 @media(max-width: 375px) {
   .profile_image {  
-    /* position: absolute; */
-    /* top: 30%;     */
+    top: 40%;    
+    right: 10%;
   }  
 
 }

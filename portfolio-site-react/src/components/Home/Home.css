@@ -188,86 +188,6 @@
 }
 
 
-
-
-
-/*** .image_source ***/
-.image_source__heading {
-  font-size: 24px;
-  color: #000;
-}
-
-
-.image_source__items {
-  margin-top: 20px;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.image_source__items {
-  display: flex;
-  align-items: center;
-}
-
-
-.image_source__item {
-  padding: 10px 20px;
-  width: 200px;
-  /* height: 100%; */
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background-position: bottom;
-    /* Enables Moving BG and Stop in tweet point with Animation */
-  text-decoration: none;
-  font-size: 18px;
-  color: #000000;
-
-  text-align: center;
-
-  transition: all .4s ease;
-}
-
-
-.image_source__item:hover {
-  /* height: 200px; */
-  box-shadow: 0 0 10px 10px hsl(0, 1%, 80%);
-  /* box-shadow: 0 0 10px 10px hsl(0, 1%, 20%); */
-
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-  
-}
-
-.image_source__item.about_me:hover {
-  background-color: hsl(100, 50%, 50%);
-  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
-  background-position: top;
-  /* background-position: 70%; */
-}
-
-
-.image_source__item.skill:hover {  
-  background-color: hsl(0, 50%, 50%);
-  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
-}
-
-
-.image_source__item.portfolio:hover {
-  background-color: hsl(200, 50%, 50%);
-  background-image: url('https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
-}
-
-
-
 /* .scroll_up */
 .scroll_up {
   z-index: 200;
@@ -347,12 +267,6 @@
   }
 
 
-  .image_source__heading {
-    margin-top: 0;
-    padding: 0;
-    width: 100%;
-  }
-
 }
 
 @media(max-width: 768px) {
@@ -407,32 +321,6 @@
 
   }
 
-
-  .image_source__heading {
-    /* margin-top: -20px; */
-    font-size: 24px; 
-  }
-
-  .image_source__items {
-    margin-top: 0;
-    
-    padding: 20px 0;   
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    overflow: scroll;
-  }
-  
-  
-  .image_source__item {
-    margin-top: 12px;
-    padding: 4px 14px;
-    width: 200px;
-    font-size: 12px;    
-  }
 
   .scroll_up {
     font-size: 8px;
@@ -493,26 +381,6 @@
   .contact__item i {
     font-size: 12px;
 
-  }
-
-
-  .image_source__heading {
-    margin-top: 0;
-  }
-
-  /* *** */
-
-  .image_source__heading {
-    margin-top: 0;
-    font-size: 14px; 
-  }
-
-
-  .image_source__item {
-    margin-top: 18px;
-    padding: 4px 8px;
-    width: 150px;
-    font-size: 8px;    
   }
 
 

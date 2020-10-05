@@ -1,0 +1,138 @@
+.page_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.page_list__heading {
+  font-size: 24px;
+  /* color: #fff; */
+  color: #000;
+  text-align: center;
+}
+
+.page_list__items {
+  margin-top: 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_list__item {
+  padding: 10px 20px;
+  width: 200px;
+  /* height: 100%; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-position: bottom;
+    /* Enables Moving BG and Stop in tweet point with Animation */
+  font-size: 18px;
+  color: #000000;
+
+  text-align: center;
+
+  transition: all .4s ease;
+}
+
+/* .scroll:hover {
+  color: #fff;
+} */
+
+/* Footer List */
+.page_list__item {
+  text-decoration: none;
+}
+
+
+.page_list__item:hover {
+  box-shadow: 0 0 10px 10px hsl(0, 1%, 80%);
+  /* box-shadow: 0 0 10px 10px hsl(0, 1%, 20%); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.about_me:hover {
+  background-color: hsl(100, 50%, 50%);
+  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
+  background-position: top;
+}
+
+
+.skill:hover {  
+  background-color: hsl(0, 50%, 50%);
+  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+}
+
+
+.portfolio:hover {
+  background-color: hsl(200, 50%, 50%);
+  background-image: url('https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+}
+
+
+
+
+@media(max-width: 1024px) {
+  
+}
+
+@media(max-width: 768px) {
+
+
+  .page_list__heading {
+    font-size: 24px; 
+  }
+
+  .page_list__items {
+    margin-top: 10px;
+    padding: 0 10px;    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page_list__item {
+    margin-top: 12px;
+    padding: 4px 14px;
+    width: 200px;
+    font-size: 12px;    
+  }
+
+}
+
+@media(max-width: 425px) {
+  
+
+
+  .page_list__heading {
+    font-size: 14px; 
+  }
+
+
+  .page_list__item {
+    margin-top: 4px;
+    padding: 4px 8px;
+    width: 150px;
+    font-size: 8px;    
+  }
+
+
+}
+
+
+@media(max-width: 375px) {
+  
+}

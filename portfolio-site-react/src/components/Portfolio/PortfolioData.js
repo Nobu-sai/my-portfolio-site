@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import '../style/portfolio.css';
-// import '../style/PortfolioData.css';
+import './Portfolio.css';
+import './PortfolioData.css';
 
 
 function PortfolioData({clickedPortfolioData}) {

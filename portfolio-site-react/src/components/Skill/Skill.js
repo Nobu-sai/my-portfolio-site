@@ -1,18 +1,18 @@
 import React from 'react'
-import '../style/section.css';
-import '../style/skill.css';
+import '../Section/Section.css';
+import './Skill.css';
 
 // Skill Icons
-import htmlIcon from '../assets/skill-icon/html5.svg';
-import cssIcon from '../assets/skill-icon/css3.svg';
-import bootstrapIcon from '../assets/skill-icon/bootstrap.svg';
-import jsIcon from '../assets/skill-icon/js.svg';
-import reactjsIcon from '../assets/skill-icon/reactjs.svg';
-import nodejsIcon from '../assets/skill-icon/nodejs.svg';
-import expressjsIcon from '../assets/skill-icon/expressjs.svg';
-import firebaseIcon from '../assets/skill-icon/firebase.svg';
-import mongodbIcon from '../assets/skill-icon/mongodb.svg';
-import figmaIcon from '../assets/skill-icon/figma.svg';
+import htmlIcon from '../../assets/skill-icon/html5.svg';
+import cssIcon from '../../assets/skill-icon/css3.svg';
+import bootstrapIcon from '../../assets/skill-icon/bootstrap.svg';
+import jsIcon from '../../assets/skill-icon/js.svg';
+import reactjsIcon from '../../assets/skill-icon/reactjs.svg';
+import nodejsIcon from '../../assets/skill-icon/nodejs.svg';
+import expressjsIcon from '../../assets/skill-icon/expressjs.svg';
+import firebaseIcon from '../../assets/skill-icon/firebase.svg';
+import mongodbIcon from '../../assets/skill-icon/mongodb.svg';
+import figmaIcon from '../../assets/skill-icon/figma.svg';
 
 
 

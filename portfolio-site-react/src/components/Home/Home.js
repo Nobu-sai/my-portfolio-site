@@ -3,14 +3,15 @@ import {Element, animateScroll as scroll } from 'react-scroll'
 import Typist from 'react-typist';
 import Typical from 'react-typical'
 
-import AboutMe from './components/AboutMe.js';
-import Skill from './components/Skill.js';
+import AboutMe from '../AboutMe/AboutMe.js';
+import Skill from '../Skill/Skill.js';
 // import Header from './components/Header.js';
-import Portfolio from './components/Portfolio.js';
-import MenuContainer from "./components/Menu/MenuContainer.js";
+import Portfolio from '../Portfolio/Portfolio.js';
+import MenuContainer from "../Menu/MenuContainer.js";
 
 import './Home.css'
-import './style/header.css'
+import '../Header/Header.css'
+import PageList from '../PageList/PageList';
 
 
 
@@ -132,14 +133,33 @@ function Home({link_1}) {
         <div className="image_source__heading">Image Source</div> */}
 
         <div className="footer__item">
-          <div className="image_source__heading">Image URL</div>
-          <div className="image_source__items">
-          <a className="image_source__item about_me" href="https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80">About Me</a>
-          
-          
-          <a className="image_source__item skill" href="https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80">Skill </a>
-          <a className="image_source__item portfolio" href="https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80">Portfolio</a>   
-          </div>
+          <PageList 
+            heading="Image URL"
+            item_1={
+              <a 
+                // className="image_source__item about_me" 
+                className="page_list__item about_me" 
+                href="https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80">
+                  About Me
+              </a>               
+            }
+            item_2={
+              <a 
+                // className="page_list__item about_me" 
+                className="page_list__item skill" 
+                href="https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80">
+                  Skill 
+              </a>
+            }
+            item_3={
+              <a 
+                // className="image_source__item portfolio" 
+                className="page_list__item portfolio" 
+                href="https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80">
+                  Portfolio
+              </a>   
+            }
+            />                  
  
         </div>
                 
