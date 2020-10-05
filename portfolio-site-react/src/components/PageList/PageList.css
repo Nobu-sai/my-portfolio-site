@@ -1,30 +1,39 @@
 .page_list {
+  /* height: 100%; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.contact .page_list {
+  flex-wrap: wrap;
+}
 
 .page_list__heading {
+  margin-bottom: 14px;
   font-size: 24px;
-  /* color: #fff; */
   color: #000;
   text-align: center;
 }
 
+/*** .page_list__items ***/
 .page_list__items {
   margin-top: 20px;
-  padding: 0 20px;
+  padding: 20px 20px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
+/*** Footer **/
+/*** .page_list__item ***/
 .page_list__item {
   padding: 10px 20px;
   width: 200px;
-  /* height: 100%; */
 
   display: flex;
   flex-direction: column;
@@ -33,6 +42,7 @@
 
   background-position: bottom;
     /* Enables Moving BG and Stop in tweet point with Animation */
+  text-decoration: none;
   font-size: 18px;
   color: #000000;
 
@@ -41,19 +51,9 @@
   transition: all .4s ease;
 }
 
-/* .scroll:hover {
-  color: #fff;
-} */
-
-/* Footer List */
-.page_list__item {
-  text-decoration: none;
-}
-
 
 .page_list__item:hover {
   box-shadow: 0 0 10px 10px hsl(0, 1%, 80%);
-  /* box-shadow: 0 0 10px 10px hsl(0, 1%, 20%); */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -61,6 +61,12 @@
 
   cursor: pointer;
 }
+
+.page_list__item_name {
+  text-align: center;
+}
+
+/** Menu/.SECTION-NAME, Footer/.SECTION-NAME,  **/
 
 .about_me:hover {
   background-color: hsl(100, 50%, 50%);
@@ -78,6 +84,67 @@
 .portfolio:hover {
   background-color: hsl(200, 50%, 50%);
   background-image: url('https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+}
+
+
+/** Footer/.contact **/
+.contact .page_list__item {
+  margin: 0px;
+  padding: 10px;
+  width: 200px;
+  height: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+
+  transition: all .4s ease;
+}
+
+.contact .page_list__item:hover {  
+  color: #000;
+}
+
+
+.contact .page_list__item_name.resume  a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact .page_list__item i {
+  margin-top: 4px;
+  font-size: 40px;
+  color: hsl(0, 0%, 60%);
+
+  transition: all .4s ease;
+}
+
+.contact .page_list__item.github i:hover {
+  color: #4078c0;
+}
+.contact .page_list__item.linkedin i:hover {
+  color: #0077b5;
+}
+
+
+
+.contact .page_list__item {
+  margin: 0px;
+  padding: 10px;
+  width: 200px;
+  height: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+
+  transition: all .4s ease;
 }
 
 
@@ -104,30 +171,46 @@
     justify-content: center;
   }
   
-  .page_list__item {
-    margin-top: 12px;
-    padding: 4px 14px;
+  .page_list__item { 
+    padding: 12px 14px;
     width: 200px;
     font-size: 12px;    
   }
+
+  /* Footer */
+
+  .contact .page_list__item i {
+    font-size: 24px;
+  }
+
 
 }
 
 @media(max-width: 425px) {
   
-
-
   .page_list__heading {
     font-size: 14px; 
   }
 
 
   .page_list__item {
-    margin-top: 4px;
-    padding: 4px 8px;
+    padding: 8px 8px;
     width: 150px;
     font-size: 8px;    
   }
+
+  /** Footer **/
+  
+    .contact .page_list__item {      
+      padding: 4px;  
+    }
+   
+  
+    .contact .page_list__item i {
+      font-size: 12px;  
+    }
+  
+  
 
 
 }
