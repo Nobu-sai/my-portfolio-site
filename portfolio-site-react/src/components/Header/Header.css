@@ -2,8 +2,10 @@
 .header {
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
   margin: 20px auto;  
+  margin-bottom: 200px;
   width: 95%;
   height: 95vh;
+  /* height: 75vh; */
 
   display: flex;
   flex-direction: column;
