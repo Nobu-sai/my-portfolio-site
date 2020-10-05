@@ -2,23 +2,23 @@ import React, { useEffect, useState } from 'react'
 import PortfolioData from './PortfolioData';
 
 
-import '../style/section.css';
-import '../style/portfolio.css';
+import '../Section/Section.css';
+import './Portfolio.css';
 // import '../style/PortfolioData.css';
 
 // Porfolio Images
-import beatBoxImage from '../assets/portfolio-image/beat-box.png';
-import blogAppImage from '../assets/portfolio-image/blog-app.png';
-import drawingBordersAnimationImage from '../assets/portfolio-image/drawing-borders-animation.png';
-import googleMapStoreLocatorImage from '../assets/portfolio-image/google-map-store-locator.png'
-import guessNumberGameImage from '../assets/portfolio-image/guess-number-game.png';
-import imageSliderImage from '../assets/portfolio-image/image-slider.png';
-import movieListImage from '../assets/portfolio-image/movie-list.png';
-import tabPanelWidgetImage from '../assets/portfolio-image/tab-panel-widget.png';
-import textEditorImage from '../assets/portfolio-image/text-editor.png';
-import toyChestImage from '../assets/portfolio-image/toy-chest.png';
-import twitterCloneImage from '../assets/portfolio-image/twitter-clone.png';
-import weatherAppImage from '../assets/portfolio-image/weather-app.png';
+import beatBoxImage from '../../assets/portfolio-image/beat-box.png';
+import blogAppImage from '../../assets/portfolio-image/blog-app.png';
+import drawingBordersAnimationImage from '../../assets/portfolio-image/drawing-borders-animation.png';
+import googleMapStoreLocatorImage from '../../assets/portfolio-image/google-map-store-locator.png'
+import guessNumberGameImage from '../../assets/portfolio-image/guess-number-game.png';
+import imageSliderImage from '../../assets/portfolio-image/image-slider.png';
+import movieListImage from '../../assets/portfolio-image/movie-list.png';
+import tabPanelWidgetImage from '../../assets/portfolio-image/tab-panel-widget.png';
+import textEditorImage from '../../assets/portfolio-image/text-editor.png';
+import toyChestImage from '../../assets/portfolio-image/toy-chest.png';
+import twitterCloneImage from '../../assets/portfolio-image/twitter-clone.png';
+import weatherAppImage from '../../assets/portfolio-image/weather-app.png';
 
 // Skill Icons
 // import htmlIcon from '../assets/skill-icon/html5.svg';

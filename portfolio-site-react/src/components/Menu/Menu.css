@@ -49,89 +49,8 @@
   text-decoration: underline;
 }
 
-.menu_list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.menu_list__heading {
-  font-size: 24px;
-  /* color: #fff; */
-  color: #000;
-  text-align: center;
-}
-
-.menu_list__items {
-  margin-top: 20px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.scroll {
-  padding: 10px 20px;
-  width: 200px;
-  /* height: 100%; */
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  background-position: bottom;
-    /* Enables Moving BG and Stop in tweet point with Animation */
-  font-size: 18px;
-  color: #000000;
-
-  text-align: center;
-
-  transition: all .4s ease;
-}
-
-/* .scroll:hover {
-  color: #fff;
-} */
-
-
-.scroll:hover {
-  box-shadow: 0 0 10px 10px hsl(0, 1%, 80%);
-  /* box-shadow: 0 0 10px 10px hsl(0, 1%, 20%); */
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-
-  cursor: pointer;
-}
-
-.scroll_about_me:hover {
-  background-color: hsl(100, 50%, 50%);
-  background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
-  background-position: top;
-}
-
-
-.scroll_skill:hover {  
-  background-color: hsl(0, 50%, 50%);
-  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
-}
-
-
-.scroll_portfolio:hover {
-  background-color: hsl(200, 50%, 50%);
-  background-image: url('https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
-}
-
-
-
 @media(max-width: 1024px) {
-  #flyoutMenu {
-    /* width: 1024px; */
-  }
+ 
 }
 
 @media(max-width: 768px) {
@@ -141,27 +60,6 @@
     height: 150px;
   }  
 
-  .menu_list__heading {
-    font-size: 24px; 
-  }
-
-  .menu_list__items {
-    margin-top: 10px;
-    padding: 0 10px;    
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .scroll {
-    margin-top: 12px;
-    padding: 4px 14px;
-    width: 200px;
-    font-size: 12px;    
-  }
-
 }
 
 @media(max-width: 425px) {
@@ -170,20 +68,6 @@
     height: 150px;
     overflow: scroll;
   }  
-
-
-  .menu_list__heading {
-    font-size: 14px; 
-  }
-
-
-  .scroll {
-    margin-top: 4px;
-    padding: 4px 8px;
-    width: 150px;
-    font-size: 8px;    
-  }
-
 
 }
 

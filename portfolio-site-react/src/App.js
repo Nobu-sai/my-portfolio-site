@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import ResumePDF from './components/ResumePDF/ResumePDF.js';
-import Home from './Home.js'
+import Home from './components/Home/Home.js'
 import './App.css'
 
 
