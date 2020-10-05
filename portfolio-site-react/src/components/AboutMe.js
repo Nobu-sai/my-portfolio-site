@@ -20,10 +20,12 @@ function AboutMe(props) {
             <div class="intro_message">            
               <div className="intro_message__heading"> I love creating things. <br/> So, I love coding.</div>                   
               <p className="intro_message__p">
-                At the end, coding is a means <br/> for creating things as my great partner.<br/>
+                At the end, coding is a means for creating things <br/>as my great partner.<br/>
               I want to be your partner <br/> to make your imagination into the reality.</p>    
-            </div>            
-            <div className="profile_image"></div>                                  
+            </div>    
+
+            <div className="profile_image"></div>   
+
           </div>
         
                                    
