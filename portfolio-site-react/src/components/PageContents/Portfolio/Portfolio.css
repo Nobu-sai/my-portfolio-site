@@ -126,13 +126,15 @@
 .portfolio_data__title {  
   font-size: 18px;
   margin: 12px 0;
+  /* width: 100%;  */
 }
 
 .portfolio_skill__name,
 .visit_url {
   margin-top: 4px;
-  margin-left: 8px;
-  width: 150px; 
+  /* margin-left: 4px; */
+  width: 200px; 
+  /* width: 90%; */
 
   background-color: hsl(60, 100%, 96%);
   font-size: 14px;

@@ -223,20 +223,20 @@ function Portfolio() {
                       <div className="portfolio_data__item">
                        <div 
                           className="portfolio_data__title"> 
-                          Made with<br/> <span className="portfolio_skill__name"> {portfolio[1].skill}</span>
+                          Skill<br/> <span className="portfolio_skill__name"> {portfolio[1].skill}.</span>
                         </div> 
                       </div>
 
                       <div className="portfolio_data__item">
                         <div>
                             <div className="portfolio_data__title">
-                              Visit the page.
+                              Webpage
                             </div>
                             <a 
                               href={portfolio[1].url}
                               className="visit_url_container"                            
                             >
-                              <span className="visit_url">Click here.</span> 
+                              <span className="visit_url">Visit.</span> 
                             </a>
                           </div>
                       </div>
