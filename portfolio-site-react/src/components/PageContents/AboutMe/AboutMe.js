@@ -15,10 +15,10 @@ function AboutMe() {
         <div className="section_contents about_me_contents">
           <div className="introduciton">    
             <div class="intro_message">            
-              <div className="intro_message__heading"> I love creating things, <br/> because I love coding.</div>                   
+              <div className="intro_message__heading"> I love <br/>coding, <br/> because <br/>I love <br/>creating things.</div>                   
               <p className="intro_message__p">
-                At the end, <br/>coding is a way for creating things, <br/> therefore it is my great partner.<br/>
-              I want to be your partner, <br/> for making your  imagination into the reality.</p>    
+                At the end, <br/>coding is a way for <br/>creating things, <br/> therefore <br/>it is my great partner.<br/>
+              I want to be your partner for <br/> making your  imagination into the reality.</p>    
             </div>    
 
             <div className="profile_image"></div>   

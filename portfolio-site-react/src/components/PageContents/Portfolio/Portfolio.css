@@ -1,3 +1,8 @@
+/* (Font Size) */
+/* .user_story__text, .dev_story__text =. portfolio_data__title
+ */
+/* .portfolio_list__title = .portfolio__heading */
+
 /* #portfolio {
   background-color: hsl(200, 100%, 30%);
   background-image: url('https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
@@ -5,6 +10,11 @@
   background-size: cover;
   background-attachment: fixed;
 } */
+
+/* (Styles/List) */
+/* Display the Title of the Next Portfolio */
+/* => Manipulate .portfolio_list__background, max-height */
+
 
 .portfolio_contents {
   display: flex;
@@ -67,11 +77,11 @@
 
 .portfolio_list__background {
   /* margin: 14px; */
-  /* padding: 20px; */
+  padding: 14px;
   height: 90%;
-  max-height: 500px;
+  max-height: 565px;
 
-  /* background-color: cornflowerblue; */
+  background-color: hsl(60, 71%, 93%);
 
   overflow: scroll;
 
@@ -107,7 +117,7 @@
 
 .portfolio_data__title {  
   font-size: 18px;
-  margin-top: 12px;
+  margin: 12px 0;
 }
 
 .portfolio_skill__name,
@@ -116,14 +126,14 @@
   margin-left: 8px;
   width: 150px; 
 
-  font-size: 12px;
+  font-size: 14px;
   color: #333;
 
   overflow: scroll;
 }
 
 .portfolio_skill__name {     
-  background-color: ivory;
+  background-color: hsl(60, 93%, 88%);
   font-weight: bold;
 }
 
@@ -166,19 +176,27 @@
 
 
 .explanation {
-  margin-top: 20px;
   width: 100%;
 }
+
 .user_story, 
 .dev_story {
-  margin-top: 8px;
-  font-size: 18px;
+  
 }
+
+.user_story__heading,
+.dev_story__heading {
+  margin-top: 16px;
+  font-size: 18px;
+
+}
+
 
 .user_story__text,
 .dev_story__text {
-  margin-top: 18px;
-  font-size: 12px;
+  margin-top: 8px;
+  background-color: hsl(60, 93%, 88%);
+  font-size: 14px;
   color: #333;
 }
 
@@ -205,15 +223,18 @@
   .portfolio_list__title,
   .portfolio__heading {
     /* padding: 100px 20px;  */
-    font-size: 18px;
+    font-size: 24px;
   }
+
 
 
 
   .portfolio_data__title {  
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 12px;
   }
+
+
 
   .portfolio_skill__name,
   .visit_url {
@@ -221,7 +242,7 @@
     margin-left: 8px;
     /* width: 100px;  */
 
-    font-size: 8px;
+    font-size: 14px;
 
   }
 
@@ -253,10 +274,14 @@
   }
 
   .portfolio_list__background {
-    /* padding: 20px 0; */
-    max-height: 180px;
-    /* overflow: scroll; */
+    max-height: 202px;
   }
+
+  .portfolio_list__title {
+    margin: 8px 0;
+  }
+
+
   .portfolio_list_container {
     /* padding: 20px 0; */
   }
@@ -274,7 +299,7 @@
 
 
   .portfolio_data__title {  
-    font-size: 12px;
+    /* font-size: 18px; */
     margin-top: 4px;
   }
 
@@ -291,20 +316,26 @@
   .portfolio_list__title,
   .portfolio__heading {
     /* padding: 100px 20px;  */
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .portfolio_list_container,
   .portfolio_data_container {
-    padding: 10px;
+    padding: 8px;
   }
 
   .portfolio_list_container {
-    padding-top: 10px;
+    padding-top: 8px;
+    height: 300px;
   }
 
   .portfolio_list {
-    width: 80%;
+    width: 90%;
+  }
+
+
+  .portfolio_list__background {
+    max-height: 193px;
   }
 
   .portfolio_data_container {
@@ -312,7 +343,7 @@
   }
 
   .portfolio_data__title {  
-    font-size: 10px;
+    font-size: 16px;
     margin-top: 8px;
   }
 
@@ -321,25 +352,23 @@
   .visit_url {
     margin-top: 4px;
     margin-left: 4px;
-    font-size: 8px;
+    font-size: 12px;
 
   }
 
 
   
-
-  .user_story, 
-  .dev_story {
-    margin-top: 4px;
-    font-size: 10px;
+  .user_story__heading,
+  .dev_story__heading { 
+    margin-top: 12px;
+    font-size: 16px;
   }
 
   .user_story__text,
   .dev_story__text {
-    margin-top: 4px;
-    font-size: 8px;
+    margin-top: 8px;
+    font-size: 12px;
   }
-
 
 
 
@@ -348,4 +377,44 @@
 
 @media(max-width: 375px) {
   
+
+  .portfolio_list__title,
+  .portfolio__heading {
+    font-size: 20px;
+  }
+
+  .portfolio_data__title {  
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  .portfolio_list__background {
+    max-height: 195px;
+  }
+
+
+  .portfolio_data__title {  
+    font-size: 14px;
+  }
+
+
+  .portfolio_skill__name,
+  .visit_url {
+    font-size: 10px;
+
+  }
+
+  
+  .user_story__heading,
+  .dev_story__heading { 
+    font-size: 14px;
+  }
+}
+
+
+@media(max-width: 320px) {
+  
+  .portfolio_list__background {
+    max-height: 225px;
+  }
 }
