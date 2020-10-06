@@ -59,6 +59,7 @@
 
 /* .portfolio_list_container */
 .portfolio_list_container {
+  padding: 0 30px;
   flex-basis: 40%;
 }
 
@@ -68,7 +69,7 @@
   padding: 20px;
   border: 1px solid #000  ;
   /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
-  width: 90%;
+  width: 100%;
   /* min-width: 600px; */
 
 
@@ -80,9 +81,9 @@
   /* margin: 14px; */
   /* padding: 8px; */
   height: 90%;
-  max-height: 500px;
+  max-height: 600px;
 
-  background-color: hsl(60, 100%, 96%);
+  /* background-color: hsl(60, 100%, 96%); */
 
   overflow: scroll;
 
@@ -129,6 +130,7 @@
   margin-left: 8px;
   width: 150px; 
 
+  background-color: hsl(60, 100%, 96%);
   font-size: 14px;
   color: #333;
 
@@ -136,7 +138,7 @@
 }
 
 .portfolio_skill__name {     
-  background-color: hsl(60, 93%, 88%);
+  /* background-color: hsl(60, 100%, 96%); */
   font-weight: bold;
 }
 
@@ -198,7 +200,7 @@
 .user_story__text,
 .dev_story__text {
   margin-top: 8px;
-  background-color: hsl(60, 93%, 88%);
+  background-color: hsl(60, 100%, 96%);
   font-size: 14px;
   color: #333;
 }
@@ -218,6 +220,12 @@
 
 
 @media(max-width: 1024px) {
+  /* .portfolio_contents {
+    
+    flex-direction: column-reverse;
+    
+  } */
+
   .portfolio_list_container,
   .portfolio_data_container {
     /* padding: 20px; */
@@ -230,12 +238,12 @@
   }
 
   .portfolio_list__background {
-    max-height: 300px;
+    max-height: 550px;
   }
 
 
   .portfolio_data__title {  
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 12px;
   }
 
@@ -245,26 +253,11 @@
   .visit_url {
     margin-top: 4px;
     margin-left: 8px;
-    /* width: 100px;  */
+    width: 100%; 
 
     font-size: 14px;
 
   }
-
-/* 
-  .user_story, 
-  .dev_story {
-    margin-top: 4px;
-    font-size: 12px;
-  }
-
-  .user_story__text,
-  .dev_story__text {
-    margin-top: 8px;
-    font-size: 8px;
-  } */
-
-
 
 }
 
@@ -296,8 +289,9 @@
     flex-direction: column-reverse;
     
   }
+
   .portfolio_list__item {
-    padding: 8px 0;
+    padding: 12px 0;
 
     /* overflow: hidden; */
   }
