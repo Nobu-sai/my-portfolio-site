@@ -43,7 +43,7 @@
 .intro_message__p {
   line-height: 2;
   letter-spacing: 8px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 
@@ -79,15 +79,15 @@
     width: 100%;
   }
   .intro_message__heading {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .intro_message__p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .profile_image {      
-    width: 200px;
+    width: 250px;
     height: 250px;
   }
 
@@ -104,7 +104,7 @@
   }
 
   .intro_message__heading {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .intro_message__p {
@@ -115,11 +115,11 @@
   .profile_image {  
     position: absolute;
     top: 40%;
-    right: 15%;      
+    right: 5%;      
   
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     
   }
 
@@ -137,22 +137,22 @@
 
   
   .intro_message__heading {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .intro_message__p {
     margin-top: 38px;
-    min-width: 350px;
-    font-size: 8px;
+    min-width: 380px;
+    font-size: 12px;
   }
 
 
   .profile_image {      
-    top: 37%;
-    right: 5%;
+    top: 30%;
+    right: 10%;
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
     width: 120px;
-    height: 100px;
+    height: 120px;
     
   }
 
@@ -163,6 +163,10 @@
 
 
 @media(max-width: 375px) {
+  .intro_message__heading {
+    line-height: 2;
+    font-size: 18px;
+  }
 
   .intro_message__p {
     margin-top: 60px;    
@@ -170,20 +174,30 @@
   }
 
   .profile_image {  
-    top: 37%;    
-    right: 3%;
-    width: 80px;
-    height: 80px;
+    top: 50%;    
+    right: 10%;
+    width: 100px;
+    height: 100px;
   }  
 
 
 }
 
-@media(max-width: 375px) {
+@media(max-width: 325px) {
+  .intro_message__heading {
+    font-size: 18px;
+  }
+
+  .intro_message__p {
+    /* margin-top: 38px; */
+    /* min-width: 270px; */
+    /* font-size: 12px; */
+  }
+
   .profile_image {  
-    top: 45%;    
-    right: 3%;
-    width: 80px;
-    height: 80px;
+    top: 52%;    
+    right: 10%;
+    /* width: 80px;
+    height: 80px; */
   }  
 }

@@ -17,19 +17,15 @@
 
 
 .header_message {
-  /* margin-top: 40px; */
   line-height: 2;
   font-size: 40px;
-  /* text-align: center; */
 }
 
 
 @media(max-width: 1024px) {
   .header__main_heading {  
-    /* margin-top: 20px;   */
-    font-size: 80px;
+    font-size: 100px;
   }
-  
 
   .header_message {    
     /* margin-top: 10px; */
@@ -39,23 +35,12 @@
 }
 
 @media(max-width: 768px) {
-  .header {
-
-  }  
-
-  .header_messages {
-    padding: 20px;
-  }
-  
   .header__main_heading {  
-    /* margin-top: 20px;   */
-    font-size: 40px;
+    font-size: 80px;
   }
-  
 
   .header_message {    
-    /* margin-top: 10px; */
-    font-size: 18px;
+    font-size: 32px;
   }
   
 
@@ -66,6 +51,14 @@
   .header {
     margin: 10vh 0;
   }  
+  .header__main_heading {  
+    font-size: 50px;
+  }
+
+  .header_message {    
+    font-size: 24px;
+  }
+
 }
 
 
@@ -75,19 +68,10 @@
     box-shadow: 0 0 4px 4px hsl(0, 0%, 80%);
   }  
 
-  .header_messages {
-    padding: 20px;
-  }
-
-  .header__main_heading {  
-    /* margin-top: 20px;   */
-    font-size: 24px;
-  }
-  
 
   .header_message {    
     /* margin-top: 10px; */
-    font-size: 8px;
+    font-size: 18px;
   }
   
 

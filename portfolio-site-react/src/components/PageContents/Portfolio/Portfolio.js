@@ -266,10 +266,12 @@ function Portfolio() {
               <div className="portfolio__heading">{clickedPortfolioData.name}</div>  
               <div className="explanation">
                 <div className="user_story">
-                    User Story: <br/><span className="user_story__text">{clickedPortfolioData.user_story}</span>
+                  <div className="user_story__heading">User Story:</div> 
+                  <div className="user_story__text">{clickedPortfolioData.user_story}</div>
                   </div>
                   <div className="dev_story">
-                    Dev Story: <br/><span className="dev_story__text">{clickedPortfolioData.dev_story}</span>
+                  <div className="dev_story__heading">User Story:</div> 
+                  <div className="dev_story__text">{clickedPortfolioData.dev_story}</div>
                   </div>  
               </div>
               <img 
@@ -305,10 +307,12 @@ function Portfolio() {
               <div className="portfolio__heading">{portfolioData['Beat Box'].name}</div>    
               <div className="explanation">
                 <div className="user_story">
-                  User Story: <br/><span className="user_story__text">You can play beats with your keybord.</span>
+                  <div className="user_story__heading">User Story:</div> 
+                  <div className="user_story__text">You can play beats with your keybord.</div>
                 </div>
                 <div className="dev_story">
-                  Dev Story: <br/><span className="dev_story__text">Used JS Classes and Audio Objects.</span>
+                  <div className="dev_story__heading">Dev Story:</div> 
+                  <div className="dev_story__text">Used JS Classes and Audio Objects.</div>
                 </div>
               </div> 
               <img 

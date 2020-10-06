@@ -81,7 +81,7 @@
 
   .heading { 
     padding: 50px 20px; 
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 8px;
   }
 
@@ -93,8 +93,23 @@
 @media(max-width: 768px) {
   .heading { 
     padding: 30px 10px; 
-    font-size: 32px;
+    font-size: 50px;
     letter-spacing: 4px;
+  }
+
+}
+
+
+@media(max-width: 425px) {
+  #footer .heading { 
+    font-size: 32px;
+  }
+}
+
+
+@media(max-width: 375px) {
+  .heading { 
+    font-size: 38px;
   }
 
 }

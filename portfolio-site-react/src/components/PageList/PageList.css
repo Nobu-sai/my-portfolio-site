@@ -176,8 +176,8 @@
   
   .page_list__item { 
     padding: 12px 14px;
-    width: 200px;
-    font-size: 12px;    
+    width: 300px;
+    font-size: 16px;    
   }
 
   /* Footer */
@@ -192,15 +192,17 @@
 @media(max-width: 425px) {
   
   .page_list__heading {
-    font-size: 14px; 
+    font-size: 18px; 
   }
 
 
   .page_list__item {
     padding: 8px 8px;
-    width: 150px;
-    font-size: 8px;    
+    width: 200px;
+    font-size: 12px;    
   }
+
+  
 
   /** Footer **/
   
@@ -210,7 +212,7 @@
    
   
     .contact .page_list__item i {
-      font-size: 12px;  
+      font-size: 18px;  
     }
   
   
