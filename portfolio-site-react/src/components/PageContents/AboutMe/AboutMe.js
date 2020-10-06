@@ -1,19 +1,16 @@
 import React from 'react'
-// import ResumePDF from './ResumePDF/ResumePDF.js'
-// import resumePDF from '../assets/resume.pdf';
-import '../Section/Section.css';
+// import Section from '../Section/Section.js';
+import '../Section.css';
 import './AboutMe.css';
+import Heading from '../../Heading/Heading.js'
 
 
 
-function AboutMe(props) {
+function AboutMe() {
+
   return (    
      <div className="section" id="about_me">              
-        <div className="section__heading_container">
-          <div className="section__heading">
-            About me
-          </div>
-        </div>
+        <Heading  content="About Me" />
         
         <div className="section_contents about_me_contents">
           <div className="introduciton">    
