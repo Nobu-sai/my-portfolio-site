@@ -67,6 +67,10 @@
 }
 
 @media(max-width: 768px) {
+  .footer {
+    /* margin-bottom: 42vh; */
+      /* For Menu */
+  }
   .footer__heading_container {
     padding: 30px 10px; 
   }
@@ -96,8 +100,8 @@
 
 @media(max-width: 425px) {
   .footer {
-    margin-top: 30px;   
-  }
+    margin-top: 30px;         
+    }
 
   .footer__item {
     /* margin-top: 40px; */
