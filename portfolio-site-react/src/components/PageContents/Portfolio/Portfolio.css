@@ -220,11 +220,11 @@
 
 
 @media(max-width: 1024px) {
-  /* .portfolio_contents {
+  .portfolio_contents {
     
     flex-direction: column-reverse;
     
-  } */
+  }
 
   .portfolio_list_container,
   .portfolio_data_container {
@@ -238,7 +238,7 @@
   }
 
   .portfolio_list__background {
-    max-height: 550px;
+    max-height: 220px;
   }
 
 
