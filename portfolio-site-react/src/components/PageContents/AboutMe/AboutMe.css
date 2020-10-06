@@ -8,39 +8,27 @@
   align-items: center;
   justify-content: center;
 
-  /* position: relative; */
+  position: relative;
 
 }
 
-/**** .introduciton ****/
 
-.introduciton {
-  /* padding: 20px 40px; */
-  width: 80%;
-  /* flex-grow: 2; */
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.intro_message {
-  flex: 2;
-  /* flex-basis: 100%; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  text-shadow: 0 0 14px 14px hsla(0, 0%, 80%);
-}
-
-.intro_message__heading {
+.intro_heading {  
+  margin-top: 40px;
   /* min-width: 250px; */
   /* text-align: center; */
+  line-height: 2;
   font-size: 32px;
 }
 
-
  /* Individual to each of Introduciton and Contact */
-.intro_message__p {
+.intro_message {
+  /* flex-grow: 2; */
+  margin-top: 40px;
+  /* padding-left: 160px; */
+  width: 100%;
+
+  text-align: center;
   line-height: 2;
   letter-spacing: 8px;
   font-size: 18px;
@@ -48,11 +36,11 @@
 
 
 .profile_image {  
-  /* flex-grow: 1; */
+
   box-shadow: 0 0 10px 10px hsla(0, 0%, 80%);
   /* padding: 20px; */
   width: 250px;
-  height: 300px;
+  height: 250px;
   /* background-image: url('../../assets/profile_image_side_edit.jpeg'); */
   background-image: url('../../../assets/profile_image_side_edit.jpeg');
   background-position: center;
@@ -70,25 +58,37 @@
 
 
 
+@media(max-width: 1115px) {
+  .intro_message {
+    padding-left: 100px;
+    
+  }
+  
+  
+  .profile_image {  
+    right: 80px;
+    width: 200px;
+    height: 200px;
+    
+}
 
-
-
+}
 
 @media(max-width: 1024px) {
-  .introduciton {
-    width: 100%;
-  }
-  .intro_message__heading {
+ 
+  .intro_heading {
     font-size: 32px;
   }
 
-  .intro_message__p {
+  .intro_message {
+    padding-left: 60px;
     font-size: 16px;
   }
 
-  .profile_image {      
-    width: 250px;
-    height: 250px;
+  .profile_image {   
+    right: 40px;   
+    width: 180px;
+    height: 180px;
   }
 
 
@@ -99,24 +99,20 @@
   .about_me {
     padding: 40px 10px;
   }
-  .introduciton {
-    /* flex-direction: column; */
-  }
 
-  .intro_message__heading {
+
+  .intro_heading {
+    margin-top: 20px;    
     font-size: 24px;
   }
 
-  .intro_message__p {
-    margin-top: 60px;    
-    min-width: 400px;
+  .intro_message {
+    margin-top: 20px;    
+    padding-left: 20px;
+    /* min-width: 400px; */
   }
 
-  .profile_image {  
-    position: absolute;
-    top: 40%;
-    right: 5%;      
-  
+  .profile_image { 
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
     width: 150px;
     height: 150px;
@@ -131,25 +127,22 @@
 @media(max-width: 425px) {  
 
   #about_me_contents {
-    position: relative;
+    /* position: relative; */
   }
 
 
   
-  .intro_message__heading {
+  .intro_heading { 
     font-size: 20px;
   }
 
-  .intro_message__p {
-    margin-top: 38px;
-    min-width: 380px;
+  .intro_message {
+    padding-left: 10px;
     font-size: 12px;
   }
 
 
   .profile_image {      
-    top: 30%;
-    right: 10%;
     box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
     width: 120px;
     height: 120px;
@@ -163,19 +156,18 @@
 
 
 @media(max-width: 375px) {
-  .intro_message__heading {
+  .intro_heading {
+    margin-top: 10px;    
     line-height: 2;
     font-size: 18px;
   }
 
-  .intro_message__p {
-    margin-top: 60px;    
-    min-width: 270px;
+  .intro_message {
+    margin-top: 10px;    
+    /* min-width: 270px; */
   }
 
-  .profile_image {  
-    top: 50%;    
-    right: 10%;
+  .profile_image {    
     width: 100px;
     height: 100px;
   }  
@@ -184,20 +176,24 @@
 }
 
 @media(max-width: 325px) {
-  .intro_message__heading {
-    font-size: 18px;
+  .intro_heading {
+    /* width: 300px; */
+    font-size: 16px;
   }
+/* 
+  .bigger {
+    font-size: 20px;
+    line-break: strict;
+  } */
 
-  .intro_message__p {
+  .intro_message {
     /* margin-top: 38px; */
     /* min-width: 270px; */
     /* font-size: 12px; */
   }
 
   .profile_image {  
-    top: 52%;    
-    right: 10%;
-    /* width: 80px;
-    height: 80px; */
+    width: 80px;
+    height: 80px;
   }  
 }
