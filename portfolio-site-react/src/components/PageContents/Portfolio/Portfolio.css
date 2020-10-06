@@ -100,7 +100,7 @@
   /* border-bottom: 1px solid #000;   */
   box-shadow: 0 0 1px 1px hsl(0, 0%, 80%);
 
-  padding: 14px 8px;
+  padding: 14px;
   /* padding-left: 8px; */
   width: 90%;
   /* text-align: center; */
@@ -297,9 +297,6 @@
   }
 
   .portfolio_list__item {
-    padding: 12px 0;
-
-    /* overflow: hidden; */
   }
 
 
