@@ -1,28 +1,34 @@
 import React from 'react'
 import Typical from 'react-typical'
-import {animateScroll as scroll } from 'react-scroll'
+
 import './Footer.css'
 
+import Heading from '../Heading/Heading.js'
 import PageList from '../PageList/PageList';
+import ScrollUp from '../ScrollUp/ScrollUp.js'
 
 function Footer({pdf_link}) {
-  // Scroll
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  }
-
+  
   return (
-    <div className="footer">
-      <div className="footer__heading_container">
+
+    <div className="footer" id="footer">
+      <Heading content={
+        <Typical  
+          steps={['Are you leaving?', 1000, 'Thanks for visiting!', 1000, 'What will you do next?', 1000, 'See you. Have a good day!', 1000]}
+          loop={Infinity}
+          wrapper="p"
+        />
+      }/>
+      {/* <div className="footer__heading_container">
         <Typical 
           className="footer__heading"
           steps={['Are you leaving?', 1000, 'Thanks for visiting!', 1000, 'What will you do next?', 1000, 'See you. Have a good day!', 1000]}
           loop={Infinity}
           wrapper="p"
         />
-      </div>      
+      </div>       */}
       
-        <div className="contact footer__item">       
+      <div className="contact footer__item">       
         <PageList 
           className="contact footer__item"
           heading="Contact Me"
@@ -93,15 +99,9 @@ function Footer({pdf_link}) {
 
       </div>
 
+      <ScrollUp />
 
-      <div className="scroll_up">
-        <i className="fas fa-arrow-down scroll_up__icon fa-flip-vertical" onClick={scrollToTop}></i>
-        <div className="top">Top</div>
-      </div>
-
-    </div>
-            
-        
+    </div>                  
 
   )
 }

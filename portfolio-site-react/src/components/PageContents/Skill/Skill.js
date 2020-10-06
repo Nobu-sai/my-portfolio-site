@@ -1,18 +1,21 @@
 import React from 'react'
-import '../Section/Section.css';
+import Heading from '../../Heading/Heading.js'
+import '../Section.css';
 import './Skill.css';
 
+
 // Skill Icons
-import htmlIcon from '../../assets/skill-icon/html5.svg';
-import cssIcon from '../../assets/skill-icon/css3.svg';
-import bootstrapIcon from '../../assets/skill-icon/bootstrap.svg';
-import jsIcon from '../../assets/skill-icon/js.svg';
-import reactjsIcon from '../../assets/skill-icon/reactjs.svg';
-import nodejsIcon from '../../assets/skill-icon/nodejs.svg';
-import expressjsIcon from '../../assets/skill-icon/expressjs.svg';
-import firebaseIcon from '../../assets/skill-icon/firebase.svg';
-import mongodbIcon from '../../assets/skill-icon/mongodb.svg';
-import figmaIcon from '../../assets/skill-icon/figma.svg';
+import htmlIcon from '../../../assets/skill-icon/html5.svg';
+import cssIcon from '../../../assets/skill-icon/css3.svg';
+import bootstrapIcon from '../../../assets/skill-icon/bootstrap.svg';
+import jsIcon from '../../../assets/skill-icon/js.svg';
+import reactjsIcon from '../../../assets/skill-icon/reactjs.svg';
+import nodejsIcon from '../../../assets/skill-icon/nodejs.svg';
+import expressjsIcon from '../../../assets/skill-icon/expressjs.svg';
+import firebaseIcon from '../../../assets/skill-icon/firebase.svg';
+import mongodbIcon from '../../../assets/skill-icon/mongodb.svg';
+import figmaIcon from '../../../assets/skill-icon/figma.svg';
+
 
 
 
@@ -20,9 +23,7 @@ function Skill() {
   return (
 
     <div className="section" id="skill">
-      <div className="section__heading_container">
-        <div className="section__heading">Skill</div>
-      </div>
+      <Heading  content="Skill" />
       
       <div className="section_contents skill_contents">                        
         <div className="skill_item">

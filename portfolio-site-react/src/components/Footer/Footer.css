@@ -4,7 +4,7 @@
   margin: 10px auto;  
     /* => Prevent cut off the bottom */
   margin-top: 100px;
-  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
+  /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
   /* border-radius: 8px; */
   padding-bottom: 200px;
   width: 95%;
@@ -19,41 +19,6 @@
 
 
 }
-
-
-
-
-.footer__heading_container {
-  z-index: 10;
-  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
-  /* flex: 1; */
-  padding: 100px 20px; 
-  width: 100%;
-  height: 100px; 
-  background-color: #000;
-
-  /* text-align: center; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.footer__heading {
-  /* margin-left: 20px; */ 
-  width: 90%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-
-  font-size: 80px;
-  /* color: #000; */
-  color: #fff;
-  letter-spacing: 20px;
-
-  text-align: center;
-}
-
 
 
 .footer__item {
@@ -77,63 +42,6 @@
 }
 
 
-/* .scroll_up */
-.scroll_up {
-  z-index: 200;
-  position: absolute;
-  left: 2%;
-  bottom: 30px;
-
-
-  /* border-radius: 50%; */
-  /* padding: 3%; */
-  width: 50px;
-  height: 50px;
-  /* background-color: hsla(0, 0%, 80%, 0.4); */
-   
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  transition: all .4s ease;
-
-  /* position: relative; */
-
-}
-
-/* .scroll_up:hover {
-  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
-} */
-
-.scroll_up__icon {
-  /* position: absolute;
-  top: 10%;
-  left: 27%; */
-
-
-  font-size: 40px;
-  color: #000;
-  opacity: .6;
-  transition: all .4s ease;
-}
-
-.scroll_up__icon:hover {
-  opacity: 1;
-  /* box-shadow:  0 0 10px 10px hsl(0, 0%, 40%); */
-  text-shadow: 0px 5px hsl(0, 0%, 40%);;
-  
-
-  cursor: pointer;
-}
-
-.top:hover {
-  transition: all .4s ease;
-}
-
-.top:hover {
-  /* text-shadow: 0px -5px hsl(0, 0%, 40%);; */
-}
 
 
 @media(max-width: 1024px) {
@@ -183,16 +91,6 @@
   }
 
 
-
-  .scroll_up {
-    font-size: 8px;
-  }
-
-  .scroll_up__icon {
-    font-size: 30px;
-  }
-
-
 }
 
 
@@ -208,23 +106,11 @@
     overflow: scroll;
   }  
 
-  
-  .scroll_up {
-    font-size: 8px;
-    bottom: 14px;
-  }
-
-  .scroll_up__icon {
-    font-size: 15px;
-  }
-
 
 }
 
 
 @media(max-width: 375px) {
-  .scroll_up {    
-    bottom: 10px;
-  }
+  
 
 }

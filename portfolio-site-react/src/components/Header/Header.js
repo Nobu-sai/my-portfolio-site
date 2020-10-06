@@ -1,53 +1,68 @@
 import React from 'react'
+import Typist from 'react-typist';
+
+import Heading from '../Heading/Heading';
+
 import './Header.css'
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 
 
 function Header() {
+
+  let typeDone = false;
+  
+  const typeHander = () => {
+    typeDone = true;
+  }
+
+  
   return (
-    <div className="header">
-      <div className="header_messages">
-        <div className="header__main_heading">Welcom.</div>
-        <h2 className="header__sub_heading">I'm Nobuya Saito.</h2>
-      </div>
+    <div className="header" id="header">
       
-      
-      <div className="header_list">        
-        
-        <div className="header_list__heading">This Page</div>
+      <Heading 
+        content={
+          <>
+            <Typist      
+            className="header__main_heading"
+            startDelay={200}                  
+            cursor={
+              {
+                show: true,
+                blink: true,
+                element: '|',
+                hideWhenDone: true,
+                hideWhenDoneDelay: 100,
+              }
+            }
+            >
+              Welcom.
+            </Typist>
+          </>
+        }
+        content_2={
+          <>  
+            <Typist      
+              className="header_message"      
+              startDelay={700}
+              cursor={
+                {
+                  show: true,
+                  blink: true,
+                  element: '|',
+                  hideWhenDone: true,
+                  hideWhenDoneDelay: 100,
+                }
+              }
+            >
+              <p>I'm Nobuya Saito. <br/>A Web Developer. </p> 
+            </Typist>
+          </>          
+        } 
 
-        <div className="header_list__items">
-          <div className="header_list__item">
-            {/* <a href="#about_me">See about Me</a> */}
-            <Link activeClass="active" className="about_me__scroll" to="about_me" spy={true} smooth={true} duration={500} >About Me</Link>
+      />
 
-            <i className="fas fa-arrow-down scroll_down__icon"></i>
-          </div>
-          <div className="header_list__item">
-            <a href="#skill">Skill</a>
-            <i className="fas fa-arrow-down scroll_down__icon"></i>
-          </div>
-          <div className="header_list__item">
-            <a href="#portfolio">ortfolio</a>
-            <i className="fas fa-arrow-down scroll_down__icon"></i>
-          </div>
-          {/* <div className="header_list__item">
-            <a href="#job_offer">Offer a Job</a>
-            <i className="fas fa-arrow-down scroll_down__icon"></i>
-          </div>  */}
-        </div>        
-        
-        
-      </div>  
-
-    </div>
+    </div>  
   
   )
 }
