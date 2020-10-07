@@ -32,7 +32,7 @@ class Menu extends Component {
             smooth={true} 
             duration={500} 
             >                
-                <div class="page_list__item_name">About Me</div>             
+                <div className="page_list__item_name">About Me</div>             
             </Link>                   
           }
           item_2={
@@ -45,7 +45,7 @@ class Menu extends Component {
             smooth={true} 
             duration={500} 
             >                            
-             <div class="page_list__item_name">Skill</div>                                   
+             <div className="page_list__item_name">Skill</div>                                   
             </Link>
           }
           item_3={
@@ -58,7 +58,7 @@ class Menu extends Component {
             smooth={true} 
             duration={500} 
             >                             
-             <div class="page_list__item_name">Portfolio</div>                       
+             <div className="page_list__item_name">Portfolio</div>                       
             </Link>
           }
         />        
