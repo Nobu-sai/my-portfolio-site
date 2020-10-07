@@ -1,0 +1,37 @@
+[debug] [2020-10-07T03:11:10.817Z] ----------------------------------------------------------------------
+[debug] [2020-10-07T03:11:10.819Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-10-07T03:11:10.819Z] CLI Version:   8.9.2
+[debug] [2020-10-07T03:11:10.819Z] Platform:      darwin
+[debug] [2020-10-07T03:11:10.819Z] Node Version:  v12.18.0
+[debug] [2020-10-07T03:11:10.820Z] Time:          Wed Oct 07 2020 12:11:10 GMT+0900 (Japan Standard Time)
+[debug] [2020-10-07T03:11:10.821Z] ----------------------------------------------------------------------
+[debug] [2020-10-07T03:11:10.821Z] 
+[debug] [2020-10-07T03:11:10.829Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-07T03:11:10.829Z] > authorizing via signed-in user
+[debug] [2020-10-07T03:11:10.830Z] [iam] checking project portfolio-site-ad71f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-07T03:11:10.833Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-07T03:11:10.833Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-07T03:11:11.069Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 07 Oct 2020 03:11:11 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-07T03:11:11.078Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-site-ad71f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-07T03:11:11.936Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 07 Oct 2020 03:11:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=580","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-07T03:11:11.939Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-site-ad71f  
+ 
+[debug] [2020-10-07T03:11:12.392Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 07 Oct 2020 03:11:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'portfolio-site-ad71f'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-07T03:11:12.397Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/portfolio-site-ad71f/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-07T03:11:13.970Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 07 Oct 2020 03:11:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[portfolio-site-ad71f]: beginning deploy... 
+[info] i  hosting[portfolio-site-ad71f]: found 48 files in build 
+[debug] [2020-10-07T03:11:14.259Z] [hosting] hash cache [YnVpbGQ] stored for 48 files
+[debug] [2020-10-07T03:11:14.259Z] [hosting][hash queue][FINAL] {"max":255,"min":26,"avg":53.72916666666666,"active":0,"complete":48,"success":48,"errored":0,"retried":0,"total":48,"elapsed":265}
+[debug] [2020-10-07T03:11:14.260Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/portfolio-site-ad71f/versions/702b7853d53bece5:populateFiles  
+ <request body omitted>
+[debug] [2020-10-07T03:11:15.520Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 07 Oct 2020 03:11:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-07T03:11:15.527Z] [hosting][populate queue][FINAL] {"max":1264,"min":1264,"avg":1264,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1270}
+[debug] [2020-10-07T03:11:15.527Z] [hosting] uploads queued: 8
