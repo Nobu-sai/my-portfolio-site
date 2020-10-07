@@ -52,14 +52,15 @@
 @media(max-width: 768px) {
 
   #flyoutMenu {
-    height: 40vh;
+    padding: 20px 0;
+    /* height: 40vh; */
   }  
 
 }
 
 @media(max-width: 425px) {
   #flyoutMenu {
-    height: 40vh;
+    /* height: 40vh; */
   }  
 
 }
