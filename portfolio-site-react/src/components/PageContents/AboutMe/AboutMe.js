@@ -19,7 +19,7 @@ function AboutMe() {
 
           <div className="intro_message">
             At the end, <br/>coding is a way for creating things, <br/> which is my great partner.<br/>
-          I want to be your partner, <br/> who helps making your imagination into the reality.</div>    
+          I want to be your partner, <br/> who makes your imagination into the reality.</div>    
                                   
         
         </div>          
