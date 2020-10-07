@@ -10,11 +10,11 @@ import './Header.css'
 
 function Header() {
 
-  let typeDone = false;
+  // let typeDone = false;
   
-  const typeHander = () => {
-    typeDone = true;
-  }
+  // const typeHander = () => {
+  //   typeDone = true;
+  // }
 
   
   return (

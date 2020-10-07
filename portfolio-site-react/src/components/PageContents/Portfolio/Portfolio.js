@@ -1,24 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import PortfolioData from './PortfolioData';
+import React, { useState } from 'react'
+// import PortfolioData from './PortfolioData';
 import Heading from '../../Heading/Heading.js'
 
 import '../Section.css';
 import './Portfolio.css';
 // import '../style/PortfolioData.css';
 
-// Porfolio Images
-import beatBoxImage from '../../../assets/portfolio-image/beat-box.png';
-import blogAppImage from '../../../assets/portfolio-image/blog-app.png';
-import drawingBordersAnimationImage from '../../../assets/portfolio-image/drawing-borders-animation.png';
-import googleMapStoreLocatorImage from '../../../assets/portfolio-image/google-map-store-locator.png'
-import guessNumberGameImage from '../../../assets/portfolio-image/guess-number-game.png';
-import imageSliderImage from '../../../assets/portfolio-image/image-slider.png';
-import movieListImage from '../../../assets/portfolio-image/movie-list.png';
-import tabPanelWidgetImage from '../../../assets/portfolio-image/tab-panel-widget.png';
-import textEditorImage from '../../../assets/portfolio-image/text-editor.png';
-import toyChestImage from '../../../assets/portfolio-image/toy-chest.png';
-import twitterCloneImage from '../../../assets/portfolio-image/twitter-clone.png';
-import weatherAppImage from '../../../assets/portfolio-image/weather-app.png';
 
 // Skill Icons
 // import htmlIcon from '../assets/skill-icon/html5.svg';
@@ -38,13 +25,13 @@ import weatherAppImage from '../../../assets/portfolio-image/weather-app.png';
 function Portfolio() {
 
   const [clickedPortfolioData, setclickedPortfolioData] = useState({})
-  const [clickedPortfolioDataImage, setclickedPortfolioDataImage] = useState("")
+  // const [clickedPortfolioDataImage, setclickedPortfolioDataImage] = useState("")
 
   const portfolioData = {
     'Beat Box': {
       name: 'Beat Box',
       url: 'https://beat-box-js.firebaseapp.com/',
-      image: beatBoxImage,
+      imageName: 'beat-box',
       skill: "HTML, CSS, JS",
       user_story: 'You can play Beats with your keybord.',
       dev_story: "Used JS Classes and Audio Objects.",
@@ -52,7 +39,7 @@ function Portfolio() {
     'Blog App': {
       name: 'Blog App',
       url: 'https://blog-app-31ad0.firebaseapp.com/',
-      image: blogAppImage,
+      imageName: 'blog-app',
       skill: 'HTML, CSS, JS, Node.js, Express.js',
       user_story: 'You can post Blogs and Sort and View them',
       dev_story: "Created Local API with Node.js and Express.js",
@@ -60,7 +47,7 @@ function Portfolio() {
     'Drawing Borders Animation': {
       name: 'Drawing Borders Animation',
       url: 'https://drawing-animaiton.firebaseapp.com/',
-      image: drawingBordersAnimationImage,
+      imageName: 'drawing-borders-animation',
       skill: 'HTML, CSS, JS',
       user_story: 'Random Borders are drawn by clicking the button',
       dev_story: "Used HTML canvas Tag and JS animations",
@@ -68,13 +55,12 @@ function Portfolio() {
     // 'Form Validation': {
     //   name: 'Form Validation',
     //   url: 'https://form-validation-1c872.firebaseapp.com/',
-    //   image: '../assets/portfolio-image/form-validation',
     //   skill: ''
     // },
     'Google Map Store Locator': {
       name: 'Google Map Store Locator',
       url: 'https://map-store-locator-1bfa8.firebaseapp.com/',
-      image: googleMapStoreLocatorImage,
+      imageName: 'google-map-store-locator',
       skill: 'HTML, CSS, JS, Node.js, MongoDB, Google Map API',
       user_story: "You can search Starbacks by ZIP Code. (Near LA only.)",
       dev_story: "Used Google Map API",
@@ -82,7 +68,7 @@ function Portfolio() {
     'Guess Number Game': {
       name: 'Guess Number Game',
       url: 'https://guess-number-game-js.firebaseapp.com/',
-      image: guessNumberGameImage,
+      imageName: 'guess-number-game',
       skill: 'HTML, CSS, JS',
       user_story: 'You can play guessing random number from -100 to 100.',
       dev_story: "Used JS for getting random numbers and replacing HTML",
@@ -90,7 +76,7 @@ function Portfolio() {
     'Image Slider': {
       name: 'Image Slider',
       url: 'https://image-slider-jquery.firebaseapp.com/',
-      image: imageSliderImage,
+      imageName: 'image-slider',
       skill: 'HTML, CSS, JS, jQuery',
       user_story: 'You can travel the earth virtually.',
       dev_story: "Used jQuery for Sliding Animation",
@@ -98,7 +84,7 @@ function Portfolio() {
     'Movie List': {
       name: 'Movie List',
       url: 'https://movie-list-c0ae3.web.app/',
-      image: movieListImage,
+      imageName: 'movie-list',
       skill: 'HTML, CSS, JS',
       user_story: 'You can view and sort a list of movie titles.',
       dev_story: "Used JS for sorting list like with Object and Loop",
@@ -106,7 +92,7 @@ function Portfolio() {
     'Tab Panel Widget': {
       name: 'Tab Panel Widget',
       url: 'https://tab-panel-widget.firebaseapp.com/',
-      image: tabPanelWidgetImage,
+      imageName: 'tab-panel-widget',
       skill: 'HTML, CSS, JS, jQuery',
       user_story: 'You can control Panels to see by the relevant Tab.',
       dev_story: "Used jQuery for moving around Panels by Tabs",
@@ -114,7 +100,7 @@ function Portfolio() {
     'Text Editor': {
       name: 'Text Editor',
       url: 'https://text-editor-ca31a.firebaseapp.com/',
-      image: textEditorImage,
+      imageName: 'text-editor',
       skill: 'HTML, CSS, JS',
       user_story: 'You can write texts and change their styles',
       dev_story: "Use JS and CSS for grabbing text and change styles.",
@@ -122,7 +108,7 @@ function Portfolio() {
     'Toy Chest': {
       name: 'Toy Chest',
       url: 'https://toy-chest-ef2ab.firebaseapp.com/',
-      image: toyChestImage,
+      imageName: 'toy-chest',
       skill: 'HTML, CSS, JS',
       user_story: 'You can play many Toys.',
       dev_story: "Used JS for the game control",
@@ -130,7 +116,7 @@ function Portfolio() {
     'Twitter Clone': {
       name: 'Twitter Clone',
       url: 'https://twitter-clone-e0f03.firebaseapp.com/',
-      image: twitterCloneImage,
+      imageName: 'twitter-clone',
       skill: 'HTML, CSS, JS, Node.js, Express.js, Twitter API',
       user_story: 'You can search Tweets from whatever word you want.',
       dev_story: "Used Twitter API for getting tweets.",
@@ -138,62 +124,22 @@ function Portfolio() {
     'Weather App': {
       name: 'Weather App',
       url: 'https://weather-app-832c9.firebaseapp.com/index.html',
-      image: weatherAppImage,
+      imageName: 'weather-app',
       skill: 'HTML, CSS, JS, OpenWeather API',
       user_story: 'You can search weather from a city name.',
       dev_story: "Used openweather API for weather data",
     }
   }
   
-  const portfolioList = React.createRef()
-  // let portfolioNameList = [];
-  // let clickedPortfolioName = "";
-
-  // let clickedPortfolioData = "";
-  // console.log(clickedPortfolioData)
-
-  // useEffect(()=>{
-  //   // console.log(clickedPortfolioData)
-  //   if(!clickedPortfolioData.image === "") {
-  //     setclickedPortfolioDataImage(clickedPortfolioData.image);
-  //     console.log(clickedPortfolioDataImage)
-  //   }  
-  //   console.log(clickedPortfolioData.image)
-  //   console.log(clickedPortfolioDataImage)
-   
-  // }, [clickedPortfolioData])
-
-  
-  // useEffect(()=>{
-  //   // console.log(portfolioList.current.children[0].children)
-  //   const portfolioNameListHTMLCollection = portfolioList.current.children[0].children
-  //   Array.prototype.map.call(portfolioNameListHTMLCollection, portfolioName => {
-  //     // console.log(portfolioName)
-  //     portfolioNameList.push(portfolioName.innerText)
-  //   })    
-  // })
 
 
-  const setPortfolio = (clickedListItem) => {
-    
-    // Find the correponsind Item from the Clicked List Item
-    // console.log( await portfolioNameList)
-    //  clickedPortfolioName = await portfolioNameList.find((listItem) => listItem === clickedListItem)
-    
-    // Assign the List Item Name directly.
-    // clickedPortfolioName = clickedListItem;    
-    // console.log('This is the clicked Portfolio Name: ', clickedPortfolioName)
 
-    // Inner Page Object
-    // clickedPortfolioData = portfolioData[clickedListItem];
-    // Array.prototype.map.call((portfolioData, data) => {
-    //   if (data.name === clickedListItem) {
-    //     clickedPortfolioData = data.name
-    //   }
-    // })
+  const portfolioListHandler = (clickedListItem) => {
 
     setclickedPortfolioData(portfolioData[clickedListItem])
-    setclickedPortfolioDataImage(clickedPortfolioData.image)
+    // setclickedPortfolioDataImage(` + require(../../../assets/portfolio-image/${clickedPortfolioData.imageName}.png) + `)
+    // console.log(clickedPortfolioData)
+    
    
   }  
 
@@ -206,15 +152,18 @@ function Portfolio() {
         
         <div className="portfolio_list_container">                   
           
-          <div className="portfolio_list" ref={portfolioList}>            
+          <div className="portfolio_list">            
             <div className="portfolio_list__background">              
              {/* <div className="scroll_message">Scroll down for the next portfolio.</div> */}
 
-              {Object.entries(portfolioData).map((portfolio)=>(
+
+              {Object.entries(portfolioData).map((portfolio, i)=>(
                 <>
+                {/* {console.log(portfolio)} */}
                   <div 
                   className="portfolio_list__item" 
-                  onClick={e => setPortfolio(portfolio[1].name)}
+                  id={i}
+                  onClick={e => portfolioListHandler(portfolio[1].name)}
                    >
                      <div className="portfolio_list__title">
                           {portfolio[1].name}
@@ -247,7 +196,6 @@ function Portfolio() {
                   </div>      
                   
                </>
-              // console.log(portfolio)     
               ))
               }
         
@@ -258,11 +206,11 @@ function Portfolio() {
           
         </div>    
          
-        {clickedPortfolioData.image && console.log(clickedPortfolioData.image)}
+        {/* {clickedPortfolioData.imageName && console.log(clickedPortfolioData.imageName)} */}
         
-        {clickedPortfolioData.image ? (
+        {clickedPortfolioData.imageName ? (
           <> 
-            <div className="portfolio_data_container">
+            <div className="portfolio_desc_container">
               <div className="portfolio__heading">{clickedPortfolioData.name}</div>  
               <div className="explanation">
                 <div className="user_story">
@@ -274,36 +222,22 @@ function Portfolio() {
                   <div className="dev_story__text">{clickedPortfolioData.dev_story}</div>
                   </div>  
               </div>
-              <img 
-              className="portfolio_image"
-              src={clickedPortfolioData.image} 
-              style={
-                {
-                // width: '70%',
-                // height: '60%',
-                // overflow: 'scroll'
-                }
-              }  
-              />
-              {/* <div 
+        
+              {/* {console.log(`../../../assets/portfolio-image/${clickedPortfolioData.imageName}.png`)}               */}
+              <div 
               className="portfolio_image" 
               style={
-                { 
-                    // backgroundImage: `url(${clickedPortfolioData.image})` ,
-                    backgroundImage:`url(${clickedPortfolioData.image}})`,
-                    padding: '18px 0',
-                    width: '80%',
-                    height: '100%',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    overflow: 'scroll'
+                {  
+                  // backgroundImage: `url(${clickedPortfolioData.image})` ,   
+                  backgroundImage: 'url(' + require(`../../../assets/portfolio-image/${clickedPortfolioData.imageName}.png`) + ')', 
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
                 }}
-              ></div>                 */}
+              ></div>                
             </div>
           </>      
           ) : (          
-            // <div></div>
-            <div className="portfolio_data_container">
+            <div className="portfolio_desc_container">
               <div className="portfolio__heading">{portfolioData['Beat Box'].name}</div>    
               <div className="explanation">
                 <div className="user_story">
@@ -315,18 +249,24 @@ function Portfolio() {
                   <div className="dev_story__text">Used JS Classes and Audio Objects.</div>
                 </div>
               </div> 
-              <img 
-              className="portfolio_image"
-                src={portfolioData['Beat Box'].image} 
-                style={
-                  {
-                  // padding: '18px 0',
-                  // width: '70%',
-                  // height: '60%',
-                  // overflow: 'scroll'
-                }
-                }  
-              />
+    
+              {/* {console.log(portfolioData['Beat Box'].image)} */}
+              <div 
+              className="portfolio_image" 
+              style={{ 
+                // width: '100%',
+                // minWidth: '500px',
+                // height: '95%',
+                // minHeight: '300px',
+                // backgroundImage:`url(${portfolioData['Beat Box'].image})`,            
+                background: 
+                  'url(' + require('../../../assets/portfolio-image/beat-box.png') + ')',                
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
+                  // backgroundRepeat: 'no-repeat'
+                }}
+              ></div>       
+
             </div>          
           )
         }              

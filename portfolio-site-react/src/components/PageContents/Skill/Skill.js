@@ -27,45 +27,45 @@ function Skill() {
       
       <div className="section_contents skill_contents">                        
         <div className="skill_item">
-          <div class="skill__item_name">HTML</div>
-          <img class="skill__item_icon" src={htmlIcon}></img>
+          <div className="skill__item_name">HTML</div>
+          <img className="skill__item_icon" src={htmlIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">CSS</div>
-          <img class="skill__item_icon" src={cssIcon}></img>
+          <div className="skill__item_name">CSS</div>
+          <img className="skill__item_icon" src={cssIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">Bootstrap</div>
-          <img class="skill__item_icon" src={bootstrapIcon}></img>
+          <div className="skill__item_name">Bootstrap</div>
+          <img className="skill__item_icon" src={bootstrapIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">JavaScript</div>
-          <img class="skill__item_icon" src={jsIcon}></img>
+          <div className="skill__item_name">JavaScript</div>
+          <img className="skill__item_icon" src={jsIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">React.js</div>
-          <img class="skill__item_icon" src={reactjsIcon}></img>
+          <div className="skill__item_name">React.js</div>
+          <img className="skill__item_icon" src={reactjsIcon}></img>
         </div>            
         <div className="skill_item">
-          <div class="skill__item_name">Node.js</div>
-          <img class="skill__item_icon" src={nodejsIcon}></img>
+          <div className="skill__item_name">Node.js</div>
+          <img className="skill__item_icon" src={nodejsIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">Express.js</div>
-          <img class="skill__item_icon" src={expressjsIcon}></img>
+          <div className="skill__item_name">Express.js</div>
+          <img className="skill__item_icon" src={expressjsIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">Firebase</div>
-          <img class="skill__item_icon" src={firebaseIcon}></img>
+          <div className="skill__item_name">Firebase</div>
+          <img className="skill__item_icon" src={firebaseIcon}></img>
         </div>
         <div className="skill_item">
-          <div class="skill__item_name">MongoDB</div>
-          <img class="skill__item_icon" src={mongodbIcon}></img>
+          <div className="skill__item_name">MongoDB</div>
+          <img className="skill__item_icon" src={mongodbIcon}></img>
         </div>     
         <div className="skill_item">
-          <div class="skill__item_name">Figma</div>
+          <div className="skill__item_name">Figma</div>
           {/* <div className="coming_soon">* Coming Soon</div> */}
-          <img class="skill__item_icon" src={figmaIcon}></img>
+          <img className="skill__item_icon" src={figmaIcon}></img>
         </div>               
       </div>
 
