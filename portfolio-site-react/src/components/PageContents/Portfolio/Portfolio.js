@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-// import PortfolioData from './PortfolioData';
+
 import Heading from '../../Heading/Heading.js'
+import PortfolioDesc from './PortfolioDesc.js';
+import PortfolioList from './PortfolioList.js'
 
 import '../Section.css';
 import './Portfolio.css';
@@ -22,12 +24,15 @@ import './Portfolio.css';
 
 
 
+
 function Portfolio() {
 
-  const [clickedPortfolioData, setclickedPortfolioData] = useState({})
-  // const [clickedPortfolioDataImage, setclickedPortfolioDataImage] = useState("")
+
+  const [portfolioToShow, setPortfolioToShow] = useState(null)
+  
 
   const portfolioData = {
+    
     'Beat Box': {
       name: 'Beat Box',
       url: 'https://beat-box-js.firebaseapp.com/',
@@ -130,147 +135,40 @@ function Portfolio() {
       dev_story: "Used openweather API for weather data",
     }
   }
+
+
+
+  // let PortfolioData = {}
+  // const getData = () => {
+  //   Get in the Divosor Component, so I can sput list here and Listen to onclick event on it, which Render the PortfolioDesc. 
   
+  // }
 
 
 
   const portfolioListHandler = (clickedListItem) => {
+    setPortfolioToShow(portfolioData[clickedListItem])     
+}  
 
-    setclickedPortfolioData(portfolioData[clickedListItem])
-    // setclickedPortfolioDataImage(` + require(../../../assets/portfolio-image/${clickedPortfolioData.imageName}.png) + `)
-    // console.log(clickedPortfolioData)
-    
-   
-  }  
+
 
   return (
     <div className="section" id="portfolio">
       <Heading  content="Portfolio" />
 
-      <div className="section_contents portfolio_contents">
+      <div className="section_contents portfolio_contents">  
 
+        <PortfolioList portfolioData={portfolioData} portfolioListHandler={portfolioListHandler}/>
         
-        <div className="portfolio_list_container">                   
-          
-          <div className="portfolio_list">            
-            <div className="portfolio_list__background">              
-             {/* <div className="scroll_message">Scroll down for the next portfolio.</div> */}
-
-
-              {Object.entries(portfolioData).map((portfolio, i)=>(
-                <>
-                {/* {console.log(portfolio)} */}
-                  <div 
-                  className="portfolio_list__item" 
-                  id={i}
-                  onClick={e => portfolioListHandler(portfolio[1].name)}
-                   >
-                     <div className="portfolio_list__title">
-                          {portfolio[1].name}
-                    </div>   
-                     <div className="portfolio_data"> 
-                      <div className="portfolio_data__item">
-                       <div 
-                          className="portfolio_data__title"> 
-                          Skill<br/> <span className="portfolio_skill__name"> {portfolio[1].skill}.</span>
-                        </div> 
-                      </div>
-
-                      <div className="portfolio_data__item">
-                        <div>
-                            <div className="portfolio_data__title">
-                              Webpage
-                            </div>
-                            <a 
-                              href={portfolio[1].url}
-                              className="visit_url_container"                            
-                            >
-                              <span className="visit_url">Visit.</span> 
-                            </a>
-                          </div>
-                      </div>
-                                             
-                      
-                     </div>
-                    
-                  </div>      
-                  
-               </>
-              ))
-              }
+        {portfolioToShow ? 
+          <PortfolioDesc           
+            portfolioToShow={portfolioToShow}/> 
+        :
+          <PortfolioDesc  
+            portfolioToShow={portfolioData['Beat Box']}/>
+        }       
         
-            </div>
-              
-          </div>
-          
-          
-        </div>    
-         
-        {/* {clickedPortfolioData.imageName && console.log(clickedPortfolioData.imageName)} */}
-        
-        {clickedPortfolioData.imageName ? (
-          <> 
-            <div className="portfolio_desc_container">
-              <div className="portfolio__heading">{clickedPortfolioData.name}</div>  
-              <div className="explanation">
-                <div className="user_story">
-                  <div className="user_story__heading">User Story:</div> 
-                  <div className="user_story__text">{clickedPortfolioData.user_story}</div>
-                  </div>
-                  <div className="dev_story">
-                  <div className="dev_story__heading">User Story:</div> 
-                  <div className="dev_story__text">{clickedPortfolioData.dev_story}</div>
-                  </div>  
-              </div>
-        
-              {/* {console.log(`../../../assets/portfolio-image/${clickedPortfolioData.imageName}.png`)}               */}
-              <div 
-              className="portfolio_image" 
-              style={
-                {  
-                  // backgroundImage: `url(${clickedPortfolioData.image})` ,   
-                  backgroundImage: 'url(' + require(`../../../assets/portfolio-image/${clickedPortfolioData.imageName}.png`) + ')', 
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover',
-                }}
-              ></div>                
-            </div>
-          </>      
-          ) : (          
-            <div className="portfolio_desc_container">
-              <div className="portfolio__heading">{portfolioData['Beat Box'].name}</div>    
-              <div className="explanation">
-                <div className="user_story">
-                  <div className="user_story__heading">User Story:</div> 
-                  <div className="user_story__text">You can play beats with your keybord.</div>
-                </div>
-                <div className="dev_story">
-                  <div className="dev_story__heading">Dev Story:</div> 
-                  <div className="dev_story__text">Used JS Classes and Audio Objects.</div>
-                </div>
-              </div> 
-    
-              {/* {console.log(portfolioData['Beat Box'].image)} */}
-              <div 
-              className="portfolio_image" 
-              style={{ 
-                // width: '100%',
-                // minWidth: '500px',
-                // height: '95%',
-                // minHeight: '300px',
-                // backgroundImage:`url(${portfolioData['Beat Box'].image})`,            
-                background: 
-                  'url(' + require('../../../assets/portfolio-image/beat-box.png') + ')',                
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover',
-                  // backgroundRepeat: 'no-repeat'
-                }}
-              ></div>       
-
-            </div>          
-          )
-        }              
-
+       
       </div>
 
     </div>  
