@@ -6,7 +6,8 @@ import PortfolioList from './PortfolioList.js'
 
 import '../Section.css';
 import './Portfolio.css';
-// import '../style/PortfolioData.css';
+
+import { db, auth, storage} from '../../../firebase.js';
 
 
 // Skill Icons
@@ -137,13 +138,13 @@ function Portfolio() {
   }
 
 
+  useState(()=>{
+    // db.collection('portfolios').onSnapshot((snapshot)=>{
+    //   snapshot.map((doc)=>console.log(doc.data()))
+    // })
+  }, [])
 
   // let PortfolioData = {}
-  // const getData = () => {
-  //   Get in the Divosor Component, so I can sput list here and Listen to onclick event on it, which Render the PortfolioDesc. 
-  
-  // }
-
 
 
   const portfolioListHandler = (clickedListItem) => {
