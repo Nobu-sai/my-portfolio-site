@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-import * as admin from 'firebase-admin';
+
 
 
 const firebaseApp = firebase.initializeApp(
@@ -14,39 +14,6 @@ const firebaseApp = firebase.initializeApp(
   appId: "1:1066914805547:web:8f855bea6d5aae606f776e"
   }  
 )
-
-const serviceAccount = require('./portfolio-site-ad71f-firebase-adminsdk-rpnn4-95bfee1215.json');
-
-let uid = 'nobu';
-let token;
-
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://portfolio-site-ad71f.firebaseio.com',
-});
-
-admin.auth().createCustomToken(uid)
-  .then(function(customToken) {
-    // Send token back to client
-    // console.log(customToken)
-    token = customToken;
-    
-  })
-  .catch(function(error) {
-    console.log('Error creating custom token:', error);
-  });
-
-
-  firebase.auth().signInWithCustomToken(token)
-  .then(res => {
-      console.log(res.user.uid);
-      res.user.updateEmail("snz0901@gmail.com"); 
-  })
-  .catch(e => {
-      console.log(e);
-  })
-
 const db = firebaseApp.firestore()
 const auth = firebase.auth();
 const storage = firebase.storage();

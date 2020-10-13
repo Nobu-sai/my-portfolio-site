@@ -1,5 +1,5 @@
 import React from 'react';
-import {Element, animateScroll as scroll } from 'react-scroll'
+import {Element } from 'react-scroll'
 
 import AboutMe from '../PageContents/AboutMe/AboutMe.js';
 import Skill from '../PageContents/Skill/Skill.js';

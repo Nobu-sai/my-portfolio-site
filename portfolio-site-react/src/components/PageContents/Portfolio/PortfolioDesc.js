@@ -2,9 +2,9 @@ import React from 'react'
 import './Portfolio.css';
 
 
-function PortfolioData({portfolioToShow}) {
+function PortfolioData({portfolioToShow}) {  
+    console.log(portfolioToShow)
   return (    
-    
     <div className="PortfolioDesc">      
 
       <div className="portfolio__heading">{portfolioToShow.name}</div>    
@@ -30,7 +30,6 @@ function PortfolioData({portfolioToShow}) {
       ></div>       
 
     </div>        
-
   )
 }
 

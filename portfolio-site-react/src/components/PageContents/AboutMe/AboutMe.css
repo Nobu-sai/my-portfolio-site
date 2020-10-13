@@ -41,8 +41,9 @@
   /* padding: 20px; */
   width: 250px;
   height: 250px;
+  background-color: red;
   /* background-image: url('../../assets/profile_image_side_edit.jpeg'); */
-  background-image: url('../../../assets/profile_image_side_edit.jpeg');
+  /* background-image: url('../../../assets/profile_image_side_edit.jpeg'); */
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
