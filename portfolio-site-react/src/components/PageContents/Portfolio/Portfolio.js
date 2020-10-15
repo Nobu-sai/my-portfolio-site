@@ -19,7 +19,7 @@ class Portfolio extends React.Component {
   //   this.portfolioDataHandler()    
   // }
 
-  componentWillUnmount() {
+  componentDidMount() {
     this.portfolioDataHandler()    
   }
 
