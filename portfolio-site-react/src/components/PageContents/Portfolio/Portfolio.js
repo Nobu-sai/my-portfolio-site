@@ -12,7 +12,6 @@ class Portfolio extends React.Component {
     super(props)
     this.state = {portfolioData: []}
     this.state = {portfolioToShow: null}    
-    this.state = {portfolioToShowIsLatest: false}
     this.isInitial = true;
   }
 
@@ -22,22 +21,51 @@ class Portfolio extends React.Component {
 
   componentDidMount() {
     this.portfolioDataHandler()    
-    
   }
 
 
   portfolioDataHandler = () => {
-    let portfolioDataList = []
+    // let portfolioDataList = []
+    // let portfolioDataList = [{"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}]
+    let portfolioDataList = ["...", "..."]
 
     db.collection('portfolio-data').onSnapshot((snapshot)=>{
       // console.log(snapshot.docs)      
         snapshot.forEach((doc)=> {  
-          portfolioDataList.push(doc.data())              
-        })       
-        this.setState({portfolioData: portfolioDataList})         
-        this.portfolioListHandler()  
+          portfolioDataList.push(doc.data())    
+          // this.setState({portfolioData: portfolioDataList})        
+        })
+        console.log("portfolioDataList: ", portfolioDataList)   
+        console.log(" * INSIDE the db.collection() ")       
+        console.log(" => Shows difference: [] VS [{...},{...}] ")             
+        // console.log(portfolioDataList)   
+        // console.log(" * portfolioDataList Array without Text (Underneath)")         
+        // console.log(" ** I thought it has impact on How dose Chrome display the console.log(). ")         
+        // console.log(" => Shows difference: [] VS [{...},{...}] ")          
+        console.log("portfolioData State: ", this.state.portfolioData) 
+        console.log(" * BEFORE this.setState({portfolioData: portfolioDataList}) ")       
+        this.setState({portfolioData: portfolioDataList})           
+        console.log("portfolioData State: ", this.state.portfolioData)   
+        console.log(" * AFTER this.setState({portfolioData: portfolioDataList}) ")       
+        
     })      
+        
+    console.log("portfolioDataList: ", portfolioDataList)     
+    console.log(" * OUTSIDE the db.collection() ")       
+    console.log(" => Shows difference: [] VS [{...},{...}] ")     
     
+    // console.log(portfolioDataList)       
+    // console.log(" * portfolioDataList Array without Text (Underneath)")   
+    // console.log(" ** I thought it has impact on How dose Chrome display the console.log(). ")               
+    // console.log(" => Shows difference: [] VS [{...},{...}] ")     
+    // console.log("portfolioDataList in JSON.stringify(): ",  JSON.stringify(portfolioDataList))
+    console.log("portfolioData State: ", this.state.portfolioData)     
+    console.log(" * BEFORE this.setState({portfolioData: portfolioDataList}) ")       
+    this.setState({portfolioData: portfolioDataList})
+    console.log("portfolioData State: ", this.state.portfolioData)     
+    console.log(" * AFTER this.setState({portfolioData: portfolioDataList}) ")       
+      
+
   }
 
 
@@ -46,24 +74,14 @@ class Portfolio extends React.Component {
   // => If there is an List Item clicked, it is set as the  portfolio to show .
   // * Then, it might be better to call this Funciton as  portfolioToShowHander() , because it is unnecessarily handled by the List. 
   portfolioListHandler = (clickedListItem) => {    
-    console.log("isInitial Property before setting portfolioToShow", this.isInitial)    
-    this.setState({portfolioToShowIsLatest: false})
-    console.log("portfolioToShowIsLatest State before setting portfolioToShow", this.state.portfolioToShowIsLatest)
-    if(this.state.portfolioToShowIsLatest === false) {
-      console.log(this.state.portfolioToShow)                 
-      if(this.isInitial) {
-        this.setState({portfolioToShow: this.state.portfolioData[0]})
-        this.isInitial = false;        
-        console.log("isInitial Property after setting portfolioToShow for the first time", this.isInitial)    
-        this.setState({portfolioToShowIsLatest: true})
-        console.log("portfolioToShow in <portfolioDesc>: ", this.state.portfolioToShow)           
-      } else {
-        this.setState({portfolioToShow: this.state.portfolioData[clickedListItem]})
-        this.setState({portfolioToShowIsLatest: true})
-        console.log("portfolioToShow in <portfolioDesc>: ",this.state.portfolioToShow)           
-      } 
-    }
-    
+    if(this.isInitial) {
+      this.portfolioToShow = this.state.portfolioData[0]
+      this.isInitial = false;        
+      console.log(this.state.portfolioData)         
+    } else {
+      this.portfolioToShow = this.state.portfolioData[clickedListItem];   
+      
+    } 
   }  
 
   // addData = () => {      
@@ -78,6 +96,10 @@ class Portfolio extends React.Component {
   //       })     
 
   // }
+
+  consoleLogState = () => {
+    this.state.portfolioData && console.log("portfolioData State", this.state.portfolioData)
+  }
   
 
   render() {
@@ -89,7 +111,9 @@ class Portfolio extends React.Component {
         <div className="section_contents portfolio_contents">  
   
         {/* <button onClick={e => addData()}>Submit Portfolio</button> */}     
-    
+        {/* {this.state.portfolioData && console.log("portfolioData State in  render() / this.state.portfolioData && : ", this.state.portfolioData)}
+        {console.log("portfolioData State in  render() : ", this.state.portfolioData)}
+         */}
         {
           this.state.portfolioData &&
           <PortfolioList 
@@ -100,11 +124,11 @@ class Portfolio extends React.Component {
         }
   
         {
-          this.state.portfolioToShowIsLatest === true &&
-          <PortfolioDesc           
-            portfolioToShow={this.state.portfolioToShow}
-            portfolioToShowIsLatest={this.state.portfolioToShowIsLatest}
-          />  
+          // this.state.portfolioData &&
+          // console.log(this.portfolioToShow)
+          // <PortfolioDesc 
+          //   portfolioToShow={this.portfolioListHandler}
+          // />  
         }  
         
         
