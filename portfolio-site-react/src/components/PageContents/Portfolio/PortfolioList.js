@@ -6,11 +6,6 @@ function PortfolioList({ portfolioData, portfolioListHandler }) {
 
   console.log("portfolioData Prop: ", portfolioData)
 
-  // console.log(portfolioData[0])
-  portfolioData.map((portfolio)=>{
-    console.log("Each portfolio from portfolioData Prop: ", portfolio)
-  })
-  
   return (
     <div className="PortfolioList">
             

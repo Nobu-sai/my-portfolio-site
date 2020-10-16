@@ -12,6 +12,7 @@ class Portfolio extends React.Component {
     super(props)
     this.state = {portfolioData: []}
     this.state = {portfolioToShow: null}    
+    this.state = {portfolioToShowIsLatest: false}
     this.isInitial = true;
   }
 
@@ -21,6 +22,7 @@ class Portfolio extends React.Component {
 
   componentDidMount() {
     this.portfolioDataHandler()    
+    
   }
 
 
@@ -30,29 +32,12 @@ class Portfolio extends React.Component {
     db.collection('portfolio-data').onSnapshot((snapshot)=>{
       // console.log(snapshot.docs)      
         snapshot.forEach((doc)=> {  
-          portfolioDataList.push(doc.data())    
-          // this.setState({portfolioData: portfolioDataList})        
-        })
-        console.log("portfolioDataList: ", portfolioDataList)     
-        console.log("portfolioDataList Array without Text (Underneath) * To See [] in Line 33 VS [{...},{...}] in Line 42 ")    
-        console.log(" * To See [] in Line 35 VS [{...},{...}] in Line 44 ")    
-        console.log(portfolioDataList)        
-        console.log("portfolioData State: ", this.state.portfolioData) 
-        this.setState({portfolioData: portfolioDataList})           
-        console.log("portfolioData State: ", this.state.portfolioData)   
-        
+          portfolioDataList.push(doc.data())              
+        })       
+        this.setState({portfolioData: portfolioDataList})         
+        this.portfolioListHandler()  
     })      
     
-    console.log("portfolioDataList: ", portfolioDataList)     
-    console.log("portfolioDataList Array without Text (Underneath)")    
-    console.log(" * To See [] in Line 35 VS [{...},{...}] in Line 44 ")    
-    console.log(portfolioDataList)       
-    console.log("portfolioDataList in JSON.stringify(): ",  JSON.stringify(portfolioDataList))
-    console.log("portfolioData State: ", this.state.portfolioData)     
-    this.setState({portfolioData: portfolioDataList})
-    console.log("portfolioData State: ", this.state.portfolioData)     
-      
-
   }
 
 
@@ -61,14 +46,24 @@ class Portfolio extends React.Component {
   // => If there is an List Item clicked, it is set as the  portfolio to show .
   // * Then, it might be better to call this Funciton as  portfolioToShowHander() , because it is unnecessarily handled by the List. 
   portfolioListHandler = (clickedListItem) => {    
-    if(this.isInitial) {
-      this.portfolioToShow = this.state.portfolioData[0]
-      this.isInitial = false;        
-      console.log(this.state.portfolioData)         
-    } else {
-      this.portfolioToShow = this.state.portfolioData[clickedListItem];   
-      
-    } 
+    console.log("isInitial Property before setting portfolioToShow", this.isInitial)    
+    this.setState({portfolioToShowIsLatest: false})
+    console.log("portfolioToShowIsLatest State before setting portfolioToShow", this.state.portfolioToShowIsLatest)
+    if(this.state.portfolioToShowIsLatest === false) {
+      console.log(this.state.portfolioToShow)                 
+      if(this.isInitial) {
+        this.setState({portfolioToShow: this.state.portfolioData[0]})
+        this.isInitial = false;        
+        console.log("isInitial Property after setting portfolioToShow for the first time", this.isInitial)    
+        this.setState({portfolioToShowIsLatest: true})
+        console.log("portfolioToShow in <portfolioDesc>: ", this.state.portfolioToShow)           
+      } else {
+        this.setState({portfolioToShow: this.state.portfolioData[clickedListItem]})
+        this.setState({portfolioToShowIsLatest: true})
+        console.log("portfolioToShow in <portfolioDesc>: ",this.state.portfolioToShow)           
+      } 
+    }
+    
   }  
 
   // addData = () => {      
@@ -83,10 +78,6 @@ class Portfolio extends React.Component {
   //       })     
 
   // }
-
-  consoleLogState = () => {
-    this.state.portfolioData && console.log("portfolioData State", this.state.portfolioData)
-  }
   
 
   render() {
@@ -98,9 +89,7 @@ class Portfolio extends React.Component {
         <div className="section_contents portfolio_contents">  
   
         {/* <button onClick={e => addData()}>Submit Portfolio</button> */}     
-        {this.state.portfolioData && console.log("portfolioData State, line 90", this.state.portfolioData)}
-        {console.log("portfolioData State, line 91", this.state.portfolioData)}
-        
+    
         {
           this.state.portfolioData &&
           <PortfolioList 
@@ -111,11 +100,11 @@ class Portfolio extends React.Component {
         }
   
         {
-          // this.state.portfolioData &&
-          // console.log(this.portfolioToShow)
-          // <PortfolioDesc 
-          //   portfolioToShow={this.portfolioListHandler}
-          // />  
+          this.state.portfolioToShowIsLatest === true &&
+          <PortfolioDesc           
+            portfolioToShow={this.state.portfolioToShow}
+            portfolioToShowIsLatest={this.state.portfolioToShowIsLatest}
+          />  
         }  
         
         
