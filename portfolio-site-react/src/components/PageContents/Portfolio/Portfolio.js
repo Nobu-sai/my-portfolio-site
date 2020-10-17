@@ -99,16 +99,15 @@ class Portfolio extends React.Component {
         <div className="section_contents portfolio_contents">  
   
         {/* <button onClick={e => addData()}>Submit Portfolio</button> */}     
-        {/* {this.state.portfolioData && console.log("portfolioData State in  render() / this.state.portfolioData && : ", this.state.portfolioData)}
+        {this.state.portfolioData && console.log("portfolioData State in  render() / this.state.portfolioData && : ", this.state.portfolioData)}
         {console.log("portfolioData State in  render() : ", this.state.portfolioData)}
-         */}
+        
         {
           this.state.portfolioData &&
           <PortfolioList 
             portfolioData={this.state.portfolioData} 
             portfolioListHandler={this.portfolioListHandler}
           />        
-        
         }
   
         {
@@ -119,16 +118,11 @@ class Portfolio extends React.Component {
           // />  
         }  
         
-        
-          
-        
-        
         </div>
   
       </div>  
     )
   }
 }
-
 
 export default Portfolio;
