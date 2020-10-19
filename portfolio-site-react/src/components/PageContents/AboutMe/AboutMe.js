@@ -13,14 +13,18 @@ function AboutMe() {
         <Heading  content="About Me" />
         
         <div className="section_contents about_me_contents">
-      
-        <div className="profile_image"></div>   
-          <div className="intro_heading"> I love <br/>coding, <br/>because <br/>I love <br/>creating.</div>             
+          <div className="upper_contents">            
+            <div className="intro_heading"> Coding is <br/>my <br/>partner.<br/>I want to be<br/>your <br/>partner.</div>     
+            <div className="profile_image"></div>   
+          </div>
+                
 
-          <div className="intro_message">
-            At the end, <br/>coding is a way for creating things, <br/> which is my great partner.<br/>
-          I want to be your partner, <br/> who makes your imagination into the reality.</div>    
-                                  
+         <div className="intro_message">
+         I love coding, because I love creating. <br/>
+         At the end, <br/>coding is a way for creating things, <br/> and it is my great partner.<br/>
+          I want to be your partner, <br/> who makes your imagination into the reality.
+         </div>    
+                                
         
         </div>          
 
