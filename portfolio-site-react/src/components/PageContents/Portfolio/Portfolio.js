@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
   portfolioDataHandler = () => {
     // let portfolioDataList = []
     // let portfolioDataList = [{"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}, {"…"}]
-    let portfolioDataList = ["...", "..."]
+    let portfolioDataList = ["...1", "...2"]
 
     db.collection('portfolio-data').onSnapshot((snapshot)=>{
       // console.log(snapshot.docs)      
@@ -37,21 +37,29 @@ class Portfolio extends React.Component {
         })
         console.log("portfolioDataList: ", portfolioDataList)   
         console.log(" * INSIDE the db.collection() ")       
-        console.log(" => Shows difference: [] VS [{...},{...}] ")                    
+        console.log(" => Shows difference: [] VS [{...},{...}]")       
+        portfolioDataList.map((data)=>{
+          console.log(data)
+        })                         
         console.log("portfolioData State: ", this.state.portfolioData) 
         console.log(" * BEFORE this.setState({portfolioData: portfolioDataList}) ")       
         this.setState({portfolioData: portfolioDataList})           
         console.log("portfolioData State: ", this.state.portfolioData)   
-        console.log(" * AFTER this.setState({portfolioData: portfolioDataList}) ")               
+        console.log(" * AFTER this.setState({portfolioData: portfolioDataList}) ")   
+        
     })              
     console.log("portfolioDataList: ", portfolioDataList)     
     console.log(" * OUTSIDE the db.collection() ")       
-    console.log(" => Shows difference: [] VS [{...},{...}] ")             
+    console.log(" => Shows difference: [] VS [{...},{...}]")       
+    portfolioDataList.map((data)=>{
+      console.log(data)
+    })             
     console.log("portfolioData State: ", this.state.portfolioData)     
     console.log(" * BEFORE this.setState({portfolioData: portfolioDataList}) ")       
     this.setState({portfolioData: portfolioDataList})
     console.log("portfolioData State: ", this.state.portfolioData)     
     console.log(" * AFTER this.setState({portfolioData: portfolioDataList}) ")       
+
       
 
   }
