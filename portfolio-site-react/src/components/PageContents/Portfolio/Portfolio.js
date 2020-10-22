@@ -8,11 +8,12 @@ import { db } from '../../../firebase.js';
 
 class Portfolio extends React.Component {
 
+  
+
   constructor(props) {
     super(props)
     this.state = {portfolioData: []}
-    this.state = {portfolioToShow: null}    
-    this.state = {portfolioToShowIsLatest: false}
+    this.state = {portfolioToShow: null}        
     this.isInitial = true;
   }
 
@@ -21,9 +22,15 @@ class Portfolio extends React.Component {
   // }
 
   componentDidMount() {
+    console.log("Description about notes in this Console.")      
+    console.log("* = My Understanding to each Logged Value")      
+    console.log("... = My Understanding to each Timing in the Whole process.")      
     this.portfolioDataHandler()    
-    
   }
+
+  // componentWillUnmount() {
+  //   this.state.portfolioData && this.portfolioListHandler()  
+  // }
 
 
   portfolioDataHandler = () => {
@@ -34,7 +41,11 @@ class Portfolio extends React.Component {
         snapshot.forEach((doc)=> {  
           portfolioDataList.push(doc.data())              
         })       
-        this.setState({portfolioData: portfolioDataList})         
+        console.log(this.state.portfolioData)      
+        console.log("* portfolioData State INSIDE  db.collection().onSnapshot().")      
+        console.log("* portfolioData State BEFORE setState() Callback.")      
+        this.setState({portfolioData: portfolioDataList})   
+        
         this.portfolioListHandler()  
     })      
     
@@ -46,23 +57,53 @@ class Portfolio extends React.Component {
   // => If there is an List Item clicked, it is set as the  portfolio to show .
   // * Then, it might be better to call this Funciton as  portfolioToShowHander() , because it is unnecessarily handled by the List. 
   portfolioListHandler = (clickedListItem) => {    
-    console.log("isInitial Property before setting portfolioToShow", this.isInitial)    
-    this.setState({portfolioToShowIsLatest: false})
-    console.log("portfolioToShowIsLatest State before setting portfolioToShow", this.state.portfolioToShowIsLatest)
-    if(this.state.portfolioToShowIsLatest === false) {
-      console.log(this.state.portfolioToShow)                 
+      clickedListItem && console.log("...This Lifecycle is given birth by onClick Event on a List Item in <PortfolioList>.")
+      console.log(clickedListItem)   
+      console.log("* What: clickedItem Param which is meant to be sent by Onclick Event of portfolio list item.")
+      console.log(this.state.portfolioToShow)      
+      console.log("* What: portfolioToShow State")   
+      console.log("* When: BEFORE if...else Statement")   
+      console.log("** This is as it is meant to be, because the Values is not Updated yet.")   
+
       if(this.isInitial) {
+        console.log("* Where: INSIDE if Statement, meaning the First Lifecycle given birth by basic React Lifecycle.")
+        // console.log("* When: AFTER the  componentWillUnmount() is Triggered.")
         this.setState({portfolioToShow: this.state.portfolioData[0]})
+        console.log("...When: After the FIRST Call to setState() in portfolioListHandler(), so the JSX and Child Components were rendred.")      
+        console.log(this.state.portfolioToShow)
+        console.log("* What: portfolioToShow State")      
+        console.log("* When: INSIDE if Statement")   
+        
         this.isInitial = false;        
-        console.log("isInitial Property after setting portfolioToShow for the first time", this.isInitial)    
-        this.setState({portfolioToShowIsLatest: true})
-        console.log("portfolioToShow in <portfolioDesc>: ", this.state.portfolioToShow)           
-      } else {
-        this.setState({portfolioToShow: this.state.portfolioData[clickedListItem]})
-        this.setState({portfolioToShowIsLatest: true})
-        console.log("portfolioToShow in <portfolioDesc>: ",this.state.portfolioToShow)           
+        console.log(this.isInitial)    
+        console.log(" * What: isInitial Property")            
+        console.log("...When: The First <portfolio> Lifecycle ended. Into a new Life.")
+        console.log("")
+      } else {        
+        console.log("...Where: INSIDE else Statement, meaning the Second or So Lifecycle given birth by onClick Event on a List Item in <PortfolioList>.")
+        console.log(this.state.portfolioData)
+        console.log("* What: this.state.portfolioData")      
+        console.log(clickedListItem)
+        console.log("* What: clickedListItem Param")
+        console.log(" ** Meant to be: The CLICKED portfolio data which is sent from <PortfolioList> when the onClick Event occurred.")    
+        console.log(this.state.portfolioData[clickedListItem])
+        console.log("* What: this.state.portfolioData[clickedListItem]")
+        console.log(" ** Meant to be: The CLICKED portfolio data which is NOTED with the  clickedListItem Param  sent from <PortfolioList> when the onClick Event occurred.")    
+        const clickedPortfolioData = this.state.portfolioData.find((portfolio)=> portfolio.name == clickedListItem)
+        console.log(clickedPortfolioData)
+        console.log("* What: clickedPortfolioData const Variable")
+        console.log("** Meant to be: All the date for the clicked portfolio")
+
+
+        this.setState({portfolioToShow: clickedPortfolioData})       
+        console.log("...When: After the SECOND OR SO Call to setState(), so the JSX and Child Components were rendred.")       
+        console.log(this.state.portfolioToShow)     
+        console.log("* What: portfolioToShow State")      
+        console.log("* When: INSIDE else Statement")   
+        console.log("** X Meaining the Value should be the CLICKED portfolio data (Noted with  clickedListItem Param )")
+        console.log("** X Meaining the Value should be the CLICKED portfolio data (Noted with  clickedPortfolioData const Variable )")
+        console.log("...When: The Second or So <portfolio> Lifecycle ended. Into a new Life.")
       } 
-    }
     
   }  
 
@@ -100,7 +141,8 @@ class Portfolio extends React.Component {
         }
   
         {
-          this.state.portfolioToShowIsLatest === true &&
+          this.state.portfolioToShow &&
+          // this.state.portfolioToShowIsLatest === true &&
           <PortfolioDesc           
             portfolioToShow={this.state.portfolioToShow}
             portfolioToShowIsLatest={this.state.portfolioToShowIsLatest}
