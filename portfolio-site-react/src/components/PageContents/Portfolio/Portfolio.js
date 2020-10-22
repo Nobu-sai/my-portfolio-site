@@ -4,11 +4,12 @@ import PortfolioDesc from './PortfolioDesc.js';
 import PortfolioList from './PortfolioList.js'
 import '../Section.css';
 import './Portfolio.css';
+
 import { db } from '../../../firebase.js';
 
-class Portfolio extends React.Component {
 
-  
+
+class Portfolio extends React.Component {
 
   constructor(props) {
     super(props)
@@ -25,20 +26,16 @@ class Portfolio extends React.Component {
     this.portfolioDataHandler()    
   }
 
-
   portfolioDataHandler = () => {
     let portfolioDataList = []
-
-    db.collection('portfolio-data').onSnapshot((snapshot)=>{
+    db.collection('portfolio').onSnapshot((snapshot)=>{
         snapshot.forEach((doc)=> {  
           portfolioDataList.push(doc.data())              
         })                              
         this.setState({portfolioData: portfolioDataList})           
         this.portfolioToShowHandler()  
     })      
-    
   }
-
 
   // Set  portfolio to show 
   // => If it is inital state or before the user click an item of portfolio, then set the first item of  portfolioData Array  as the  portoflio to show .
@@ -51,42 +48,39 @@ class Portfolio extends React.Component {
         const clickedPortfolioData = this.state.portfolioData.find((portfolio)=> portfolio.name == clickedListItem)        
         this.setState({portfolioToShow: clickedPortfolioData})       
       } 
-    
   }  
 
   // addData = () => {      
-  //     db.collection('portfolio-data').add(
+  
+  //   this.state.portfolioData.map((portfolio)=>{
+  //     // console.log(portfolio)
+  //     db.collection('portfolio').add(
   //       {
-  //         name: `${portfolio[1].name}`,
-  //         imageName: `${portfolio[1].imageName}`,
-  //         skill: `${portfolio[1].skill}`,
-  //         url: `${portfolio[1].url}`,
-  //         user_story: `${portfolio[1].user_story}`,
-  //         dev_story: `${portfolio[1].dev_story}`      
-  //       })     
+  //         name: portfolio.name,
+  //         imageName: portfolio.imageName,
+  //         skill: portfolio.skill,
+  //         url: portfolio.url,
+  //         user_story: portfolio.user_story,
+  //         dev_story: portfolio.dev_story,    
+  //       })
+  //   })     
 
   // }
+        
   
-
   render() {
     return (
-
       <div className="section" id="portfolio">
         <Heading  content="Portfolio" />
-    
         <div className="section_contents portfolio_contents">  
-  
-        {/* <button onClick={e => addData()}>Submit Portfolio</button> */}     
-    
+        {/* <button onClick={this.addData}>Submit Portfolio</button> */}
         {
           this.state.portfolioData &&
           <PortfolioList 
             portfolioData={this.state.portfolioData} 
             portfolioListHandler={this.portfolioToShowHandler}
-          />        
-        
+          />                
         }
-  
         {
           this.state.portfolioToShow &&
           <PortfolioDesc           
@@ -94,17 +88,10 @@ class Portfolio extends React.Component {
             portfolioToShowIsLatest={this.state.portfolioToShowIsLatest}
           />  
         }  
-        
-        
-          
-        
-        
         </div>
-  
       </div>  
     )
   }
 }
-
 
 export default Portfolio;
