@@ -12,6 +12,12 @@
 
 }
 
+.upper_contents {
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 .intro_heading {  
   margin-top: 40px;
@@ -41,6 +47,7 @@
   /* padding: 20px; */
   width: 250px;
   height: 250px;
+  background-color: red;
   /* background-image: url('../../assets/profile_image_side_edit.jpeg'); */
   background-image: url('../../../assets/profile_image_side_edit.jpeg');
   background-position: center;
@@ -96,14 +103,27 @@
 }
 
 @media(max-width: 768px) {
-  .about_me {
+  .about_me_contents {
     padding: 40px 10px;
   }
 
+  .upper_contents {
+    position: relative;
+  }
 
   .intro_heading {
     margin-top: 20px;    
     font-size: 24px;
+  }
+
+  .profile_image { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
+    width: 150px;
+    height: 150px;
+    
   }
 
   .intro_message {
@@ -112,12 +132,7 @@
     /* min-width: 400px; */
   }
 
-  .profile_image { 
-    box-shadow: 0 0 4px 4px hsla(0, 0%, 80%);
-    width: 150px;
-    height: 150px;
-    
-  }
+
 
 
 
@@ -133,7 +148,7 @@
 
   
   .intro_heading { 
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .intro_message {
@@ -159,7 +174,7 @@
   .intro_heading {
     margin-top: 10px;    
     line-height: 2;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .intro_message {
@@ -178,7 +193,7 @@
 @media(max-width: 325px) {
   .intro_heading {
     /* width: 300px; */
-    font-size: 16px;
+    font-size: 14px;
   }
 /* 
   .bigger {
