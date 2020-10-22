@@ -22,9 +22,9 @@ class Portfolio extends React.Component {
   // }
 
   componentDidMount() {
-    console.log("Description about notes in this Console.")      
-    console.log("* = My Understanding to each Logged Value")      
-    console.log("... = My Understanding to each Timing in the Whole process.")      
+    console.log("Description about notes in this Console like underneath.")
+    console.log("* = My Understanding about A line of code for the Logged Value")
+    console.log("... = My Understanding to LINES of code for a group of process") 
     this.portfolioDataHandler()    
   }
 
@@ -66,13 +66,13 @@ class Portfolio extends React.Component {
       console.log("** This is as it is meant to be, because the Values is not Updated yet.")   
 
       if(this.isInitial) {
-        console.log("* Where: INSIDE if Statement, meaning the First Lifecycle given birth by basic React Lifecycle.")
+        console.log("...Where: INSIDE if Statement, meaning the First Lifecycle given birth by basic React Lifecycle.")
         // console.log("* When: AFTER the  componentWillUnmount() is Triggered.")
         this.setState({portfolioToShow: this.state.portfolioData[0]})
         console.log("...When: After the FIRST Call to setState() in portfolioListHandler(), so the JSX and Child Components were rendred.")      
         console.log(this.state.portfolioToShow)
         console.log("* What: portfolioToShow State")      
-        console.log("* When: INSIDE if Statement")   
+        console.log("* Where: INSIDE if Statement")   
         
         this.isInitial = false;        
         console.log(this.isInitial)    
@@ -101,7 +101,7 @@ class Portfolio extends React.Component {
         console.log("* What: portfolioToShow State")      
         console.log("* When: INSIDE else Statement")   
         console.log("** X Meaining the Value should be the CLICKED portfolio data (Noted with  clickedListItem Param )")
-        console.log("** X Meaining the Value should be the CLICKED portfolio data (Noted with  clickedPortfolioData const Variable )")
+        console.log("** Meaining the Value should be the CLICKED portfolio data (Noted with  clickedPortfolioData const Variable )")
         console.log("...When: The Second or So <portfolio> Lifecycle ended. Into a new Life.")
       } 
     
