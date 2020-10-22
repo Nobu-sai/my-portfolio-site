@@ -3,8 +3,6 @@ import './Portfolio.css';
 
 
 function PortfolioData({portfolioToShow}) {  
-    console.log(portfolioToShow)    
-    console.log("* What: portfolioToShow State")    
   return (    
     <div className="PortfolioDesc">      
       
