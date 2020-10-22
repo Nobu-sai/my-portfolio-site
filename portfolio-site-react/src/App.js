@@ -17,6 +17,9 @@ function App() {
     // <div className="App">  
       <Router>
         <div className="App">
+          {console.log("Description about my way of noting with SIGNS in this Console like underneath.")}
+          {console.log("  * = My understanding about A line of code for the process to log the Value.")}
+          {console.log("  ... = My understanding about LINES of code for a group of process.")}
           <Switch>
             <Route path="/resume_pdf">
               <ResumePDF />          
