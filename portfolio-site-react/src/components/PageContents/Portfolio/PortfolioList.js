@@ -1,28 +1,29 @@
 import React from 'react'
 import './Portfolio.css'
+import { v4 as uuidv4 } from 'uuid';
 
-function PortfolioList({portfolioData, portfolioListHandler}) {
-  return (
+function PortfolioList({ portfolioData, portfolioListHandler }) {
+
+   return (
     <div className="PortfolioList">
             
       <div className="portfolio_list">            
-        <div className="portfolio_list__background">                      
-
-          {Object.entries(portfolioData).map((portfolio, i)=>(
-            <>
+        <div className="portfolio_list__background">                
+          {
+            portfolioData.map((portfolio)=> (                 
               <div 
-              className="portfolio_list__item" 
-              key={i}
-              onClick={e => portfolioListHandler(portfolio[1].name)}
+              className="portfolio_list__item"             
+              onClick={e => portfolioListHandler(portfolio.name)}
+              key={uuidv4()}
                 >
                   <div className="portfolio_list__title">
-                      {portfolio[1].name}
+                      {portfolio.name}
                 </div>   
                   <div className="portfolio_data"> 
                   <div className="portfolio_data__item">
                     <div 
                       className="portfolio_data__title"> 
-                      Skill<br/> <span className="portfolio_skill__name"> {portfolio[1].skill}.</span>
+                      Skill<br/> <span className="portfolio_skill__name"> {portfolio.skill}.</span>
                     </div> 
                   </div>
 
@@ -32,27 +33,20 @@ function PortfolioList({portfolioData, portfolioListHandler}) {
                           Webpage
                         </div>
                         <a 
-                          href={portfolio[1].url}
+                          href={portfolio.url}
                           className="visit_url_container"                            
                         >
                           <span className="visit_url">Visit.</span> 
                         </a>
                       </div>
-                  </div>
-                                          
-                  
-                  </div>
+                  </div>                                                        
+                </div>
                 
-              </div>      
-              
-            </>
-          ))
-          }
-    
-        </div>
-          
-      </div>
-      
+              </div>                
+            ))           
+          }          
+        </div>          
+      </div>      
     </div>    
   )
 }
