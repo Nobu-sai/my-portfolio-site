@@ -4,7 +4,8 @@ import './Portfolio.css'
 
 function PortfolioList({ portfolioData, portfolioListHandler }) {
 
-  console.log("portfolioData Prop: ", portfolioData)
+  console.log(portfolioData)
+  console.log("* What: portfolioData Prop")
 
   return (
     <div className="PortfolioList">

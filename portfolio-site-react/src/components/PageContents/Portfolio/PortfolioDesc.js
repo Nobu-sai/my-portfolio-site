@@ -2,13 +2,12 @@ import React from 'react'
 import './Portfolio.css';
 
 
-function PortfolioData({portfolioToShow, portfolioToShowIsLatest}) {  
-    console.log("portfolioToShow in <portfolioDesc>: ", portfolioToShow)
-    console.log("portfolioToShowIsLatest in <PortfolioDesc>: ", portfolioToShowIsLatest)
+function PortfolioData({portfolioToShow}) {  
+    console.log(portfolioToShow)    
+    console.log("* What: portfolioToShow State")    
   return (    
-    <div className="PortfolioDesc">     
-    {portfolioToShowIsLatest === true &&
-      <>
+    <div className="PortfolioDesc">      
+      
           <div className="portfolio__heading">{portfolioToShow.name}</div>    
           <div className="explanation">
             <div className="user_story">
@@ -30,11 +29,7 @@ function PortfolioData({portfolioToShow, portfolioToShowIsLatest}) {
               backgroundSize: 'cover',
             }}
           ></div>    
-       </>   
-    } 
-
-   
-
+       
     </div>        
   )
 }
