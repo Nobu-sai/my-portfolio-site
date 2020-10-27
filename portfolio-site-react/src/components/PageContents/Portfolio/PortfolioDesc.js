@@ -2,7 +2,7 @@ import React from 'react'
 import './Portfolio.css';
 
 
-function PortfolioData({portfolioToShow}) {  
+function PortfolioDesc({portfolioToShow}) {  
   return (    
     <div className="PortfolioDesc">      
       
@@ -32,4 +32,4 @@ function PortfolioData({portfolioToShow}) {
   )
 }
 
-export default PortfolioData;
+export default PortfolioDesc;
