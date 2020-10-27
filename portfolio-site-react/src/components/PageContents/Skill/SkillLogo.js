@@ -9,7 +9,7 @@ import HTMLIcon from '../../../assets/skill-icon/html5.svg';
 import JavaScriptIcon from '../../../assets/skill-icon/javascript.svg';
 import MongoDBIcon from '../../../assets/skill-icon/mongodb.svg';
 import NodejsIcon from '../../../assets/skill-icon/nodejs.svg';
-import PostmanIcon from '../../../assets/skill-icon/postman-logo-stacked.svg';
+import PostmanIcon from '../../../assets/skill-icon/postman-logo-no-letters.png';
 import ReactjsIcon from '../../../assets/skill-icon/reactjs.svg';
 import StorybookIcon from '../../../assets/skill-icon/storybook.svg';
 
