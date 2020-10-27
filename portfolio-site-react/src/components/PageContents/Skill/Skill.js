@@ -27,7 +27,7 @@ function Skill() {
 
     <div className="section" id="skill">
       <Heading  content="Skill" />
-      <button onClick={Skill}>Add skill</button>
+      {/* <button onClick={Skill}>Add skill</button> */}
       <div className="section_contents skill_contents">        
       {skills.length > 1 && skills.map((skill)=>(
 
