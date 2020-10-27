@@ -27,6 +27,10 @@
   font-size: 32px;
 }
 
+.intro_heading .yellow-marker {
+  background-color: hsl(60, 100%, 85%);
+}
+
  /* Individual to each of Introduciton and Contact */
 .intro_message {
   /* flex-grow: 2; */
@@ -38,6 +42,10 @@
   line-height: 2;
   letter-spacing: 8px;
   font-size: 18px;
+}
+
+.intro_message .yellow-marker {
+  background-color: hsl(60, 100%, 85%);
 }
 
 

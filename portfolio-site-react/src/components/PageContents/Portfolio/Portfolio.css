@@ -123,7 +123,7 @@
   width: 200px; 
   /* width: 90%; */
 
-  background-color: hsl(60, 100%, 96%);
+  background-color: hsl(60, 100%, 85%);
   font-size: 14px;
   color: #333;
 
@@ -192,11 +192,14 @@
 .user_story__text,
 .dev_story__text {
   margin-top: 8px;
-  background-color: hsl(60, 100%, 96%);
   font-size: 14px;
   color: #333;
 }
 
+.user_story__text .yellow-marker,
+.dev_story__text .yellow-marker {
+  background-color: hsl(60, 100%, 85%);
+}
 
 
 
