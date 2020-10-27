@@ -8,7 +8,6 @@ import './Portfolio.css';
 import { db } from '../../../firebase.js';
 
 
-
 class Portfolio extends React.Component {
 
   constructor(props) {
