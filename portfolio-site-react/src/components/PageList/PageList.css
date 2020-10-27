@@ -75,6 +75,10 @@
   background-position: top;
 }
 
+.footer__item .about_me:hover {
+background-position: center center;
+}
+
 
 .skill:hover {  
   background-color: hsl(0, 50%, 50%);
