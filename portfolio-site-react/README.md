@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Firebase
+: I removed firebase.js File from all the commits named: CHNG: remove firebase.js from commited source.
+Thus, To see the wanted output related to Firebase, please create firebase.js and congiguraitons when you use sources before the commit.  
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,0 +1,11 @@
+# pack-refs with: peeled fully-peeled sorted 
+f55993119fc97ab74b10bb7ea30378bc12b5c9fa refs/heads/master
+9361f4825e717ea4a2d074b31001d9ce07e9b14c refs/heads/portfolio-section
+2957d669ff97bb53e67af3e6e59f54823ea09465 refs/heads/portfolio-section-research-1
+80c43f61e4d260ec3da01698decd271e6119a539 refs/heads/portfolio-section-research-2
+110ccb30522adfaaa613fba713d40ed4c95259c2 refs/heads/research-3
+ebffeb93f6a5f43409b952bec546a097b08cd05b refs/heads/research-4
+fbe35abd4d42eb9ea488ba719d767210b32f9ca5 refs/pull/1/head
+2c1c1d23e590057a7b97e7b48362b8bf431e0006 refs/pull/2/head
+9361f4825e717ea4a2d074b31001d9ce07e9b14c refs/pull/3/head
+ebffeb93f6a5f43409b952bec546a097b08cd05b refs/pull/4/head
