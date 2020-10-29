@@ -22,7 +22,7 @@ function AboutMe() {
          <div className="intro_message">
          I love coding, because I love <span class="yellow-marker">creating</span>. <br/>
          At the end, <br/>coding is a way for creating things, <br/> and it is my great partner.<br/>
-          I want to be your partner, <br/> who makes<span class="yellow-marker"> your imagination into the reality</span>.
+          I want to be your partner, <br/> who stays with you to <br/>make<span class="yellow-marker"> your imagination into the reality</span>.
          </div>    
                                 
         
