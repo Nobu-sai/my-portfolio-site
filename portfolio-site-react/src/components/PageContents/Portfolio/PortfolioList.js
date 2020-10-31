@@ -23,7 +23,7 @@ function PortfolioList({ portfolioData, portfolioListHandler }) {
                   <div className="portfolio_data__item">
                     <div 
                       className="portfolio_data__title"> 
-                      Skill<br/> <span className="portfolio_skill__name"> {portfolio.skill}.</span>
+                      Skill<br/> <span className="portfolio_skill__name yellow_marker"> {portfolio.skill}.</span>
                     </div> 
                   </div>
 
@@ -36,7 +36,7 @@ function PortfolioList({ portfolioData, portfolioListHandler }) {
                           href={portfolio.url}
                           className="visit_url_container"                            
                         >
-                          <span className="visit_url">Visit.</span> 
+                          <span className="visit_url yellow_marker">Visit.</span> 
                         </a>
                       </div>
                   </div>                                                        

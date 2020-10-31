@@ -1,6 +1,6 @@
 
 
-.about_me_contents {
+.about_contents {
   padding: 80px 20px;
   /* height: 800px; */
   display: flex;
@@ -44,11 +44,6 @@
   font-size: 18px;
 }
 
-.intro_message .yellow-marker {
-  background-color: hsl(60, 100%, 85%);
-}
-
-
 .profile_image {  
 
   box-shadow: 0 0 10px 10px hsla(0, 0%, 80%);
@@ -57,7 +52,7 @@
   height: 250px;
   background-color: red;
   /* background-image: url('../../assets/profile_image_side_edit.jpeg'); */
-  background-image: url('../../../assets/profile_image_side_edit.jpeg');
+  /* background-image: url('../../../assets/profile_image_side_edit.jpeg'); */
   background-position: center;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -71,6 +66,15 @@
   opacity: 1;
 }
 
+
+
+.yellow_marker {
+  background-color: hsl(60, 100%, 90%);
+}
+
+.green_marker {
+  background-color: hsl(125, 100%, 90%);
+}
 
 
 @media(max-width: 1115px) {
@@ -111,7 +115,7 @@
 }
 
 @media(max-width: 768px) {
-  .about_me_contents {
+  .about_contents {
     padding: 40px 10px;
   }
 
@@ -149,7 +153,7 @@
 
 @media(max-width: 425px) {  
 
-  #about_me_contents {
+  #about_contents {
     /* position: relative; */
   }
 
