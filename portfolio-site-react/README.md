@@ -1,6 +1,7 @@
 This project was bootstrapped with Create React App.
 ## Firebase
-: I removed firebase.js File from all the commits named: CHNG: remove firebase.js from commited source. Thus, To see the wanted output related to Firebase, please create firebase.js and congiguraitons when you use sources before the commit.
+: I removed firebase.js File from all the historical commits with BFG BEFORE: DEL: firebase.js from all historical commits
+Inside the Commit, I failed to delete, so I retried and succeeded afterward.
 
 ## Available Scripts
 In the project directory, you can run:
