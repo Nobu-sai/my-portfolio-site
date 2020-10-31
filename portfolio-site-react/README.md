@@ -59,8 +59,8 @@ npm run build fails to minify
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 # Firebase
-### : I removed firebase.js File from all the historical commits with BFG BEFORE: DEL: firebase.js from all historical commits
-###  Inside the Commit, I failed to delete, so I retried and succeeded afterward.
+### : I removed firebase.js File from all the historical commits with BFG in the Commit (DEL: firebase.js from all historical commits).
+### Therefore, to use Firebase before the Commit, Firebase Config needs to be put into  firebase.js .
 
 # Styles
 
