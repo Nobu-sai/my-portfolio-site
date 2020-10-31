@@ -59,38 +59,29 @@ npm run build fails to minify
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ## Firebase
-: I removed firebase.js File from all the historical commits with BFG BEFORE: DEL: firebase.js from all historical commits
-Inside the Commit, I failed to delete, so I retried and succeeded afterward.
+### : I removed firebase.js File from all the historical commits with BFG BEFORE: DEL: firebase.js from all historical commits
+###  Inside the Commit, I failed to delete, so I retried and succeeded afterward.
 
 ## Styles
 
 ### Basic Font Size
 #### 1440px
-#### 1024px
-= 40, 32, 24, 18, 16
-#### 1024px
-= 36, 24, 18, 16
-#### 725px
-= 30, 24, 20, 18, 16, 14
-#### 425px
-= 38, 24, 20, 18, 16, 12
-#### 375px
-= 38, 24, 20, 18, 16, 10
+#### 1024px: 40, 32, 24, 18, 16
+#### 1024px: 36, 24, 18, 16
+#### 725px: 30, 24, 20, 18, 16, 14
+#### 425px: 38, 24, 20, 18, 16, 12
+#### 375px: 38, 24, 20, 18, 16, 10
 ### Coloring
-#### Yellow Marker
-: hsl(60, 100%, 90%)
-#### Green Marker 
-: hsl(125, 100%, 90%)
+#### Yellow Marker: hsl(60, 100%, 90%)
+#### Green Marker: hsl(125, 100%, 90%)
 ### class Attribute/naming convention
-#### Connecting Words ( _ )
-: WORD_WORD
-#### NESTING ( __ )
-: WORD_WORD__WORD
+#### Connecting Words ( _ ): WORD_WORD
+#### NESTING ( __ ): WORD_WORD__WORD
 
 ### class Attribute/naming
 ####  Yellow Marker
-: yellow_marker 
-Put at the bottom.
+#### : yellow_marker 
+#### Put at the bottom.
 ####  Green Marker
-: green_marker
-Put at the bottom.
+#### : green_marker
+#### Put at the bottom.
