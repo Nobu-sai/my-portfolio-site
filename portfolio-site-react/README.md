@@ -65,32 +65,32 @@ Inside the Commit, I failed to delete, so I retried and succeeded afterward.
 ## Styles
 
 ### Basic Font Size
-1440px
-1024px
+#### 1440px
+#### 1024px
 = 40, 32, 24, 18, 16
-1024px
+#### 1024px
 = 36, 24, 18, 16
-1024px
+#### 725px
 = 30, 24, 20, 18, 16, 14
-425px
+#### 425px
 = 38, 24, 20, 18, 16, 12
-375px
+#### 375px
 = 38, 24, 20, 18, 16, 10
-### Color Range
-Yellow Marker
+### Coloring
+#### Yellow Marker
 : hsl(60, 100%, 90%)
-Green Marker 
+#### Green Marker 
 : hsl(125, 100%, 90%)
 ### class Attribute/naming convention
-Connecting Words ( _ )
+#### Connecting Words ( _ )
 : WORD_WORD
-NESTING ( __ )
+#### NESTING ( __ )
 : WORD_WORD__WORD
 
 ### class Attribute/naming
-Yellow Marker
+####  Yellow Marker
 : yellow_marker 
-* Put at the bottom.
-Green Marker
+Put at the bottom.
+####  Green Marker
 : green_marker
-* Put at the bottom.
+Put at the bottom.
