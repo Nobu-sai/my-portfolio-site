@@ -69,31 +69,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 1024px: 40, 32, 24, 18, 16
 
-
 725px: 30, 24, 20, 18, 16, 14
-
 
 425px: 38, 24, 20, 18, 16, 12
 
-
 375px: 38, 24, 20, 18, 16, 10
+
 ## Coloring
-
-Yellow Marker: hsl(60, 100%, 90%)
-
-Green Marker: hsl(125, 100%, 90%)
+### Yellow Marker: hsl(60, 100%, 90%)
+### Green Marker: hsl(125, 100%, 90%)
 
 ## class Attribute/naming convention
-
-Connecting Words ( _ ): WORD_WORD
-
-NESTING ( __ ): WORD_WORD__WORD
+### Connecting Words ( _ ): WORD_WORD
+### NESTING ( __ ): WORD_WORD__WORD
 
 ## class Attribute/naming
-
-Yellow Marker: yellow_marker 
+### Yellow Marker: yellow_marker 
 Put at the bottom.
-
-
-Green Marker: green_marker
+### Green Marker: green_marker
 Put at the bottom.
