@@ -92,8 +92,8 @@ NESTING ( __ ): WORD_WORD__WORD
 ## class Attribute/naming
 
 Yellow Marker: yellow_marker 
-### Put at the bottom.
+Put at the bottom.
 
 
 Green Marker: green_marker
-### Put at the bottom.
+Put at the bottom.
