@@ -59,7 +59,10 @@ function Footer({pdf_link}) {
           item_4={
             <div 
               className="page_list__item">             
-              <div className="page_list__item_name resume">{pdf_link}            
+              <div className="page_list__item_name resume">
+                {pdf_link}            
+                {/* * pdf_link = <Home>/pdf_link Prop = <App>/<Home pdf_link={<Link to="/resume_pdf">Resume (PDF)</Link>}/>  */}
+                {/* => Onclick Event on this  pdf_link  AUTOMATICALLY SWITCH the page to /resume_pdf Endpoint */}
               </div>
               
             </div>   
@@ -74,7 +77,7 @@ function Footer({pdf_link}) {
           item_1={
             <a 
               // className="image_source__item about_me" 
-              className="page_list__item about_me" 
+              className="page_list__item about" 
               href="https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80">
                 <div className="page_list__item_name">About Me</div>       
             </a>               

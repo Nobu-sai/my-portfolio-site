@@ -1,7 +1,7 @@
 import React from 'react';
-import {Element } from 'react-scroll'
+import {Element} from 'react-scroll'
 
-import AboutMe from '../PageContents/AboutMe/AboutMe.js';
+import About from '../PageContents/About/About.js';
 import Skill from '../PageContents/Skill/Skill.js';
 import Header from '../Header/Header.js';
 import Portfolio from '../PageContents/Portfolio/Portfolio.js';
@@ -22,8 +22,8 @@ function Home({pdf_link}) {
 
       <Header />               
     
-      <Element name="about_me">
-        <AboutMe />      
+      <Element name="about">
+        <About />      
       </Element>        
       
       <Element name="skill" >

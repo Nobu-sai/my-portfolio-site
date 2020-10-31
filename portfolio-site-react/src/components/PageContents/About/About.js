@@ -1,7 +1,7 @@
 import React from 'react'
 // import Section from '../Section/Section.js';
 import '../Section.css';
-import './AboutMe.css';
+import './About.css';
 import Heading from '../../Heading/Heading.js'
 
 
@@ -10,7 +10,7 @@ function AboutMe() {
 
   return (    
      <div className="section" id="about_me">              
-        <Heading  content="About Me" />
+        <Heading  content="About" />
         
         <div className="section_contents about_me_contents">
           <div className="upper_contents">            

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import List from '../PageList/PageList.js';
+import PageList from '../PageList/PageList.js';
 import { Link } from 'react-scroll'
 
 import "./Menu.css";
@@ -20,19 +20,19 @@ class Menu extends Component {
           //  onMouseDown={this.props.handleMouseDown} 
            className={visibility}>
 
-        <List 
+        <PageList 
           heading="This Page"
           item_1={
             <Link 
             activeClass="active" 
-            className="page_list__item about_me" 
+            className="page_list__item about" 
             // to={props.scrollTo}
-            to="about_me" 
+            to="about" 
             spy={true} 
             smooth={true} 
             duration={500} 
             >                
-                <div className="page_list__item_name">About Me</div>             
+                <div className="page_list__item_name">About</div>             
             </Link>                   
           }
           item_2={

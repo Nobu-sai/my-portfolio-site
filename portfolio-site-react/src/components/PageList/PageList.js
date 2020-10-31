@@ -4,7 +4,12 @@ import React from 'react'
 
 function List({heading, item_1, item_2, item_3, item_4}) {
   // (item_1,2,3)
-  // className: page_list__item, about_me, skill, portfolio
+  // className: page_list__item, about, skill, portfolio
+
+  const setActive = () =>{
+
+  }
+  
   return (
     <div className="page_list">                      
       <div className="page_list__heading">
