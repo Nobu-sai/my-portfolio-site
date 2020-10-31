@@ -1,4 +1,9 @@
 This project was bootstrapped with Create React App.
+## TOC
+### Available Scripts
+### Learn More
+### Firebase
+### Styles
 
 
 # Available Scripts
