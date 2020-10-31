@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { v4 as uuidv4 } from 'uuid';
+
 import Heading from '../../Heading/Heading.js'
 import SkillItem from './SkillItem.js'
 import '../Section.css';
 import './Skill.css';
+
 
 
 import { db } from '../../../firebase.js';
@@ -16,8 +19,7 @@ function Skill() {
   }, [])
 
   const getSkill = () => {
-    db.collection('skill').onSnapshot((snapshot)=>{
-      console.log("...When: React is going to read  setSkills Method, so it Will Render the return()")
+    db.collection('skill').onSnapshot((snapshot)=>{      
       setSkills(snapshot.docs.map((doc)=> doc.data() ))
       })
   }
@@ -31,7 +33,7 @@ function Skill() {
       <div className="section_contents skill_contents">        
       {skills.length > 1 && skills.map((skill)=>(
 
-        <SkillItem skillName={skill.name} />          
+        <SkillItem skillName={skill.name} key={uuidv4()}/>          
                
       ))} 
                
