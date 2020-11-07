@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import SkillLogo from './SkillLogo.js'
+import SkillLogo from '../../../assets/SkillLogo.js'
 
 
 function SkillItem({skillName}) {
