@@ -1,5 +1,6 @@
 import React from 'react'
 import './Portfolio.css';
+import PortfolioImage from '../../../assets/PortfolioImage.js'
 
 
 function PortfolioDesc({portfolioToShow}) {  
@@ -22,7 +23,8 @@ function PortfolioDesc({portfolioToShow}) {
           className="portfolio_image" 
           style={{ 
             backgroundImage: 
-              'url(' + require(`../../../assets/portfolio-image/${portfolioToShow.imageName}.png`) + ')',                
+              // 'url(' + require(`../../../assets/portfolio-image/${portfolioToShow.imageName}.png`) + ')',                
+              `url(${PortfolioImage[portfolioToShow.name]})`,                
               backgroundPosition: 'center',
               backgroundSize: 'cover',
             }}
