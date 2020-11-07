@@ -18,7 +18,7 @@ function PortfolioList({ portfolioData, portfolioListHandler }) {
                 >
                   <div className="portfolio_list__title">
                       {portfolio.name}
-                </div>   
+                  </div>   
                   <div className="portfolio_data"> 
                   <div className="portfolio_data__item">
                     <div 

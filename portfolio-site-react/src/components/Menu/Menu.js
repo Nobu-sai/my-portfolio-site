@@ -4,7 +4,6 @@ import { Link } from 'react-scroll'
 
 import "./Menu.css";
 
-
  
 class Menu extends Component {
   // constructor(props) {}
