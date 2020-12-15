@@ -14,7 +14,7 @@ function Footer({pdf_link}) {
     <div className="footer" id="footer">
       <Heading content={
         <Typical  
-          steps={['Are you leaving?', 1000, 'Thanks for visiting!', 1000, 'What will you do next?', 1000, 'See you. Have a good day!', 1000]}
+          steps={['Are you leaving?', 1000, 'Thanks for visiting!', 1000, 'What will you do next?', 1000, 'See you, have a good day!', 1000]}
           loop={Infinity}
           wrapper="p"
         />
