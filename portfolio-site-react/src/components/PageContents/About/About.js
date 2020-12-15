@@ -22,7 +22,7 @@ function About() {
          <div className="intro_message">
          I love <span className="yellow_marker">coding</span>, because I love <span className="green_marker">creating</span>. <br/>
          At the end, <br/>coding is <span className="yellow_marker">a helpful way</span><br/>for <span className="green_marker">creating what I want</span>, <br/> and it is my great partner.<br/>
-          I want to be your partner,<br/><span className="yellow_marker">who stays with you</span> <br/>to <span className="green_marker">realize what you want</span>.
+          I want to be your partner,<br/><span className="yellow_marker">who stays with you</span> <br/>to <span className="green_marker">make the real closer to your ideal</span>.
          </div>    
                                 
         
