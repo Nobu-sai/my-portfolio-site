@@ -17,7 +17,7 @@ function Footer({pdf_link}) {
           steps={['Are you leaving?', 1000, 'Thanks for visiting!', 1000, 'What will you do next?', 1000, 'See you, have a good day!', 1000]}
           loop={Infinity}
           wrapper="p"
-        />
+        />        
       }/>
       {/* <div className="footer__heading_container">
         <Typical 
