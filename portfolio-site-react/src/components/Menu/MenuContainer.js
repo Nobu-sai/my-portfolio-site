@@ -10,8 +10,8 @@ class MenuContainer extends Component {
     super(props, context);
    
     this.state = {
-      // visible: false
-      visible: true
+      visible: false
+      // visible: true
     };
 
    
@@ -23,7 +23,7 @@ class MenuContainer extends Component {
     this.toggleMenu();
  
     console.log("clicked");
-    e.stopPropagation();
+    // e.stopPropagation();
   }
 
    
@@ -33,24 +33,24 @@ class MenuContainer extends Component {
     });
   }
 
+  componentDidMount() {
+    
+    // setInterval(() => this.toggleMenu(), 3500)
+    setTimeout(() => this.toggleMenu(), 3500)
+
+  }
+
   render() {
+
     return (
       <div className="menu_container">
-        <MenuButton handleMouseDown={this.handleMouseDown}/>
-        <Menu handleMouseDown={this.handleMouseDown}
-          menuVisibility={this.state.visible} />
-        {/* <div>
-          <p>Can you spot the item that doesn't belong?</p>
-          <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-            <li>Sit</li>
-            <li>Bumblebees</li>
-            <li>Aenean</li>
-            <li>Consectetur</li>
-          </ul>
-        </div> */}
+        <MenuButton 
+          handleMouseDown={this.handleMouseDown}
+        />
+        <Menu 
+          handleMouseDown={this.handleMouseDown}
+          menuVisibility={this.state.visible} 
+        />
       </div>
     );
   }

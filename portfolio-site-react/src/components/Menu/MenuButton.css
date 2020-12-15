@@ -1,9 +1,10 @@
 #roundButton {
   z-index: 105;
+  /* position: absolute; */
   position: fixed;
   right: 2%;
   bottom: 2%;
-  
+
   background-color: hsl(0, 0%, 60%);
   margin-bottom: 20px;
   box-shadow: 0 0 30px 10px hsl(0, 0%, 60%);
@@ -14,7 +15,16 @@
   outline: none;
   transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
 }
+
+#roundButton.hidden {
+  visibility: hidden;
+}
  
+#roundButton.visible {
+  visibility: visible;
+}
+
+
 #roundButton:hover {
   background-color: hsl(0, 0%, 30%);
   cursor: pointer;

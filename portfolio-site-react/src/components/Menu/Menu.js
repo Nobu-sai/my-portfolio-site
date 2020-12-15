@@ -6,7 +6,6 @@ import "./Menu.css";
 
  
 class Menu extends Component {
-  // constructor(props) {}
   render() {
     var visibility = "hide";
  
@@ -17,8 +16,8 @@ class Menu extends Component {
     return (
       <div id="flyoutMenu"
           //  onMouseDown={this.props.handleMouseDown} 
-           className={visibility}>
-
+           className={visibility}
+      >        
         <PageList 
           heading="This Page"
           item_1={

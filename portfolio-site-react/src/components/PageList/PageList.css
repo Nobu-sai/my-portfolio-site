@@ -1,5 +1,6 @@
-.page_list {
+.page_list {  
   padding: 40px 0;
+  /* => Controlling the Height of Menu */
   /* height: 100%; */
 
   display: flex;
@@ -23,6 +24,7 @@
 .page_list__items {
   /* margin-top: 40px; */
   padding-top: 40px;
+  /* => Controlling the Height of Menu */
 
   display: flex;
   align-items: center;
