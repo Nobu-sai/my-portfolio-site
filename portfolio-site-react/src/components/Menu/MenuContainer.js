@@ -10,10 +10,9 @@ class MenuContainer extends Component {
     super(props, context);
    
     this.state = {
-      visible: false
+      visible: false,
       // visible: true
     };
-
    
     this.handleMouseDown = this.handleMouseDown.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
