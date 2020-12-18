@@ -5,8 +5,10 @@ import './Portfolio.css'
 import { v4 as uuidv4 } from 'uuid';
 
 function PortfolioList({ portfolioData, portfolioListHandler }) {  
-  console.log(portfolioData[0].skill_list)
-  portfolioData.map((portfolio)=>{console.log(portfolio.skill_list)})
+  // console.log(portfolioData)
+  //   console.log("* What: portfolioData")
+  //   console.log(" ** Meant to be: The List of Data for the MULTIPLE PORTFOLIOS.")    
+    // portfolioData.map((portfolio)=>{console.log(portfolio.skill_list[0])})
 
    return (
     <div className="PortfolioList">
@@ -27,10 +29,10 @@ function PortfolioList({ portfolioData, portfolioListHandler }) {
                   <div className="portfolio_data__item">
                     <div 
                       className="portfolio_data__title"> 
-                      Skill<br/> 
-                      {/* <span className="portfolio_skill__name yellow_marker"> {portfolio.skill}.</span> */}
-                        <PortfolioSkill className="portfolio_skill__name" skillList={portfolio} />
+                      Skill<br/>                       
                     </div> 
+                     {/* <span className="portfolio_skill__name yellow_marker"> {portfolio.skill_list[0]}.</span> */}
+                     <PortfolioSkill className="portfolio_skill__name" skillList={portfolio.skill_list} />
                   </div>
 
                   <div className="portfolio_data__item">

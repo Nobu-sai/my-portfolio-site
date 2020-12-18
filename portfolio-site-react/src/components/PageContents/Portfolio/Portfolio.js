@@ -12,14 +12,12 @@ class Portfolio extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {portfolioData: []}
-    this.state = {portfolioToShow: null}        
+    this.state = {
+      portfolioData: [],
+      portfolioToShow: null
+    }         
     this.isInitial = true;
   }
-
-  // componentDidMount() {
-  //   this.portfolioDataHandler()    
-  // }
 
   componentDidMount() {
     this.portfolioDataHandler()    
@@ -74,9 +72,9 @@ class Portfolio extends React.Component {
         <div className="section_contents portfolio_contents">  
         {/* <button onClick={this.addData}>Submit Portfolio</button> */}
         {
-          this.state.portfolioData &&
+          this.state.portfolioData.length > 0 &&
           <PortfolioList 
-            portfolioData={this.state.portfolioData} 
+            portfolioData={this.state.portfolioData}             
             portfolioListHandler={this.portfolioToShowHandler}
           />                
         }

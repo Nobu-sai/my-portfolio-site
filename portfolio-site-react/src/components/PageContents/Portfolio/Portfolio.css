@@ -109,6 +109,9 @@
   text-align: center;
 }
 
+.portfolio_data__item {
+  height: 100%;
+}
 
 .portfolio_data__title {  
   font-size: 18px;
