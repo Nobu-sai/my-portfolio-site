@@ -79,7 +79,7 @@ function Footer({pdf_link}) {
               // className="image_source__item about_me" 
               className="page_list__item about" 
               href="https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80">
-                <div className="page_list__item_name">About Me</div>       
+                <div className="page_list__item_name">About</div>       
             </a>               
           }
           item_2={
