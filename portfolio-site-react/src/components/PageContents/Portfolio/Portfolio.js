@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
     let portfolioDataList = []  
     db.collection('portfolio').onSnapshot((snapshot)=>{
         snapshot.forEach((doc)=> {  
-          portfolioDataList.push(doc.data())              
+          portfolioDataList.push(doc.data())                      
         })                              
         this.setState({portfolioData: portfolioDataList})           
         this.portfolioToShowHandler()  
