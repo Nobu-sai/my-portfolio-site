@@ -44,7 +44,7 @@
   justify-content: center;
 
   background-position: bottom;
-    /* Enables Moving BG and Stop in tweet point with Animation */
+    /* Enables Moving BG and Stop in sweet point with Animation */
   text-decoration: none;
   font-size: 18px;
   color: #000000;
@@ -65,9 +65,6 @@
   cursor: pointer;
 }
 
-.page_list__item_name {
-  text-align: center;
-}
 
 /** Menu/.SECTION-NAME, Footer/.SECTION-NAME,  **/
 
