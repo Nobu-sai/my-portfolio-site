@@ -4,9 +4,9 @@ import SkillLogo from '../../../assets/SkillLogo.js'
 
 
 function PortfolioSkill({skillList}) {
-  console.log(skillList)
+  // console.log(skillList)
   // console.log(SkillLogo)
-  console.log(SkillLogo)
+  // console.log(SkillLogo)
   return (
     <div className="skill_container">
       {
