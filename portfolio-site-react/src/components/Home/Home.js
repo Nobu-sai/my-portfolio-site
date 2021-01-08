@@ -12,8 +12,7 @@ import MenuContainer from "../Menu/MenuContainer.js";
 import './Home.css'
 
 
-function Home({pdf_link}) {
-  
+function Home({pdf_link, public_commitment}) {
 
   return (
     <div className="Home">                               
@@ -23,7 +22,9 @@ function Home({pdf_link}) {
       <Header />               
     
       <Element name="about">
-        <About />      
+        <About 
+          public_commitment={public_commitment}
+        />      
       </Element>        
       
       <Element name="skill" >
