@@ -4,7 +4,6 @@ import '../Section.css';
 import './About.css';
 import Heading from '../../Heading/Heading.js'
 import PublicCommitment from '../../PublicCommitment/PublicCommitment';
-// import DisplayCommit from '../../PublicCommitment/DisplayCommit';
 
 
 
