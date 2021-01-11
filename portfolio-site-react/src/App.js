@@ -5,8 +5,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import ResumePDF from './components/ResumePDF/ResumePDF.js';
 import Home from './components/Home/Home.js'
+import ResumePDF from './components/ResumePDF/ResumePDF.js';
+import PublicCommitment from './components/PublicCommitment/PublicCommitment.js';
 import './App.css'
 
 
@@ -22,13 +23,22 @@ function App() {
           {console.log("  ... = My understanding about LINES of code for a group of process.")}
           <Switch>
             <Route path="/resume_pdf">
-              <ResumePDF />          
+              <ResumePDF />                        
+            </Route>    
+            <Route path="/public_commitment">
+              <PublicCommitment />                        
             </Route>    
             
             <Route path="/">
-              <Home pdf_link={<Link to="/resume_pdf">Resume (PDF)</Link>}/>        
+              <Home 
+                pdf_link={
+                  <Link to="/resume_pdf">Resume (PDF)</Link>
+                }
+                public_commitment={
+                  <Link to="/public_commitment">Public Commitment</Link>
+                }
+              />        
             </Route>    
-          
           </Switch>
         </div>
                     
