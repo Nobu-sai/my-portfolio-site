@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { db } from './commitment-record-firebase.js';
+import { commitmentRecordDB } from '../../firebase.js';
 
 import './PublicCommitment.css';
 
-  console.log(db.collection('commitment-record').doc().get())
+console.log(commitmentRecordDB.collection('commitment-record').doc().get())
   
 export default class PublicCommitment extends Component {
   constructor(props) {

@@ -5,7 +5,7 @@ import PortfolioList from './PortfolioList.js'
 import '../Section.css';
 import './Portfolio.css';
 
-import { db } from '../../../firebase.js';
+import { defaultDB } from '../../../firebase.js';
 
 
 class Portfolio extends React.Component {
@@ -25,7 +25,7 @@ class Portfolio extends React.Component {
 
   portfolioDataHandler = () => {
     let portfolioDataList = []  
-    db.collection('portfolio').onSnapshot((snapshot)=>{
+    defaultDB.collection('portfolio').onSnapshot((snapshot)=>{
         snapshot.forEach((doc)=> {  
           portfolioDataList.push(doc.data())                      
         })                              

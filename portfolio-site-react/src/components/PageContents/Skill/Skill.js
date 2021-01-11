@@ -8,7 +8,7 @@ import './Skill.css';
 
 
 
-import { db } from '../../../firebase.js';
+import { defaultDB } from '../../../firebase.js';
 
 
 function Skill() {
@@ -19,7 +19,7 @@ function Skill() {
   }, [])
 
   const getSkill = () => {
-    db.collection('skill').onSnapshot((snapshot)=>{      
+    defaultDB.collection('skill').onSnapshot((snapshot)=>{      
       setSkills(snapshot.docs.map((doc)=> doc.data() ))
       })
   }
