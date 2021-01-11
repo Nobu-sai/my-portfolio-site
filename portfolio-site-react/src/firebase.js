@@ -27,6 +27,8 @@ const defaultDB = defaultProject.firestore()
 // const defaultAuth = defaultProject.auth();
 // const storage = firebase.storage();
 
+export { defaultDB };
+
 const commitmentRecordProject = firebase.initializeApp(firebaseCommitmentRecordProjectConfig, "other")
 const commitmentRecordDB = commitmentRecordProject.firestore()
 // const defaultAuth = defaultProject.auth();
@@ -39,4 +41,4 @@ console.log(commitmentRecordProject.name)
 
 // Exporting
 
-export { defaultDB, commitmentRecordDB  };
+export { commitmentRecordDB };
