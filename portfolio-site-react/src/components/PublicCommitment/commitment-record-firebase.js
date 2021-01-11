@@ -1,19 +1,18 @@
-import firebase from 'firebase'; 
+// import firebase from 'firebase'; 
 
-const firebaseCommitmentRecordProjectConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_COMMITMENT_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_COMMITMENT_AUTH_DOMAIN,
-  databaseURL: process.env.REACT_APP_FIREBASE_COMMITMENT_DATABASE_URL,
-  projectId: process.env.REACT_APP_FIREBASE_COMMITMENT_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_COMMITMENT_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_COMMITMENT_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_COMMITMENT_APP_ID 
-}
+// const firebasedefaultprojectconfig = {
+//   apikey: process.env.react_app_firebase_commitment_api_key,
+//   authdomain: process.env.react_app_firebase_commitment_auth_domain,
+//   databaseurl: process.env.react_app_firebase_commitment_database_url,
+//   projectid: process.env.react_app_firebase_commitment_project_id,
+//   storagebucket: process.env.react_app_firebase_commitment_storage_bucket,
+//   messagingsenderid: process.env.react_app_firebase_commitment_sender_id,
+//   appid: process.env.react_app_firebase_commitment_app_id 
+// }
 
-const commitmentRecordProject = firebase.initializeApp(firebaseCommitmentRecordProjectConfig, "other")
-const commitmentRecordDB = commitmentRecordProject.firestore()
-// const defaultAuth = defaultProject.auth();
-// const storage = firebase.storage();
+// const defaultproject = firebase.initializeapp(firebasedefaultprojectconfig)
+// const defaultdb = defaultproject.firestore()
+// // const defaultauth = defaultproject.auth();
+// // const storage = firebase.storage();
 
-// Exporting
-export { commitmentRecordDB };
+// export { defaultDB };

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { commitmentRecordDB } from './commitment-record-firebase.js';
+import { commitmentRecordDB } from '../../firebase.js';
 
 import './PublicCommitment.css';
 
