@@ -20,12 +20,36 @@
 }
 
 
+.weeklyDWtime {
+  font-size: 28px;
+}
 
+.DWtime {
+  font-size: 40px;
+  color: red;
+}
 
+.desc {
+  padding: 20px 0;
+  font-size: 16px;
+}
 
+.desc_title {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.desc_item {
+  margin-top: 14px;
+}
+
+.annotation {
+  padding: 10px 0;
+  font-size: 10px;
+}
 
 /* Old */
-#container {
+/* #container {
   padding-top: 250px; 
   padding-bottom: 100px; 
   background-color: hsla(0, 0%, 40%, .6); 
@@ -141,4 +165,4 @@
 
 
 
-
+ */

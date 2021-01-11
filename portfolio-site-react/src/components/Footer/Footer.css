@@ -41,6 +41,10 @@
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
 }
 
+.footer__item.public_commitment {
+  padding: 40px;
+  flex-direction: column;
+}
 
 
 

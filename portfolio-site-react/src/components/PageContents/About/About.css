@@ -2,6 +2,10 @@
 
 .about_contents {
   padding: 80px 20px;
+}
+
+.messages {
+
   /* height: 800px; */
   display: flex;
   flex-direction: column;

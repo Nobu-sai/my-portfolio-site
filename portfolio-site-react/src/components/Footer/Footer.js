@@ -3,9 +3,10 @@ import Typical from 'react-typical'
 
 import './Footer.css'
 
-import Heading from '../Heading/Heading.js'
 import PageList from '../PageList/PageList';
 import ScrollUp from '../ScrollUp/ScrollUp.js'
+import Heading from '../Heading/Heading.js'
+import PublicCommitment from '../PublicCommitment/PublicCommitment';
 
 function Footer({pdf_link}) {
   
@@ -27,7 +28,14 @@ function Footer({pdf_link}) {
           wrapper="p"
         />
       </div>       */}
-      
+
+      <div>
+       </div> 
+
+      <div className="footer__item public_commitment">
+         <PublicCommitment />
+      </div>
+
       <div className="contact footer__item">       
         <PageList 
           className="contact footer__item"
