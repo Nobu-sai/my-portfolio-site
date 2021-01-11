@@ -38,8 +38,8 @@ export default class About extends React.Component {
          </div>    
 
          {/* <div>Record (Only me is authenticated.): {this.props.public_commitment}</div>         */}
-         {/* <PublicCommitment />
-          <div className="pc-desc">
+         <PublicCommitment />
+          {/* <div className="pc-desc">
             <h2>What do I count?</h2>  
             <div>: Deep Work Time for 10 hours per week.</div>
             <div className="what_deep_word">

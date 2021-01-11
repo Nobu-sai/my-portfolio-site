@@ -33,9 +33,9 @@ const commitmentRecordDB = commitmentRecordProject.firestore()
 // const storage = firebase.storage();
 
 
-// Test the name
-console.log(defaultProject.name)
-console.log(commitmentRecordProject.name)
+// Test the name Property of each App.
+// console.log(defaultProject.name)
+// console.log(commitmentRecordProject.name)
 
 // Exporting
 
