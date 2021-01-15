@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import { commitmentRecordDB } from '../../firebase.js';
 
 import './PublicCommitment.css';
+import WeeklyDWTimeTotal from './WeeklyDWTimeTotal.js'
 
   
 export default class PublicCommitment extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      weeklyDWTime: 0,
       visibilityClassName: "visible"
     }
     this.props = {
@@ -16,61 +15,15 @@ export default class PublicCommitment extends Component {
 
   }  
 
-  componentDidMount() {
-    this.getCommitments()
-    this.handleTimeVisibility()
-  }
-
-  getCommitments() {
-    let documents = []
-      commitmentRecordDB.collection('commitment-record').onSnapshot((snapshot)=>{
-        snapshot.forEach((doc)=> {
-            // console.log(doc.data())
-            documents.push(doc.data())
-          }
-        )
-        // console.log(documents)  
-        this.updateWeeklyDWTime(documents)
-      })
-  }
-
-  updateWeeklyDWTime(documents) {    
-    let weeklyDWTime = 0;
-    console.log(documents)
-    documents.map((doc) => {
-      // console.log(doc['DW Time'])
-      weeklyDWTime += doc['DW Time']
-    })
-
-    console.log(weeklyDWTime)
-    this.setState({
-      weeklyDWTime: weeklyDWTime
-    })
-  }
-
-  handleTimeVisibility() {
-    setInterval(()=>{
-      if(this.state.visibilityClassName == "visible") {
-        this.setState({
-          // visible:  false,
-          visibilityClassName: "invisible"
-        })
-        console.log(this.state.visibilityClassName)
-      } else {
-        this.setState({
-          // visible: true,
-          visibilityClassName: "visible"
-        })
-      }
-    }, 500)
-  }
-
   
   render() {
     return (
       <div>
-        <div className="weeklyDWtime">
-          Weekly focusing time <span className={`DWtime ${this.state.visibilityClassName}`}>{this.state.weeklyDWTime}</span> / 10:00 hours.
+        <div>
+          <div className="weeklyDWTime__title">I've been focusing this week for...</div>
+          <div className="weeklyDWTimeTotal">
+            <WeeklyDWTimeTotal />       
+          </div>
         </div> 
         <div className="desc">
           <div className="desc_title">What do I count?</div>  

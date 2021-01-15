@@ -19,23 +19,12 @@
   width: 300px;
 }
 
-
-
-.weeklyDWtime {
-  font-size: 32px;
+.weeklyDWTime__title {
+  font-size: 36px;
 }
 
-.DWtime {
-  /* font-size: 40px; */
-  color: red;
-}
-
-.DWtime.visible {
-  visibility: visible;
-}
-
-.DWtime.invisible {
-  visibility: hidden;
+.weeklyDWTimeTotal {
+  margin-top: 20px;
 }
 
 .desc {
