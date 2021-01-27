@@ -186,7 +186,7 @@ export default class CommitmentRecord extends Component {
   render() {
     return (
       <div className="weeklyDWtime">
-        <div><span className={`DWtime ${this.state.visibilityClassName}`}>{this.state.weeklyDWTimeTotal}</span> / 10:00</div>
+        <div><span className={`DWtime ${this.state.visibilityClassName}`}>{this.state.weeklyDWTimeTotal}</span> / 15:00</div>
       </div>      
     )
   }
