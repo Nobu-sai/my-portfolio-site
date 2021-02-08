@@ -47,22 +47,22 @@ class Portfolio extends React.Component {
       } 
   }  
 
-  // addData = () => {      
+  addData = () => {      
   
-  //   this.state.portfolioData.map((portfolio)=>{
-  //     // console.log(portfolio)
-  //     db.collection('portfolio').add(
-  //       {
-  //         name: portfolio.name,
-  //         imageName: portfolio.imageName,
-  //         skill: portfolio.skill,
-  //         url: portfolio.url,
-  //         user_story: portfolio.user_story,
-  //         dev_story: portfolio.dev_story,    
-  //       })
-  //   })     
+    this.state.portfolioData.map((portfolio)=>{
+      // console.log(portfolio)
+      defaultDB.collection('portfolio').add(
+        {
+          name: "Amazone Clone",
+          imageName: "amazon-clone",
+          skill_list: ["HTML", "CSS", "JavaScript", "React.js", "Firebase", "Stripe"],
+          url: "https://e-clone-no-1-input.web.app/",
+          user_story: "We can enjoy limitless shopping virtually.",
+          dev_story: "I used React Context API and Stripe.",    
+        })
+    })     
 
-  // }
+  }
         
   
   render() {

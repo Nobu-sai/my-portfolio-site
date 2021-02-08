@@ -1,4 +1,5 @@
 
+import AmazonCloneImage from './portfolio-image/amazon-clone.png';
 import BlogAppImage from './portfolio-image/blog-app.png';
 import BeatBoxImage from './portfolio-image/beat-box.png';
 import DrawingBordersImage from './portfolio-image/drawing-borders-animation.png';
@@ -13,6 +14,7 @@ import TwitterCloneImage from './portfolio-image/twitter-clone.png';
 import WeatherAppImage from './portfolio-image/weather-app.png';
 
 export default {
+  "Amazon Clone": AmazonCloneImage,
   "Blog App": BlogAppImage,
   "Beat Box": BeatBoxImage,
   "Drawing Borders Animation": DrawingBordersImage,
