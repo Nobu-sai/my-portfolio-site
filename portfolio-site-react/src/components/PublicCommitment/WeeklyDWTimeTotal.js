@@ -172,7 +172,7 @@ export default class CommitmentRecord extends Component {
         this.setState({
           visibilityClassName: "invisible"
         })
-        console.log(this.state.visibilityClassName)
+        // console.log(this.state.visibilityClassName)
       } else {
         this.setState({
           visibilityClassName: "visible"
