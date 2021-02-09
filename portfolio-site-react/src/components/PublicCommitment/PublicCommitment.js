@@ -30,7 +30,8 @@ export default class PublicCommitment extends Component {
             <div className="desc_item">: The Deep Work time.</div>
           <div className="what_deep_work">
             <div className="desc_title">What is Deep Work Time?</div>  
-              <div className="desc_item">: Only work in the Deep Work time (*1) in Deep Work days (*2).</div>
+              <div className="desc_item">: Only I can focus.</div> 
+              {/* <div className="desc_item">: Only work in the Deep Work time (*1) in Deep Work days (*2).</div>
               <div className="desc_item">: Only what is PLANED the day before.</div> 
               <div className="desc_item">: Only what is done within VALID System or Process.</div>  
               </div> 
@@ -42,7 +43,7 @@ export default class PublicCommitment extends Component {
                 <div className="desc_item">= Only AFTER Deep Work Ritual (Cold Shower and Meditation).</div>
                 <div className="desc_item">*2 (Deep Work Days)</div>
                 <div className="desc_item">= Only the day I can focus at the DEEPEST level.</div> 
-                <div className="desc_item">= Only 4-5 Days a week.</div>
+                <div className="desc_item">= Only 4-5 Days a week.</div> */}
               </div>
           </div>
           <div className="why">
