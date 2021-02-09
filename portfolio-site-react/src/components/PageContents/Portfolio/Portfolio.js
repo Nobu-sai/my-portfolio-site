@@ -27,7 +27,24 @@ class Portfolio extends React.Component {
     let portfolioDataList = []  
     defaultDB.collection('portfolio').onSnapshot((snapshot)=>{
         snapshot.forEach((doc)=> {  
-          portfolioDataList.push(doc.data())                      
+                    
+           portfolioDataList.push(doc.data())                      
+           const findPortfolioIndexToRemove = () => { 
+            // Remove unnecessary portfolios form the list. 
+             portfolioDataList.map((portfolio) => {
+              if (portfolio.name == "Google Map Store Locator" || portfolio.name == "Twitter Clone" || portfolio.name == "Blog App" ) {
+                // console.log(portfolioDataList.indexOf(portfolio))
+                // console.log('* Portfolio to remove: ', portfolio.name)
+                portfolioDataList.splice(portfolioDataList.indexOf(portfolio))
+              }
+            
+            })
+          }
+
+          findPortfolioIndexToRemove()
+                        
+          // console.log(portfolioDataList)
+                      
         })                              
         this.setState({portfolioData: portfolioDataList})           
         this.portfolioToShowHandler()  
@@ -47,22 +64,22 @@ class Portfolio extends React.Component {
       } 
   }  
 
-  addData = () => {      
+  // addData = () => {      
   
-    this.state.portfolioData.map((portfolio)=>{
-      // console.log(portfolio)
-      defaultDB.collection('portfolio').add(
-        {
-          name: "Amazone Clone",
-          imageName: "amazon-clone",
-          skill_list: ["HTML", "CSS", "JavaScript", "React.js", "Firebase", "Stripe"],
-          url: "https://e-clone-no-1-input.web.app/",
-          user_story: "We can enjoy limitless shopping virtually.",
-          dev_story: "I used React Context API and Stripe.",    
-        })
-    })     
+  //   this.state.portfolioData.map((portfolio)=>{
+  //     // console.log(portfolio)
+  //     defaultDB.collection('portfolio').add(
+  //       {
+  //         name: "Amazone Clone",
+  //         imageName: "amazon-clone",
+  //         skill_list: ["HTML", "CSS", "JavaScript", "React.js", "Firebase", "Stripe"],
+  //         url: "https://e-clone-no-1-input.web.app/",
+  //         user_story: "We can enjoy limitless shopping virtually.",
+  //         dev_story: "I used React Context API and Stripe.",    
+  //       })
+  //   })     
 
-  }
+  // }
         
   
   render() {
@@ -72,11 +89,13 @@ class Portfolio extends React.Component {
         <div className="section_contents portfolio_contents">  
         {/* <button onClick={this.addData}>Submit Portfolio</button> */}
         {
-          this.state.portfolioData.length > 0 &&
+          this.state.portfolioData.length > 0 && 
+          
           <PortfolioList 
             portfolioData={this.state.portfolioData}             
             portfolioListHandler={this.portfolioToShowHandler}
-          />                
+          />           
+               
         }
         {
           this.state.portfolioToShow &&
