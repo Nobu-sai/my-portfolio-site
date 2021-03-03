@@ -55,7 +55,7 @@ function Header() {
                 }
               }
             >
-              <p>I'm Nobuya Saito. <br/>A Web Developer. </p> 
+              I'm Nobuya Saito. <br/> A Web Developer.  
             </Typist>
           </>          
         } 
