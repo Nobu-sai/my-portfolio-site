@@ -30,24 +30,6 @@
   font-size: 140px;
 }
 
-#header .heading {
-
-  height: 100%; 
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  color: #000;
-
-}
-
-#header {
-  /* font-size: 40px; */
-}
-
-
 #about .heading {
   /* box-shadow: 0 0 10px 10px hsl(109, 85%, 23%); */
   background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');

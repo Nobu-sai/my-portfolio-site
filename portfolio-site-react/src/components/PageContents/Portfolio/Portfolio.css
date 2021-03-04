@@ -17,6 +17,7 @@
 
 
 .portfolio_contents {
+  padding: 100px 20px;
   display: flex;
   /* flex-direction: column;  */
   /* flex-direction: row;  */

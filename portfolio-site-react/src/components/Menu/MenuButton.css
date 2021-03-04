@@ -26,6 +26,9 @@
  
 #roundButton.visible {
   /* visibility: visible; */
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
   background-color: hsl(0, 0%, 60%);
   margin-bottom: 20px;
   box-shadow: 0 0 30px 10px hsl(0, 0%, 60%);
