@@ -2,14 +2,21 @@
 .header {
   /* box-shadow: 0 0 10px 10px hsl(0, 0%, 80%); */
   margin: 2vh 0;  
-  width: 95%;
+  width: 80%;
   height: 95vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+
+  transition: all .4s ease;
   
+}
+
+.header.add {
+  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
 }
 
 .header__main_heading {  
