@@ -7,13 +7,23 @@ class MenuButton extends Component {
     this.state = {
       buttonVisibility: 'hidden'
     }    
+
+    this.toggleButtonVisibility = this.toggleButtonVisibility.bind(this)
   }
   
   toggleButtonVisibility() {
-    this.setState({
-      buttonVisibility: 'visible'
-    })
+    if(this.state.buttonVisibility == "hidden") {
+      this.setState({
+        buttonVisibility: 'visible'
+      })
+    } else {
+      this.setState({
+        buttonVisibility: 'hidden'
+      }) 
+    } 
+
   }
+
 
   componentDidMount() {    
     setTimeout(() => 
@@ -25,11 +35,12 @@ class MenuButton extends Component {
   render() {  
   
     return (
-      <button 
+      <div
         id="roundButton"
         className={this.state.buttonVisibility}
         onMouseDown={this.props.handleMouseDown}
-      ></button>
+        onClick={this.toggleButtonVisibility}
+      ></div>
     );
   }
 }
