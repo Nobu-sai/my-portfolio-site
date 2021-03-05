@@ -15,3 +15,18 @@
 .DWtime.invisible {
   visibility: hidden;
 }
+
+
+@media(max-width: 1024px) {
+  .weeklyDWtime {
+    font-size: 24px;
+  }
+
+}
+  
+
+@media(max-width: 425px) {
+  .weeklyDWtime {
+    font-size: 18px;
+  }
+}

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Typist from 'react-typist';
 
-import Heading from '../Heading/Heading';
+import Heading from '../../Heading/Heading';
 
 import './Header.css'
 
@@ -53,6 +53,7 @@ function Header() {
       >
         I'm Nobuya Saito. <br/> A Web Developer.  
       </Typist>
+      
     
     </div>  
   

@@ -22,7 +22,7 @@ export default class PublicCommitment extends Component {
         <div>
           <div className="weeklyDWTime__title">I've been focusing this week for...</div>
           <div className="weeklyDWTimeTotal">
-            <WeeklyDWTimeTotal />       
+            <WeeklyDWTimeTotal className="weeklyDWTime__item" />       
           </div>
         </div> 
         <div className="desc">

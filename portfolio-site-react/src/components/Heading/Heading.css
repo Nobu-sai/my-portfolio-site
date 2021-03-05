@@ -2,11 +2,13 @@
 
 
 .heading {
-  /* margin-left: 20px; */
+  position: absolute;
+  top: -20px;
+
   box-shadow: 0 0 10px 10px hsl(0, 0%, 80%);
-  padding: 60px 20px; 
-  width: 80%;
-  height: 120px;
+  padding: 60px; 
+  width: 60%;
+  height: 50px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -31,6 +33,7 @@
 }
 
 #about .heading {
+  left: 20px;
   /* box-shadow: 0 0 10px 10px hsl(109, 85%, 23%); */
   background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
   /* color: hsl(109, 44%, 66%); */
@@ -44,12 +47,16 @@
 }
 
 #portfolio .heading {   
+  right: 20px;
   /* box-shadow: 0 0 10px 10px hsl(201, 85%, 21%); */
   background-image: url('https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'); 
   color: #fff;
 }
 
-#footer .heading {   
+#footer .heading {  
+  top: -150px; 
+  width: 90%;
+  height: 100px;
   background-color: #000;
   color: #fff;
 }
@@ -63,10 +70,16 @@
 @media(max-width: 1024px) { 
 
   .heading { 
-    padding: 50px 20px; 
-    font-size: 60px;
+    padding: 50px; 
+    font-size: 50px;
     letter-spacing: 8px;
   }
+
+
+  #footer .heading {     
+    height: 70px;
+  }
+
 
 
 }
@@ -75,24 +88,56 @@
 
 @media(max-width: 768px) {
   .heading { 
-    padding: 30px 10px; 
-    font-size: 50px;
+    padding: 30px; 
+    font-size: 40px;
     letter-spacing: 4px;
   }
+
+ #footer .heading {  
+    top: -100px;  
+    height:50px;
+   
+ }
 
 }
 
 
 @media(max-width: 425px) {
+  .heading { 
+    padding: 10px 0; 
+    height: 40px;
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+
   #footer .heading { 
-    font-size: 32px;
+    padding: 20px 0;
+    top: -50px;    
   }
 }
 
 
 @media(max-width: 375px) {
   .heading { 
-    font-size: 38px;
+    top: 0px;
+    width: 70%;
+    font-size: 24px;
+  }
+
+  #skill .heading { 
+    top: -15px;
+    
+  }
+
+}
+@media(max-width: 325px) {
+  #about .heading { 
+    left: 4px;
+  }
+
+  #portfolio .heading { 
+    right: 4px;
+    top: -20px;
   }
 
 }

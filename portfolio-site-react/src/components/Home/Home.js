@@ -3,9 +3,9 @@ import {Element} from 'react-scroll'
 
 import About from '../PageContents/About/About.js';
 import Skill from '../PageContents/Skill/Skill.js';
-import Header from '../Header/Header.js';
+import Footer from '../PageContents/Footer/Footer';
+import Header from '../PageContents/Header/Header';
 import Portfolio from '../PageContents/Portfolio/Portfolio.js';
-import Footer from '../../components/Footer/Footer.js'
 import MenuContainer from "../Menu/MenuContainer.js";
 
 

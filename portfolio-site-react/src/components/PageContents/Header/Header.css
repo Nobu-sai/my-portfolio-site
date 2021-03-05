@@ -32,23 +32,23 @@
 
 @media(max-width: 1024px) {
   .header__main_heading {  
-    font-size: 100px;
+    font-size: 80px;
   }
 
   .header_message {    
     /* margin-top: 10px; */
-    font-size: 32px;
+    font-size: 28px;
   }
   
 }
 
 @media(max-width: 768px) {
   .header__main_heading {  
-    font-size: 80px;
+    font-size: 50px;
   }
 
   .header_message {    
-    font-size: 32px;
+    font-size: 17px;
   }
   
 
@@ -58,13 +58,16 @@
 @media(max-width: 425px) {
   .header {
     margin: 10vh 0;
+    align-items: left;    
   }  
   .header__main_heading {  
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .header_message {    
-    font-size: 24px;
+    /* padding: 0 14px; */
+    width: 140px;
+    font-size: 14px;
   }
 
 }
@@ -79,7 +82,7 @@
 
   .header_message {    
     /* margin-top: 10px; */
-    font-size: 18px;
+    font-size: 12px;
   }
   
 

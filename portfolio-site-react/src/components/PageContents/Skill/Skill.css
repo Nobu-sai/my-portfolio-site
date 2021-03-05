@@ -143,6 +143,9 @@
 
 
 @media(max-width: 375px) {
+  .skill_contents {
+    padding-top: 20px;
+  }
   .skill__item_name {
     letter-spacing: 8px;
   }
@@ -150,6 +153,7 @@
 
 
 @media(max-width: 325px) {
+  
 
   .skill_item {  
     margin: 10px;

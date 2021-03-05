@@ -1,18 +1,19 @@
 import React from 'react'
 import Typical from 'react-typical'
 
-import './Footer.css'
+import './Footer.css';
+import '../Section.css';
 
-import PageList from '../PageList/PageList';
-import ScrollUp from '../ScrollUp/ScrollUp.js'
-import Heading from '../Heading/Heading.js'
-import PublicCommitment from '../PublicCommitment/PublicCommitment';
+import PageList from '../../PageList/PageList';
+import ScrollUp from '../../ScrollUp/ScrollUp.js'
+import Heading from '../../Heading/Heading.js'
+import PublicCommitment from '../../PublicCommitment/PublicCommitment';
 
 function Footer({pdf_link}) {
   
   return (
 
-    <div className="footer" id="footer">
+    <div className="section footer" id="footer">
       <Heading content={
         <Typical  
           steps={['Are you leaving?', 1000, 'Thanks for visiting!', 1000, 'What will you do next?', 1000, 'See you, have a good day!', 1000]}
