@@ -37,7 +37,7 @@ export default class PublicCommitment extends Component {
             <div className="desc_title">Why Deep Work?</div>  
             <div className="desc_item">: I think it is the BEST way for the MAXIMUM outcome.</div>
             <div className="desc_title">Why do I publich my record?</div>  
-            <div className="desc_item">: To reinforce my commitment to what I need to do by trying to evade feel shame if I could not follow to it.   
+            <div className="desc_item">: To reinforce my commitment to what I need to do by trying to evade feeling shame if I could not follow to it.   
             </div>
           </div>      
 
