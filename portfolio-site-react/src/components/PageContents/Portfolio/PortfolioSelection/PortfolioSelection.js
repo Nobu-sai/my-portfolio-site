@@ -3,8 +3,8 @@ import './PortfolioSelection.css';
 
 //Child Components
 import SkillTabs from './SkillTabs/SkillTabs'
-import Option from './Option/Option'
-import { setLogLevel } from 'firebase';
+// import Option from './Option/Option'
+// import { setLogLevel } from 'firebase';
 
 export default class Portfolioselection extends Component {
   constructor(props) {
@@ -39,7 +39,6 @@ export default class Portfolioselection extends Component {
       skillTabs += `${<div label={skill}></div>}` 
     })
 
-    // console.log(skillTabs)
 
     return (
       <div className="portfolio_selection">

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SkillTab from './SkillTab';
 import './SkillTabs.css'
 
-class Tabs extends Component {
+class SkillTabs extends Component {
   static propTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
   }
@@ -37,63 +37,17 @@ class Tabs extends Component {
       }
     } = this;
 
-    // let listItems = ""
-
-    // children.map((child)=>{
-    //   if(Array.isArray(child)) {
-    //     child.map((item)=> {
-    //       const { label } = item.props
-    //       listItems += 
-    //         `      
-    //         ${    
-    //           <SkillTab
-    //             activeTab={activeTab}
-    //             key={label}
-    //             label={label}
-    //             onClickTabItem={onClickTabItem}
-    //             portfolioSearchKeyHander={portfolioSearchKeyHander }
-    //           />
- 
-    //         }
-    //        `
-    //     })
-    //   } else {
-    //     const { label } = child.props;
-    //     listItems += 
-    //       `     
-    //       ${ 
-    //         <SkillTab
-    //         activeTab={activeTab}
-    //         key={label}
-    //         label={label}
-    //         onClickTabItem={onClickTabItem}
-    //         portfolioSearchKeyHander={portfolioSearchKeyHander }
-    //       />
-    //       }
-    //       `
-    //   }
-    // })
 
     return (
       <div className="tabs">
-        <ol className="tab-list">
-          {/* {listItems} */}
+        <ol className="tab-list"> 
           {
             children.map((child) => {            
-              console.log(child)
-              // console.log(child.props)    
               
-              // let label = ""
-
               if(Array.isArray(child)) {
-                // console.log(child)
-                child.map((item)=>{
-                  // label = item.props.label;
-                  console.log(item.props)
-                  const { label } = item.props    
-                  console.log(label)
-                  console.log(typeof label)
-
+                // child is the Array of <div label={skill}></div>
+                return child.map((item)=>{                  
+                  const { label } = item.props;                     
                   return (
                     <SkillTab
                       activeTab={activeTab}
@@ -103,47 +57,23 @@ class Tabs extends Component {
                       portfolioSearchKeyHander={portfolioSearchKeyHander }
                     />
                   )
-                })
-              } 
-              // else {
-              //   // label = child.props.label;
-              //   const { label } = child.props; 
-              //   // console.log(label)
+                })               
+              } else {
+                const { label } = child.props; 
 
-              //   return (
-              //     <SkillTab
-              //       activeTab={activeTab}
-              //       key={label}
-              //       label={label}
-              //       onClickTabItem={onClickTabItem}
-              //       portfolioSearchKeyHander={portfolioSearchKeyHander }
-              //     />
-              //   );
-              // }
-                // return (
-                //   <SkillTab
-                //     activeTab={activeTab}
-                //     key={label}
-                //     label={label}
-                //     onClickTabItem={onClickTabItem}
-                //     portfolioSearchKeyHander={portfolioSearchKeyHander }
-                //   />
-                // );
-              
-              })
-              // const { label } = child.props; 
-              // console.log(label)
-
-              // return (
-              //   <SkillTab
-              //     activeTab={activeTab}
-              //     key={label}
-              //     label={label}
-              //     onClickTabItem={onClickTabItem}
-              //     portfolioSearchKeyHander={portfolioSearchKeyHander }
-              //   />
-              // );
+                return (
+                  <SkillTab
+                    activeTab={activeTab}
+                    key={label}
+                    label={label}
+                    onClickTabItem={onClickTabItem}
+                    portfolioSearchKeyHander={portfolioSearchKeyHander }
+                  />
+                );
+              }
+            })     
           }
+       
         </ol>
         <div className="category-content">
  
@@ -153,4 +83,4 @@ class Tabs extends Component {
   }
 }
 
-export default Tabs;
+export default SkillTabs;

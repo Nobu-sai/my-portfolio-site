@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
  
-class Tab extends Component {
+class SkillTab extends Component {
   static propTypes = {
     activeTab: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
@@ -21,7 +21,6 @@ class Tab extends Component {
   }
 
   render() {
-    console.log(this.props.label)
     const {
       onClickTabItem,
       portfolioSearchKeyHander,
@@ -36,8 +35,7 @@ class Tab extends Component {
     if (activeTab === label) {
       className += ' tab-list-active'
     }
-
-    console.log(label)
+ 
 
     return (
       <li
@@ -53,4 +51,4 @@ class Tab extends Component {
   }
 }
 
-export default Tab;
+export default SkillTab;
