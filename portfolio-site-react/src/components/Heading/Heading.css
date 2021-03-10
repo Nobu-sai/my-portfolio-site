@@ -55,6 +55,8 @@
 
 #footer .heading {  
   top: -150px; 
+
+  /* margin-top: 150px; */
   width: 90%;
   height: 100px;
   background-color: #000;
@@ -77,6 +79,8 @@
 
 
   #footer .heading {     
+    top: -200px;
+    margin-top: 70px;
     height: 70px;
   }
 
@@ -94,7 +98,8 @@
   }
 
  #footer .heading {  
-    top: -100px;  
+    top: -70px;
+    margin-top: 0px;
     height:50px;
    
  }
@@ -111,6 +116,7 @@
   }
 
   #footer .heading { 
+    top: -70px;    
     padding: 20px 0;
     top: -50px;    
   }

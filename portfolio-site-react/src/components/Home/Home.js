@@ -27,9 +27,9 @@ function Home({pdf_link, public_commitment}) {
         />      
       </Element>        
       
-      <Element name="skill" >
+      {/* <Element name="skill" >
         <Skill />
-      </Element>
+      </Element> */}
 
 
       <Element name="portfolio" >

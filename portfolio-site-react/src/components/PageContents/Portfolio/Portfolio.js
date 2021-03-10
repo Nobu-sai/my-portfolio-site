@@ -1,5 +1,6 @@
 import React from 'react'
 import Heading from '../../Heading/Heading.js'
+import PortfolioSelection from './PortfolioSelection/PortfolioSelection';
 import PortfolioDesc from './PortfolioDesc.js';
 import PortfolioList from './PortfolioList.js'
 import '../Section.css';
@@ -14,15 +15,49 @@ class Portfolio extends React.Component {
     super(props)
     this.state = {
       portfolioData: [],
-      portfolioToShow: null
+      portfolioToShow: null,
+      skills: [],
+      searchKey: "All"
     }         
     this.isInitial = true;
   }
 
   componentDidMount() {
+    this.getSkills();
     this.portfolioDataHandler()    
   }
 
+  componentDidUpdate() { 
+    // console.log(this.state.skills)
+  }
+
+  getSkills = () => {
+    let skillsList = [];
+    defaultDB.collection('portfolio').onSnapshot((snapshot)=>{
+      snapshot.forEach((doc)=> {        
+        doc.data()['skill_list'].map((skill)=>{
+          if(!skillsList.includes(skill)) {
+            skillsList.push(skill)
+          }
+        })
+      })
+      
+      this.setState({
+        skills: skillsList
+      })
+    })
+
+  }
+
+  // Get the category to search for the portfolios
+  portfolioSearchKeyHander = (searchKey) => {
+    // this.setState({
+    //   searchSkill
+    // })
+  } 
+
+  
+  // Get the portfolios from Firestore and assign them to the portfolioData Array State. 
   portfolioDataHandler = () => {
     let portfolioDataList = []  
     defaultDB.collection('portfolio').onSnapshot((snapshot)=>{
@@ -87,24 +122,37 @@ class Portfolio extends React.Component {
       <div className="section" id="portfolio">
         <Heading  content="Portfolio" />
         <div className="section_contents portfolio_contents">  
-        {/* <button onClick={this.addData}>Submit Portfolio</button> */}
-        {
-          this.state.portfolioData.length > 0 && 
+          {/* <button onClick={this.addData}>Submit Portfolio</button> */}
           
-          <PortfolioList 
-            portfolioData={this.state.portfolioData}             
-            portfolioListHandler={this.portfolioToShowHandler}
-          />           
-               
-        }
-        {
-          this.state.portfolioToShow &&
-          <PortfolioDesc           
-            portfolioToShow={this.state.portfolioToShow}
-            portfolioToShowIsLatest={this.state.portfolioToShowIsLatest}
-          />  
-        }  
+          {
+            this.state.skills.length > 0 &&
+            <PortfolioSelection 
+              skills={this.state.skills}
+              portfolioSearchKeyHander={this.portfolioSearchKeyHander}            
+            />
+          }
+
+
+          <div className="portfolio_display">
+            {
+              this.state.portfolioData.length > 0 && 
+              
+              <PortfolioList 
+                portfolioData={this.state.portfolioData}             
+                portfolioListHandler={this.portfolioToShowHandler}
+              />           
+                  
+            }
+            {
+              this.state.portfolioToShow &&
+              <PortfolioDesc           
+                portfolioToShow={this.state.portfolioToShow}
+                portfolioToShowIsLatest={this.state.portfolioToShowIsLatest}
+              />  
+            }  
+          </div>
         </div>
+        
       </div>  
     )
   }
