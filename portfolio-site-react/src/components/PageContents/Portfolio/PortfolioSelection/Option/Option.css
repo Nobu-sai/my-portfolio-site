@@ -1,0 +1,22 @@
+.options {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.sort_title {
+  text-align: center;
+}
+
+.option_list {
+  margin-top: 10px;
+  width: 90%;
+  height: 100px;
+  overflow: scroll;
+}
+
+.option {
+  margin-top: 4px;
+  background:  rgb(218, 207, 207);
+}
