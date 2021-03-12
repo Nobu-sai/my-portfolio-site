@@ -42,7 +42,7 @@ class SkillTabs extends Component {
       <div className="tabs">
         <ol className="tab-list"> 
           {
-            children.map((child) => {            
+            children.map((child) => {          
               
               if(Array.isArray(child)) {
                 // child is the Array of <div label={skill}></div>
