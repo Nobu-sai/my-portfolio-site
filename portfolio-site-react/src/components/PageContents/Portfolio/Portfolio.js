@@ -187,6 +187,18 @@ class Portfolio extends React.Component {
         
   
   render() {
+    const singlePortfolioResult = (    
+      <div className="portfolio__resultAmount">
+        {this.state.portfolioData.length} hit portfolio.
+      </div> 
+    );
+
+    const multiplePortfolioResults = (
+      <div className="portfolio__resultAmount">
+        {this.state.portfolioData.length} hit portfolios.
+      </div> 
+    );
+
     return (
       <div className="section" id="portfolio">
         <Heading  content="Portfolio" />
@@ -194,7 +206,7 @@ class Portfolio extends React.Component {
           {/* <button onClick={this.addData}>Submit Portfolio</button> */}
           
           {
-            this.state.skills.length > 0 &&
+            this.state.skills.length > 0 && 
             <PortfolioSelection 
               skills={this.state.skills}
               portfolioSearchKeyHander={this.portfolioSearchKeyHander}            
@@ -202,12 +214,13 @@ class Portfolio extends React.Component {
           }
 
           {
-            this.state.portfolioData.length > 0 && 
-                                          
-              <div className="portfolio_amount">
-                {this.state.portfolioData.length} hit portfolios.
-              </div>
-          
+            this.state.portfolioData.length === 1 && 
+             singlePortfolioResult
+          }
+
+          {
+            this.state.portfolioData.length > 1 && 
+             multiplePortfolioResults
           }
 
           <div className="portfolio_display">
