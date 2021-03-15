@@ -38,15 +38,17 @@ class SkillTab extends Component {
  
 
     return (
-      <li
+      <div
         className={className}
+          // Default = 'tab-list-item'
+          // For ACTIVE one = 'tab-list-item tab-list-active'
         onClick={() => {
           onClickTabItem();
           portfolioSearchKeyHander();
         }}
       >
         {label}
-      </li>
+      </div>
     );
   }
 }

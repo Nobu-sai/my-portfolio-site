@@ -40,7 +40,7 @@ class SkillTabs extends Component {
 
     return (
       <div className="tabs">
-        <ol className="tab-list"> 
+        <div className="tab-list"> 
           {
             children.map((child) => {          
               
@@ -74,10 +74,8 @@ class SkillTabs extends Component {
             })     
           }
        
-        </ol>
-        <div className="category-content">
- 
         </div>
+                
       </div>
     );
   }

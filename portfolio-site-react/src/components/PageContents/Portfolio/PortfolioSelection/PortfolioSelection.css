@@ -1,5 +1,11 @@
 
 .portfolio_selection {
-  padding: 40px 0;
+  /* margin-top: 30px; */
+  padding: 0;
 }
 
+@media(max-width: 768px) {
+  .portfolio_selection {
+    /* margin-top: 60px; */
+  }
+}
