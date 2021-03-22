@@ -154,7 +154,7 @@ class Portfolio extends React.Component {
   // Set the ONE portfolio to show 
   // => If it is inital state or before the user click an item of portfolio, then set the first item of  portfolioData Array  as the  portoflio to show .
   // => If there is an List Item clicked, it is set as the  portfolio to show .
-  portfolioToShowHandler = (clickedListItem) => {    
+  portfolioToShowHandler = (clickedPortfolioName) => {    
     // console.log(this.state.portfolioData)
     // if(this.state.isInitial) {
       if(!this.state.portfolioToShow) {
@@ -163,7 +163,7 @@ class Portfolio extends React.Component {
         portfolioToShow: this.state.portfolioData[0],        
       })                    
     } else {               
-      const clickedPortfolioData = this.state.portfolioData.find((portfolio)=> portfolio.name == clickedListItem)        
+      const clickedPortfolioData = this.state.portfolioData.find((portfolio)=> portfolio.name == clickedPortfolioName)        
       this.setState({portfolioToShow: clickedPortfolioData})       
     } 
   }  
@@ -226,12 +226,20 @@ class Portfolio extends React.Component {
           <div className="portfolio_display">
             {              
              this.state.portfolioData.length > 1 &&
-              
-              <PortfolioList 
-                portfolioData={this.state.portfolioData}             
-                portfolioListHandler={this.portfolioToShowHandler}
-              />           
-                  
+                <PortfolioList 
+                  portfolioToShowHandler={this.portfolioToShowHandler}
+                >     
+                  {
+                    this.state.portfolioData.map((portfolio)=>(
+                      <div 
+                        // portfolioName={portfolio.name}
+                        portfolioData={portfolio}
+                        >
+                          {portfolio}
+                        </div>
+                    ))
+                  }
+                </PortfolioList>      
             }
             {
               this.state.portfolioToShow && 
