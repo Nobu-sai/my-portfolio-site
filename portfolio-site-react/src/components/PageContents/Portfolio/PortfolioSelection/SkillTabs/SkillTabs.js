@@ -20,15 +20,15 @@ class SkillTabs extends Component {
     this.setState({ activeTab: tab });
   }
 
-  portfolioSearchKeyHander  = (tab) => {
-    return this.props.portfolioSearchKeyHander(tab)
+  portfolioSearchKeyHandler  = (tab) => {
+    return this.props.portfolioSearchKeyHandler(tab)
   }
 
 
   render() {
     const {
       onClickTabItem,
-      portfolioSearchKeyHander,      
+      portfolioSearchKeyHandler,      
       props: {
         children,
       },
@@ -54,7 +54,7 @@ class SkillTabs extends Component {
                       key={label}
                       label={label}
                       onClickTabItem={onClickTabItem}
-                      portfolioSearchKeyHander={portfolioSearchKeyHander }
+                      portfolioSearchKeyHandler={portfolioSearchKeyHandler }
                     />
                   )
                 })               
@@ -67,7 +67,7 @@ class SkillTabs extends Component {
                     key={label}
                     label={label}
                     onClickTabItem={onClickTabItem}
-                    portfolioSearchKeyHander={portfolioSearchKeyHander }
+                    portfolioSearchKeyHandler={portfolioSearchKeyHandler }
                   />
                 );
               }

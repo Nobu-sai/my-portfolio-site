@@ -26,7 +26,7 @@ function PortfolioList(props) {
     setActiveItem(props.children[0].props.portfolioData.name)
   },[])
 
-  console.log(activeItem);
+  // console.log(activeItem);
 
 
 

@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { v4 as uuidv4 } from 'uuid';
+
+// Personal
 import './PortfolioSelection.css';
 
 //Child Components
@@ -22,13 +25,13 @@ export default class Portfolioselection extends Component {
     // console.log(this.props.skills) 
   }
 
-  portfolioSearchKeyHander  = (skill) => {
-    this.props.portfolioSearchKeyHander(skill)
+  portfolioSearchKeyHandler  = (skill) => {
+    this.props.portfolioSearchKeyHandler(skill)
   }
 
   render() {
     const {
-      portfolioSearchKeyHander,       
+      portfolioSearchKeyHandler,       
       props: { 
         skills,       
       },    
@@ -44,14 +47,17 @@ export default class Portfolioselection extends Component {
       <div className="portfolio_selection">
           <div>
              <SkillTabs
-              portfolioSearchKeyHander={portfolioSearchKeyHander} 
+              portfolioSearchKeyHandler={portfolioSearchKeyHandler} 
             > 
               <div label="All">                
               </div>              
               {
                 skills.map((skill)=>(
                   // console.log(skill)
-                  <div label={skill}>                  
+                  <div 
+                    label={skill}
+                    key={uuidv4()}
+                    >                  
                   </div> 
                 ))
               }

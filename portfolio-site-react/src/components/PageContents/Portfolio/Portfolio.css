@@ -124,8 +124,18 @@
   text-align: center;
 }
 
-.portfolio_data__item {
+.portfolio_data__itemsContainer {
   height: 100%;
+}
+
+.portfolio_data_item {
+  padding: 0 4px;
+  background-color: hsl(60, 100%, 92%);
+  /* transition: all .4s ease; */
+}
+
+.portfolio_data_item:hover {
+  /* box-shadow: 0 0 4px 4px hsl(0, 0%, 80%);  */
 }
 
 .portfolio_data__title {  
@@ -148,8 +158,10 @@
   overflow: scroll;
 }
 
-.portfolio_skill__name {     
-  /* background-color: hsl(60, 100%, 96%); */
+.portfolio_skill__name {      
+  padding: 4px;
+  padding-bottom: 12px;
+  width: 100%;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -157,7 +169,14 @@
 }
 
 .portfolio_skill__nameItem {
-  margin-right: 8px;  
+  margin-right: 4px; 
+  padding: 0 4px; 
+  text-align: center;
+}
+
+.portfolio_skill__nameItem .skill_name {
+  /* color: #fff; */
+
 }
 
 .visit_url_container { 
@@ -166,7 +185,7 @@
 }
 
 .visit_url {  
-  padding: 4px;
+  /* padding: 4px; */
   transition: all .4s ease;
 }
 

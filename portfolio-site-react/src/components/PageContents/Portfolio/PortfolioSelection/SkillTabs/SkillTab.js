@@ -5,7 +5,8 @@ class SkillTab extends Component {
   static propTypes = {
     activeTab: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onClickTabItem: PropTypes.func.isRequired,
+    portfolioSearchKeyHandler: PropTypes.func.isRequired,
   };
 
   onClickTabItem = () => {
@@ -13,9 +14,9 @@ class SkillTab extends Component {
     onClickTabItem(label);
   }
 
-  portfolioSearchKeyHander = () => {
-    const { label, portfolioSearchKeyHander } = this.props;
-    portfolioSearchKeyHander(label)
+  portfolioSearchKeyHandler = () => {
+    const { label, portfolioSearchKeyHandler } = this.props;
+    portfolioSearchKeyHandler(label)
       // The clicked Tab's SkillTab.js/label Props is Sent to SkillTabs/addSearchSkills() Method/tab Param
       // -> which sends the label to PortfoliSelection.js/addSearchSkills Props which is sent Portfolio.js/portfolioSearchSkillsHandler() Method which ADDS the clicked skill to the LIST of skills to use to search for portfolio in Firestore. 
   }
@@ -23,7 +24,7 @@ class SkillTab extends Component {
   render() {
     const {
       onClickTabItem,
-      portfolioSearchKeyHander,
+      portfolioSearchKeyHandler,
       props: {
         activeTab,
         label,
@@ -44,7 +45,7 @@ class SkillTab extends Component {
           // For ACTIVE one = 'tab-list-item tab-list-active'
         onClick={() => {
           onClickTabItem();
-          portfolioSearchKeyHander();
+          portfolioSearchKeyHandler();
         }}
       >
         {label}

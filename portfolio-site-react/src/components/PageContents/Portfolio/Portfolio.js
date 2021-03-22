@@ -1,4 +1,7 @@
 import React from 'react'
+import { v4 as uuidv4 } from 'uuid';
+
+// Personal 
 import Heading from '../../Heading/Heading.js'
 import PortfolioSelection from './PortfolioSelection/PortfolioSelection';
 import PortfolioDesc from './PortfolioDesc.js';
@@ -64,7 +67,7 @@ class Portfolio extends React.Component {
   // Get the SKILL (*) used to search for the related portfolios.
   // * (the SKILL)
   // = As the skill tab clicked and Sent back from PortfolioSelection.js.
-  portfolioSearchKeyHander = (skill) => {    
+  portfolioSearchKeyHandler = (skill) => {    
       
     this.setState({
       searchKey: skill,
@@ -209,7 +212,7 @@ class Portfolio extends React.Component {
             this.state.skills.length > 0 && 
             <PortfolioSelection 
               skills={this.state.skills}
-              portfolioSearchKeyHander={this.portfolioSearchKeyHander}            
+              portfolioSearchKeyHandler={this.portfolioSearchKeyHandler}            
             />
           }
 
@@ -234,8 +237,9 @@ class Portfolio extends React.Component {
                       <div 
                         // portfolioName={portfolio.name}
                         portfolioData={portfolio}
-                        >
-                          {portfolio}
+                        key={uuidv4()}
+                          >
+                            {portfolio}
                         </div>
                     ))
                   }
