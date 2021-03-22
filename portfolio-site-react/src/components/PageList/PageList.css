@@ -34,6 +34,7 @@
 
 /*** Footer **/
 /*** .page_list__item ***/
+   /* = Sent from where the PageList Component is Rendered. */
 .page_list__item {
   padding: 10px 20px;
   width: 200px;
@@ -49,7 +50,7 @@
   font-size: 18px;
   color: #000000;
 
-  text-align: center;
+  /* text-align: center; */
 
   transition: all .4s ease;
 }
@@ -68,25 +69,25 @@
 
 /** Menu/.SECTION-NAME, Footer/.SECTION-NAME,  **/
 
-.about:hover {
+.me:hover {
   background-color: hsl(100, 50%, 50%);
   background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
   background-position: top;
 }
 
-.footer__item .about:hover {
+.footer__item .me:hover {
 background-position: center center;
-}
-
-.skill:hover {  
-  background-color: hsl(0, 50%, 50%);
-  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
 }
 
 
 .portfolio:hover {
   background-color: hsl(200, 50%, 50%);
   background-image: url('https://images.unsplash.com/photo-1529444161959-5690000911bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+}
+
+.information:hover {  
+  background-color: hsl(0, 50%, 50%);
+  background-image: url('https://images.unsplash.com/photo-1475873326779-99eac8da25b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
 }
 
 

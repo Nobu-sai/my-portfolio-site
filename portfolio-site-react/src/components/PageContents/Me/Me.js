@@ -1,13 +1,13 @@
 import React from 'react'
 
 import '../Section.css';
-import './About.css';
+import './Me.css';
 import Heading from '../../Heading/Heading.js'
 
 
 
 // function About({public_commitment}) {
-export default class About extends React.Component {
+export default class Me extends React.Component {
     
   constructor(props) {
     super(props)
@@ -20,8 +20,8 @@ export default class About extends React.Component {
   render() {
 
     return (    
-     <div className="section" id="about">              
-        <Heading  content="About" />
+     <div className="section" id="me">              
+        <Heading  content="Me" />
         
         <div className="section_contents about_contents">
           <div className="messages">

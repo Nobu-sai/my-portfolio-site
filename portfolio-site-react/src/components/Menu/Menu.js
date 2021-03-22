@@ -23,30 +23,17 @@ class Menu extends Component {
           item_1={
             <Link 
             activeClass="active" 
-            className="page_list__item about" 
+            className="page_list__item me" 
             // to={props.scrollTo}
-            to="about" 
+            to="me" 
             spy={true} 
             smooth={true} 
             duration={500} 
             >                
-                <div className="page_list__item_name">About</div>             
+                <div className="page_list__item_name">Me</div>             
             </Link>                   
           }
           item_2={
-            <Link 
-            activeClass="active" 
-            className="page_list__item skill" 
-            to="skill" 
-            // to={props.scrollTo}
-            spy={true} 
-            smooth={true} 
-            duration={500} 
-            >                            
-             <div className="page_list__item_name">Skill</div>                                   
-            </Link>
-          }
-          item_3={
             <Link 
             activeClass="active" 
             className="page_list__item portfolio" 
@@ -57,6 +44,19 @@ class Menu extends Component {
             duration={500} 
             >                             
              <div className="page_list__item_name">Portfolio</div>                       
+            </Link>
+          }
+          item_3={
+            <Link 
+            activeClass="active" 
+            className="page_list__item information" 
+            to="information" 
+            // to={props.scrollTo}
+            spy={true} 
+            smooth={true} 
+            duration={500} 
+            >                            
+             <div className="page_list__item_name">Info</div>                                   
             </Link>
           }
         />        

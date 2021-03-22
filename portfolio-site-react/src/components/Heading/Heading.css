@@ -32,7 +32,7 @@
   font-size: 140px;
 }
 
-#about .heading {
+#me .heading {
   left: 20px;
   /* box-shadow: 0 0 10px 10px hsl(109, 85%, 23%); */
   background-image: url('https://images.unsplash.com/photo-1465809873722-b4bf7208d2b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80');
@@ -137,7 +137,7 @@
 
 }
 @media(max-width: 325px) {
-  #about .heading { 
+  #me .heading { 
     left: 4px;
   }
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Element} from 'react-scroll'
 
-import About from '../PageContents/About/About.js';
-import Skill from '../PageContents/Skill/Skill.js';
+import Me from '../PageContents/Me/Me.js';
+// import Skill from '../PageContents/Skill/Skill.js';
 import Footer from '../PageContents/Footer/Footer';
 import Header from '../PageContents/Header/Header';
 import Portfolio from '../PageContents/Portfolio/Portfolio.js';
@@ -21,8 +21,8 @@ function Home({pdf_link, public_commitment}) {
 
       <Header />               
     
-      <Element name="about">
-        <About 
+      <Element name="me">
+        <Me
           public_commitment={public_commitment}
         />      
       </Element>        
@@ -36,8 +36,9 @@ function Home({pdf_link, public_commitment}) {
         <Portfolio />  
       </Element>                   
             
-  
-      <Footer pdf_link={pdf_link} />    
+      <Element name="information">
+        <Footer pdf_link={pdf_link} />    
+      </Element>  
                 
 
   </div>
